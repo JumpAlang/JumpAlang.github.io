@@ -3,8 +3,8 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>(转载)开涛-分享我的学习方法——还是坚持+努力 | Jump!Alang</title>
-<link rel="shortcut icon" href="https://jumpalang.github.io//favicon.ico?v=1555575485689">
+<title>(转载)分享我的学习方法——还是坚持+努力 | Jump!Alang</title>
+<link rel="shortcut icon" href="https://jumpalang.github.io//favicon.ico?v=1555575817033">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://jumpalang.github.io//styles/main.css">
 
@@ -18,7 +18,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://jumpalang.github.io/">
-  <img class="avatar" src="https://jumpalang.github.io//images/avatar.png?v=1555575485689" alt="">
+  <img class="avatar" src="https://jumpalang.github.io//images/avatar.png?v=1555575817033" alt="">
   </a>
   <h1 class="site-title">
     Jump!Alang
@@ -72,7 +72,7 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              (转载)开涛-分享我的学习方法——还是坚持+努力
+              (转载)分享我的学习方法——还是坚持+努力
             </h2>
             <div class="post-info">
               <time class="post-time">
@@ -86,9 +86,13 @@
             </div>
             
             <div class="post-content">
-              <p>#我的学习方法<br>
-##目的
-目的就是这个技术完成什么功能，解决哪类问题。拿JSON举个例子：
+              <blockquote>
+<p>本文转载自：开涛<a href="https://jinnianshilongnian.iteye.com/blog/1709268">https://jinnianshilongnian.iteye.com/blog/1709268</a></p>
+</blockquote>
+<!--more-->
+<h1 id="我的学习方法">我的学习方法</h1>
+<h2 id="目的">目的</h2>
+<p>目的就是这个技术完成什么功能，解决哪类问题。拿JSON举个例子：
 <strong><a href="http://www.json.org" title="json">http://www.json.org/</a></strong> 写道</p>
 <blockquote>
 <p>JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.
@@ -130,8 +134,8 @@ JDBC抽象层（怎么个抽象法，比普通JDBC调用有哪些好处）等等
 <li>提供了类似于DOM、CSS及类似于Jquery的操作方法来取出和操作数据（重点是DOM、CSS、Jquery我们都有所了解，再学这个应该不难）</li>
 </ol>
 <p><code>从一个技术的定义上，找关键词，我们能总结出它的核心目的。</code>而且能提出一系列问题，有了这一系列问题我们能知道我们接下来要学习什么，只有了解了这些功能才能真正理解设计的目的和是什么。</p>
-<p>##适用场景
-就是我们这个技术的适应的环境，可以在哪些场景中使用。
+<h2 id="适用场景">适用场景</h2>
+<p>就是我们这个技术的适应的环境，可以在哪些场景中使用。
 比如JSON适用于：</p>
 <ul>
 <li>数据交换，尤其跨平台的数据交流</li>
@@ -141,29 +145,29 @@ JDBC抽象层（怎么个抽象法，比普通JDBC调用有哪些好处）等等
 在Java/JavaEE开发的整个过程中都有帮助。此时需要问有哪些帮助？为什么？</p>
 <p>比如Jsoup：
 只要我们想在Java里解析HTML就可以考虑使用它。</p>
-<p>##如何使用
-到这一步其实是最简单的，可以按照如下步骤学习：</p>
+<h2 id="如何使用">如何使用</h2>
+<p>到这一步其实是最简单的，可以按照如下步骤学习：</p>
 <ol>
 <li>根据官网的hello world进行简单入门，了解最基本的使用，到此我们入门了；</li>
 <li>如果官网提供了单元测试用例，最好的学习方式就是跟着单元测试挨着试，到此该技术的所有特性就有所了解了；</li>
 <li>写自己的功能，根据之前学的知识开始开发自己需要的功能；</li>
 <li>如果需要经常使用/涉及项目核心技术，一定要读读官方文档，有时候读读API做到心中有数。</li>
 </ol>
-<p>##类似的技术
-每当我们学习完一个新技术的时候，都要留一手，防止一个技术有bug/性能问题造成后续无替代方案。</p>
+<h2 id="类似的技术">类似的技术</h2>
+<p>每当我们学习完一个新技术的时候，都要留一手，防止一个技术有bug/性能问题造成后续无替代方案。</p>
 <p>比如Jsoup类似的技术有：
 HTMLParser
 NekoHTML
 这两个解析工具功能十分强大，但是使用上没Jsoup简单。</p>
 <p>比如我要实现论坛内容过滤问题：
-过滤掉所有的事件注册，如&lt;a onclick=&quot;……“&gt;需要删除onclick
+过滤掉所有的事件注册，如&lt;a onclick=&quot;……&quot;&gt;需要删除onclick
 删除form相关的表单元素，防止恶意用户注入表单窃取用户数据这个功能我使用Jsoup实现的。</p>
 <p>比如我要抓取iteye的论坛内容（主题、内容、发布人、发布时间）等，使用Jsoup十分方便，因为它的选择器语法类似于Jquery语法，十分方便，而且学习成本很低，基本上只要会Jquery，10几分钟就能上手。</p>
-<p>##优缺点
-我们应该对我们经常使用的核心技术做到心中有数，即了解优缺点，对于普通的技术只要基本会用即可（有时候可以对比）。
+<h2 id="优缺点">优缺点</h2>
+<p>我们应该对我们经常使用的核心技术做到心中有数，即了解优缺点，对于普通的技术只要基本会用即可（有时候可以对比）。
 比如hibernate和ibatis，springmvc和struts2等等，做个对比，总结不出来几点说明自己对这个玩意还是了解不深，需要断续学习和研究。</p>
-<p>##为什么
-对于一些项目中使用的核心技术，需要掌握：
+<h2 id="为什么">为什么</h2>
+<p>对于一些项目中使用的核心技术，需要掌握：
 做好了解为什么，即为什么有这个东西，即了解发展历史和产生的背景
 如何实现的，读源码，知其所以然
 重复发明个轮子，这样可以更好的了解原理，而且学习效果更佳，这样比读N遍源码效果更好
@@ -172,9 +176,9 @@ NekoHTML
 在此学习过程中一定要有把握度：
 有些东西只需了解目的和怎么使用既可；
 有些需要理解到为什么，像spring、junit、slf4j/logback、ehcache、proxool、tomcat、ibatis等等，有时间多读点源代码或者自己造个轮子；尽量做到每一个方面都有涉及（出问题我不怕），但要专一，如spring。）</p>
-<p>#我的学习历程
-##写自己的代码
-代码量非常重要，前期要写足一定量代码，再看一些书籍/读一些源码才有感觉。我是如何写代码的：</p>
+<h1 id="我的学习历程">我的学习历程</h1>
+<h2 id="写自己的代码">写自己的代码</h2>
+<p>代码量非常重要，前期要写足一定量代码，再看一些书籍/读一些源码才有感觉。我是如何写代码的：</p>
 <ol>
 <li>项目代码，这个没得说，在写的过程中思考我们在读书时遇到的一些问题；</li>
 <li>在写项目的时候我们可以发现我们经常重复做一些事情，此时就需要考虑建立自己的代码工具库，如通用代码库、代码生成工具、常用工具类等；不要重复自己，遇到重复的就考虑往自己工具箱添加可利用的组件；</li>
@@ -183,8 +187,8 @@ NekoHTML
 </ol>
 <p>发明轮子我觉得是很有必要的，光看不练没有什么多大效果，发明个轮子可以帮助我们更好的理解，轮子不一定非得
 用到我们的项目，此时的轮子是帮助我们学习的。</p>
-<p>##阅经典的书籍
-读大师经典著作，如：
+<h2 id="阅经典的书籍">阅经典的书籍</h2>
+<p>读大师经典著作，如：
 <a href="http://blog.jobbole.com/5886/">《国外程序员推荐：每个程序员都应读的书》</a>
 <a href="http://blog.jobbole.com/1383/">《一些经典的计算机书籍》</a>
 或者关注如iteye等网站，推荐的一些好书。我经常到<a href="http://www.china-pub.com/?chinapub=eqf&amp;website_id=931693&amp;eu_id=00zp88bd355d38c42ed0&amp;ref=yqf">互动</a>、<a href="http://www.itpub.net/forum-61-1.html">itpub</a>、<a href="http://www.ituring.com.cn/">图灵社区</a>等看一些新书
@@ -206,16 +210,16 @@ NekoHTML
 <li>从简单的源码入手，刚开始放低难度，如阅读junit、slf4j、ehcache等相对简单的源码，再深入阅读如spring等源代码；</li>
 <li>阅读源代码要分而治之，一次读一块，不要混读，不要杂读。</li>
 </ol>
-<p>##记自己的博客
-记博客可以思维缜密，完善知识体系，扎实技术；而且可以分享自己的经验想法，如果有错误会有朋友指正，非常好的学习方式。</p>
+<h2 id="记自己的博客">记自己的博客</h2>
+<p>记博客可以思维缜密，完善知识体系，扎实技术；而且可以分享自己的经验想法，如果有错误会有朋友指正，非常好的学习方式。</p>
 <p>记博客思路：</p>
 <ol>
 <li>记录自己工作中遇到的问题及解决方案；自己既然遇到了别人也可能遇到；</li>
 <li>不要怕写的简单，没面子，我觉得要厚脸皮；</li>
 <li>任何东西都可以记，留作回忆。</li>
 </ol>
-<p>##向同事学习
-既然能作为同事，说明大家水平差不多，学习同事的优点。</p>
+<h2 id="向同事学习">向同事学习</h2>
+<p>既然能作为同事，说明大家水平差不多，学习同事的优点。</p>
 <p>向同事学习思路：</p>
 <ol>
 <li>没事聊聊技术，听听它的想法；</li>
@@ -232,7 +236,6 @@ NekoHTML
 </ol>
 <p><code>学习没有捷径，我不聪明，但我刻苦；刻苦还是不够，得善于思考和总结。学习不要怕丢人，学到手是自己的，学会厚脸皮。</code></p>
 <p>希望对需要的人有所帮助，每个人都有自己的学习方法，可以借鉴学习，但不要临摹，适合自己的才是最好的。</p>
-<p>下一篇会《分享我是如何解决问题的》。</p>
 
             </div>
           </article>
