@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jumpalang.github.io/</id>
     <title>Jump!Alang</title>
-    <updated>2019-05-27T03:46:59.338Z</updated>
+    <updated>2019-05-27T19:31:53.264Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jumpalang.github.io/"/>
     <link rel="self" href="https://jumpalang.github.io//atom.xml"/>
@@ -579,7 +579,9 @@ NekoHTML
 	</div>
 	</div>
 	<!-- 正文-->
-> 能用来驾驭一个人命运的，唯有他的真情实感，对自己真实，一切都释怀了。———《半山文集》 2019.5.27
+<blockquote>
+<p>能用来驾驭一个人命运的，唯有他的真情实感，对自己真实，一切都释怀了。———《半山文集》 2019.5.27</p>
+</blockquote>
 <blockquote>
 <p>好多的美好，并不是被时光消磨殆尽的，是被内在的冲突消耗掉的，是被习惯抹平的。———《半山文集》 2019.5.27</p>
 </blockquote>
