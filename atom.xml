@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://jumpalang.github.io/</id>
+    <title>Jump!Alang</title>
+    <updated>2019-05-27T03:45:01.900Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://jumpalang.github.io/"/>
+    <link rel="self" href="https://jumpalang.github.io//atom.xml"/>
+    <subtitle>永远年轻！永远热泪盈眶！</subtitle>
+    <logo>https://jumpalang.github.io//images/avatar.png</logo>
+    <icon>https://jumpalang.github.io//favicon.ico</icon>
+    <rights>All rights reserved 2019, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[我喜欢的歌曲MV]]></title>
+        <id>https://jumpalang.github.io//post/wo-xi-huan-de-ge-qu-mv</id>
+        <link href="https://jumpalang.github.io//post/wo-xi-huan-de-ge-qu-mv">
+        </link>
+        <updated>2019-05-22T03:06:34.000Z</updated>
+        <content type="html"><![CDATA[<div style="text-align:center;">
+	<h1>心太软</h1>
+	 <div>
+		<video controls="controls"  autoplay="autoplay"  width="66%">
+		<source src="http://jumpalang.1969com.cn/video/%E5%BF%83%E5%A4%AA%E8%BD%AF.mp4" type="video/mp4" />
+		</video>
+	</div>
+	<h1>爱的代价</h1>
+	 <div>
+		<video controls="controls" width="66%"  >
+		<source src="http://jumpalang.1969com.cn/video/%E7%88%B1%E7%9A%84%E4%BB%A3%E4%BB%B7%E2%80%94%E2%80%94%E5%BC%A0%E8%89%BE%E5%98%89.mkv" type="video/mp4" />
+		</video>
+	</div>
+	<h1>思念是一种病</h1>
+	 <div>
+		<video controls="controls" width="66%"  >
+		<source src="http://jumpalang.1969com.cn/video/%E6%80%9D%E5%BF%B5%E6%98%AF%E4%B8%80%E7%A7%8D%E7%97%85.mkv" type="video/mp4" />
+		</video>
+	</div>
+	<h1>知足</h1>
+	 <div>
+		<video controls="controls" width="66%"  >
+		<source src="http://jumpalang.1969com.cn/video/%E7%9F%A5%E8%B6%B3.mkv" type="video/mp4" />
+		</video>
+	</div>
+	<h1>情非得已</h1>
+	 <div>
+		<video controls="controls" width="66%"  >
+		<source src="http://jumpalang.1969com.cn/video/%E6%83%85%E9%9D%9E%E5%BE%97%E5%B7%B2.mkv" type="video/mp4" />
+		</video>
+	</div>
+		<h1>天空</h1>
+	 <div>
+		<video controls="controls" width="66%"  >
+		<source src="http://jumpalang.1969com.cn/video/%E5%A4%A9%E7%A9%BA.mkv" type="video/mp4" />
+		</video>
+	</div>
+		<h1>勇气</h1>
+	 <div>
+		<video controls="controls" width="66%"  >
+		<source src="http://jumpalang.1969com.cn/video/%E5%8B%87%E6%B0%94.mkv" type="video/mp4" />
+		</video>
+	</div>
+	<h1>一直很安静</h1>
+	 <div>
+		<video controls="controls" width="66%"  >
+		<source src="http://jumpalang.1969com.cn/video/%E4%B8%80%E7%9B%B4%E5%BE%88%E5%AE%89%E9%9D%99.mkv" type="video/mp4" />
+		</video>
+	</div>
+	</div>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为爱痴狂]]></title>
+        <id>https://jumpalang.github.io//post/wei-ai-chi-kuang</id>
+        <link href="https://jumpalang.github.io//post/wei-ai-chi-kuang">
+        </link>
+        <updated>2019-05-20T04:27:19.000Z</updated>
+        <summary type="html"><![CDATA[<div style="text-align:center;">
+	<div>
+			<audio  controls="controls">
+			<source src="http://jumpalang.1969com.cn/music/%E4%B8%BA%E7%88%B1%E7%97%B4%E7%8B%82-%E9%92%A2%E7%90%B4%E8%BD%BB%E6%9F%94.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>]]></summary>
+        <content type="html"><![CDATA[<div style="text-align:center;">
+	<div>
+			<audio  controls="controls">
+			<source src="http://jumpalang.1969com.cn/music/%E4%B8%BA%E7%88%B1%E7%97%B4%E7%8B%82-%E9%92%A2%E7%90%B4%E8%BD%BB%E6%9F%94.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>
+<!--more-->
+<div style="text-align:center;">
+	<div>
+			<audio  controls="controls">
+			<source src="http://jumpalang.1969com.cn/music%E4%B8%BA%E7%88%B1%E7%97%B4%E7%8B%82-%E5%88%98%E8%8B%A5%E8%8B%B1.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>
+	<div style="text-align:center;">
+	<div>
+			<audio  controls="controls">
+			<source src="http://jumpalang.1969com.cn/%E6%8A%8A%E6%82%B2%E4%BC%A4%E7%95%99%E7%BB%99%E8%87%AA%E5%B7%B1.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>
+	<div style="text-align:center;">
+	 <div>
+		<video controls="controls" >
+		<source src="http://jumpalang.1969com.cn/video/%E4%B8%BA%E7%88%B1%E7%97%B4%E7%8B%82.mp4" type="video/mp4" />
+		</video>
+	</div>
+	</div>
+<!-- 正文-->
+<blockquote>
+<ul>
+<li>作词：陈升 作曲：陈升</li>
+<li>演唱：刘若英</li>
+<li>我从春天走来 你在秋天说要分开</li>
+<li>说好不为你忧伤 但心情怎会无恙</li>
+<li>为何总是这样 在我心中深藏着你</li>
+<li>想要问你想不想 陪我到地老天荒</li>
+<li>如果爱情这样忧伤 为何不让我分享</li>
+<li>日夜都问你也不回答 怎么你会变这样</li>
+<li>想要问问你敢不敢</li>
+<li>像你说过那样的爱我</li>
+<li>想要问问你敢不敢</li>
+<li>像我这样为爱痴狂</li>
+<li>想要问问你敢不敢</li>
+<li>像你说过那样的爱我</li>
+<li>像我这样为爱痴狂</li>
+<li>到底你会怎么想</li>
+<li>为何总是这样 在我心中深藏着你</li>
+<li>说好不为你忧伤 但心情怎会无恙</li>
+<li>如果爱情这样忧伤 为何不让我分享</li>
+<li>日夜都问你也不回答 怎么你会变这样</li>
+<li>想要问问你敢不敢</li>
+<li>像你说过那样的爱我</li>
+<li>想要问问你敢不敢</li>
+<li>像我这样为爱痴狂</li>
+<li>想要问问你敢不敢</li>
+<li>像你说过那样的爱我</li>
+<li>像我这样为爱痴狂</li>
+<li>到底你会怎么想</li>
+<li>想要问问你敢不敢</li>
+<li>像你说过那样的爱我</li>
+<li>像我这样为爱痴狂</li>
+<li>到底你会怎么想</li>
+</ul>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[泪海]]></title>
+        <id>https://jumpalang.github.io//post/lei-hai</id>
+        <link href="https://jumpalang.github.io//post/lei-hai">
+        </link>
+        <updated>2019-05-20T02:37:39.000Z</updated>
+        <summary type="html"><![CDATA[<div style="text-align:center;">
+	<div>
+			<audio  controls="controls" autoplay="autoplay">
+			<source src="http://jumpalang.1969com.cn/music%E6%B3%AA%E6%B5%B7-%E9%92%A2%E7%90%B4.m4a" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>]]></summary>
+        <content type="html"><![CDATA[<div style="text-align:center;">
+	<div>
+			<audio  controls="controls" autoplay="autoplay">
+			<source src="http://jumpalang.1969com.cn/music%E6%B3%AA%E6%B5%B7-%E9%92%A2%E7%90%B4.m4a" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>
+<!--more-->
+<!-- 正文-->
+<blockquote>
+<ul>
+<li>演唱：许茹芸</li>
+<li>爱已不能动</li>
+<li>还有什么值得我心痛</li>
+<li>想你的天空 下起雨来</li>
+<li>没人心疼的黑夜</li>
+<li>脸颊两行咸咸的泪水</li>
+<li>是你 哦 是你</li>
+<li>让我望穿泪水肝肠寸断</li>
+<li>你怎么舍得让我的泪</li>
+<li>流向海</li>
+<li>付出的感情永远 找不回来</li>
+<li>你怎么舍得让我的爱</li>
+<li>流向海</li>
+<li>伤心的往事一幕幕</li>
+<li>就像潮水</li>
+<li>将我淹埋</li>
+<li>爱已不能动</li>
+<li>还有什么值得我心痛</li>
+<li>想你的天空 下起雨来</li>
+<li>没人心疼的黑夜</li>
+<li>脸颊两行咸咸的泪水</li>
+<li>是你 哦 是你</li>
+<li>让我望穿泪水肝肠寸断</li>
+<li>你怎么舍得让我的泪</li>
+<li>流向海</li>
+<li>付出的感情永远 找不回来</li>
+<li>你怎么舍得让我的爱</li>
+<li>流向海</li>
+<li>伤心的往事一幕幕</li>
+<li>就像潮水</li>
+<li>将我淹埋</li>
+<li>闭上了双眼</li>
+<li>还看见和你的缠绵</li>
+<li>眼角的泪水</li>
+<li>洗不去心中</li>
+<li>一遍一遍的誓言</li>
+<li>你怎么舍得让我的泪</li>
+<li>流向海</li>
+<li>付出的感情永远 找不回来</li>
+<li>你怎么舍得让我的爱</li>
+<li>流向海</li>
+<li>伤心的往事一幕幕</li>
+<li>就像潮水</li>
+<li>将我淹埋</li>
+</ul>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[可能否]]></title>
+        <id>https://jumpalang.github.io//post/ke-neng-fou</id>
+        <link href="https://jumpalang.github.io//post/ke-neng-fou">
+        </link>
+        <updated>2019-05-18T05:11:22.000Z</updated>
+        <summary type="html"><![CDATA[<div style="text-align:center;">
+	<div>
+			<audio  controls="controls">
+			<source src="http://jumpalang.1969com.cn/music%E5%8F%AF%E8%83%BD%E5%90%A6-%E9%92%A2%E7%90%B4.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>]]></summary>
+        <content type="html"><![CDATA[<div style="text-align:center;">
+	<div>
+			<audio  controls="controls">
+			<source src="http://jumpalang.1969com.cn/music%E5%8F%AF%E8%83%BD%E5%90%A6-%E9%92%A2%E7%90%B4.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>
+<!--more-->
+<div style="text-align:center;">
+	<div>
+			<audio  controls="controls">
+			<source src="http://jumpalang.1969com.cn/music%E6%9C%A8%E5%B0%8F%E9%9B%85+-+%E5%8F%AF%E8%83%BD%E5%90%A6.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>
+<!-- 正文-->
+<blockquote>
+<p>作曲 : 木小雅 作词 : 木小雅 编曲：闫津</p>
+<ul>
+<li>春天的风 能否吹来夏天的雨</li>
+<li>秋天的月 能否照亮冬天的雪</li>
+<li>夜空的星 能否落向晨曦的海</li>
+<li>山间的泉 能否遇上南飞的雁</li>
+<li>能否早一点 看透命运的伏线</li>
+<li>能否不轻易就深陷</li>
+<li>能否慢一点 挥霍有限的时间</li>
+<li>能否许我一个永远</li>
+<li>可能我撞了南墙才会回头吧</li>
+<li>可能我见了黄河才会死心吧</li>
+<li>可能我偏要一条路走到黑吧</li>
+<li>可能我还没遇见 那个他吧</li>
+<li>断掉的弦 能否扯破自缚的茧</li>
+<li>熄灭的火 能否烧光残留的念</li>
+<li>梦中的云 能否化作熟悉的脸</li>
+<li>前世的劫 能否换来今生的缘</li>
+<li>能否早一点 相信年少的誓言</li>
+<li>能否不轻易说再见</li>
+<li>能否慢一点 感受岁月的缱绻</li>
+<li>能否许我一次成全</li>
+<li>可能我撞了南墙才会回头吧</li>
+<li>可能我见了黄河才会死心吧</li>
+<li>可能我偏要一条路走到黑吧</li>
+<li>可能我还没遇见 那个他吧</li>
+<li>可能我撞了南墙才会回头吧</li>
+<li>可能我见了黄河才会死心吧</li>
+<li>可能我偏要一条路走到黑吧</li>
+<li>可能我还没遇见 那个他吧</li>
+<li>可能我还没忘掉 哪个他吧</li>
+</ul>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[(转载)比特币入门教程]]></title>
+        <id>https://jumpalang.github.io//post/zhuan-zai-bi-te-bi-ru-men-jiao-cheng</id>
+        <link href="https://jumpalang.github.io//post/zhuan-zai-bi-te-bi-ru-men-jiao-cheng">
+        </link>
+        <updated>2019-04-18T08:33:20.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>作者：阮一峰 日期：2018年1月4日 摘自：<a target="_blank" href="http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html">链接</a></p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>作者：阮一峰 日期：2018年1月4日 摘自：<a target="_blank" href="http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html">链接</a></p>
+</blockquote>
+<!--more-->
+<p>比特币（bitcoin）诞生于2008年的一篇<a href="https://bitcoin.org/en/bitcoin-paper">论文</a>。
+一个署名为中本聪的人,提出了革命性的构想：让我们创造一种不受政府或其他任何人控制的代币！这个想法堪称疯狂：一串 数字，背后没有任何资产支持，也没有任何人负责，你把它当作钱付给对方，怎么会有人愿意授受？</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/9662431-be7e212367dee45c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>但是，猜想居然变成了现实。随后的几年，在全世界无数爱好者的支持下，比特币网络运行起来了，越来越多的人和资本参与，星星之火，终成燎原。刚刚过去的2017年，比特币迎来了爆发式的增长，从年初的1000美元，最高涨到了2万美元，全世界都为之震动，上到政府，下到普通百姓都在关注。事实就是比特币已经并将断续改变世界。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/9662431-f4e2c043cde455bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>新闻媒体往往只关注它的火爆表现，忽视或者无法回答一些基本的问题。</p>
+<blockquote>
+<ul>
+<li>比特币的原理是什么？</li>
+<li>为什么这个无人管理的体系可以成功运作？</li>
+<li>比特币交易的流程是怎么回事？</li>
+<li>它与区块链又是什么关系？</li>
+</ul>
+</blockquote>
+<p>下面，我尝试回答这些问题，希望帮助大家理解比特币。拋开技术细节，还是很容易解释的。
+有一点说明，本文只讨论技术问题，不涉及如何投资比特币，更不会预测价格走势。事实上，我也不知道。如果我知道怎么发财，可能就不会在这里写博客了。</p>
+<h1 id="非对称加密">非对称加密</h1>
+<p>首先，理解比特币，必须理解<a href="http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html">非对称加密</a>。
+你可能听说过这个词，所谓非对称加密，其实很简单，就是加密和解密需要两把钥匙：一把公钥和一把私钥。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/9662431-5961dd0174f45be2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>公钥是公开的，任何人都可以获取。私钥是保密的，只有拥有者才能使用。他人使用你的公钥加密信息，然后发送给你
+，你用私钥解密，取出信息。反过来，你也可以用私钥加密信息，别人用你的公钥解开，从而证明这个信息确实是你发出的，且未被篡改，这叫做数字签名（更详细的介绍请看<a href="http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html">《什么是数字签名》</a>）。
+现在请设想，<strong>如果公钥加密的不是普通的信息，而是加密了一笔钱，发送给你，这会怎样？</strong>
+首先，你能解开加密包，取出里面的钱，因为私钥在你手里。其次，别人偷不走这笔钱，因为他们没有你的私钥。因此，支付可以成功。</p>
+<p>这就是比特币（以及其他数字货币）的原理：非对称加密保证了支付的可靠性。</p>
+<p>由于支付的钱必须通过私钥取出，所以你是谁并不重要，重要的是谁拥有私钥。只有拥有了私钥，才能取出支付给你的钱。（事实上，真实的交易流程稍有不同，私钥保证的不是取出支付给你的钱，而是保证只有你能把这些属于你的钱支付出去，详见后文。）</p>
+<h1 id="比特币钱包">比特币钱包</h1>
+<p>对于比特币来说，钱不是支付给个人的，而是支付给某一把私钥。这就是交易匿名性的根本原因，因为没有人知道，那些私钥背后的主人是谁。</p>
+<p>所以，<strong>比特币交易的第一件事，就是你必须拥有自己的公钥和私钥。</strong>
+你去网上那些比特币交易所开户，它们会让你首先生成一个比特币钱包（wallet）。**这个钱包不是用来存放比特币，而是存放你的公钥和私钥。**软件会帮你生成这两把钥匙，然后放在钱包里面。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/9662431-ca24fa8c951380f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>根据协议，公钥的长度是512位。这个长度不太方便传播，因此协议又规定，要为公钥生成一个160位的指纹。所谓指纹，就是一个比较短的、易于传播的哈希值。160位是二进制，写成十六进制，大约是26到35个字符，比如<strong>1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2</strong>。这个字符串就叫做钱包的地址，它是唯一的，即每个钱包的地址肯定都是不一样的。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/9662431-f88e42b18c2c3677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>你向别人收钱时，只要告诉对方你的钱包地址即可，对方向这个地址付款。由于你是这个地址的拥有者，所以你会收到这笔钱。</p>
+<p>由于你是否拥有某个钱包地址，是由私钥证明的（具体的证明方法稍后介绍），所以一定要保护好私钥。这是极其重要，如果你的私钥被偷了，你的比特币也就等于没了，因为他人可以冒用你的身份了，把钱包里面的钱都转走。</p>
+<p>同样的，你向他人支付比特币，千万不能写错他人的钱包地址，否则你的比特币就支付到了另一个不同的人了。</p>
+<h1 id="交易过程">交易过程</h1>
+<p>下面，我把整个流程串起来，看看比特币如何完成一笔交易。
+**一笔交易就是一个地址的比特币，转移到另一个地址。**由于比特币的交易记录全部都是公开的，哪个地址拥有多少比特币，都是可以查到的。因此，支付方是否拥有足够的比特币，完成这笔交易，这是可以轻易验证的。</p>
+<p>问题出在怎么防止其他人，冒用你的名义申报交易。举例来说，有人申报了一笔交易：地址A向地址B支付10个比特币。我怎么知道这个申报是真的，申报人就是地址A的主人？</p>
+<p>比特币协议规定，申报交易的时候，除了交易金额，转出比特币的一方还必须提供以下数据：</p>
+<blockquote>
+<ul>
+<li>上一笔交易的Hash（你从哪里得到这些比特币）</li>
+<li>本次交易双方的地址</li>
+<li>支付方的公钥</li>
+<li>支付方的私钥生成的数字签名</li>
+</ul>
+</blockquote>
+<p>验证这笔交易是否属实，需要三步：</p>
+<blockquote>
+<ul>
+<li>第一步，找到上一笔交易，确认支付方的比特币来源。</li>
+<li>第二步，算出支付方公钥的指纹，确认与支付方的地址一致，从而保证公钥属实。</li>
+<li>第三步，使用公钥去解开数字签名，保证私钥属实。</li>
+</ul>
+</blockquote>
+<p>经过上面三步，就可以认定这笔交易是真实的。</p>
+<h1 id="四-交易确认与区块链">四、交易确认与区块链</h1>
+<p>确认交易的真实性以后，交易还不算完成。<strong>交易数据必须写入数据库，才算成立。对方才能真正收到钱。</strong>
+比特币使用的是一种特殊的数据库，叫做区块链（blockchain），详细的介绍请看<a href="http://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html">《区块链入门教程》</a>。本文只讨论交易如何写入区块链。
+首先，所有的交易数据都会传送到矿工那里。矿工负责把这些交易写入区块链。
+根据比特币协议，一个区块的大小最大是1MB，而一笔交易大概是500字节左右，因此一个区块最多可以包含2000多笔交易。矿工负责把这2000多笔交易打包在一起，组成一个区块，然后计算这个区块的Hash。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/9662431-73d4194482bb24d1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
+计算Hash的过程叫做采矿，这需要大量的计算。矿工之间也在竞争，谁先算出Hash，谁就能第一个添加新区块进入区块链，从而享受这个区块全部收益，而其他矿工将一无所获。
+一笔交易一旦写入了区块链，就无法反悔了。这里需要建立一个观念：**比特币不存放在钱包或其他别的地方，而是只存在于区块链上面。**区块链记载了你参与的第一笔交易，你得到过多少比特币，你又支付了多少比特币，因此可以算出来你拥有多少资产。</p>
+<h1 id="五-矿工的收益">五、矿工的收益</h1>
+<p>交易的确认离不开矿工。为什么有人愿意做矿工呢？
+比特币协议规定，挖到新区块的矿工将获得奖励，一开始（2008年）是50个比特币，然后每4年减半，目前（2018）年是12.5个比特币。这也是比特币的供给增加机制，流通中新增的比特币都是这样诞生的。
+你可能看出来了，每4年奖励减半，那么到了2140年，矿工将得不到任何奖励，比特币的数量也将停止增加。这时，矿工的收益就完全依靠交易手续费了。
+所谓交易手续费，就是矿工可以从每笔交易抽成，具体的金额由支付方自愿决定。你完全可以一毛不拔，一分钱也不给矿工，但是那样的话，你的交易就会没人处理，迟迟无法写入区块链，得到确认。矿工们总是优先处理手续费最高的交易。
+目前由于交易数量猛增，手续费已经水涨船高，一个区块2000多笔交易的手续费总额可以达到3~10个比特币。如果你的手续费给低了，很可能过了一个星期，交易还没确认。
+一个区块的奖励金12.5个比特币，再加上手续费，收益是相当可观的。按照目前的价格，可以达到100万~200万人民币。想想看，运气好的话，几分钟就能挖到一个区块，拿到这样一笔钱，怪不得人们对挖矿趋之若鹜。</p>
+<h1 id="六-区块的扩容">六、区块的扩容</h1>
+<p><a href="http://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html">《区块链入门教程》</a>说过，比特币协议规定，平均10分钟诞生一个区块。区块的大小只有1MB，最多只能包含2000多笔交易。也就是说，比特币网络每10分钟，最多只能处理2000多笔交易，换算一下，就是处理速度为3~5笔/秒。
+全世界的比特币交易这么多，可是区块链每秒最多只能处理5笔，这已经成为制约比特币发展的一个瓶颈。
+很早就有人呼吁，改革比特币协议，提升处理速度。这件事在2017年8月有了一点眉目，当时区块链发生了一次分叉，诞生了一个新协议，称为<a href="https://en.wikipedia.org/wiki/Bitcoin_Cash">Bitcoin Cash</a>（简称BCH）。这种新货币其他方面与比特币致，就是每个区块的大小从1MB增加到8MB，因此处理速度提升了8倍，手续费也低得多。该协议是对原有区块链的分叉，因此当时持有比特币的人，等于一人获赠了一份同样数量的<strong>BCH</strong>。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/9662431-f8c9f5f43e22a1b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><strong>BCH</strong>等于创建了一种新货币，还有人提议，原始比特币的区块大小提升到2MB，这称为<a href="https://en.wikipedia.org/wiki/SegWit2x">SegWit2x</a>。这个建议原定于2017年11月实施，但是最后一刻由于缺乏共识，就被取消了，目前还在讨论中。</p>
+<h1 id="七-点对点网络">七、点对点网络</h1>
+<p>比特币是一个全世界的开放网络，只要你有服务器，就能加入这个网络，成为一个节点。每个节点都包含了整个区块链（目前大概100多GB），并且节点之间时刻不停在同步信息。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/9662431-9202e20ae0ffa7af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>当你发生了一笔支付，你所在的节点就会把这笔交易告诉另一个节点，直至传遍整个网络。矿工从网上收集各自新发生的交易，将它们打包写入区块链。一旦写入成功，矿工所在节点的区块链，就成为最新版本，其他节点都会来复制新增的区块，保证全网的区块链都是一致的。
+最后，你所在的节点也拿到了最新的区块链，从而得知你早先的那笔交易，已经写在里面了，至此交易确认成功。</p>
+<h1 id="八-还有一个问题">八、还有一个问题</h1>
+<p>写到这里，我就介绍完了比特币的基本知识，希望你已经明白了比特币是怎么回事。但是还有一个根本的问题，我没有回答：比特币的本质到底是什么？
+说到底，比特币只是区块链的一条记录，是凭空生成的，为什么可以当钱用？举例来说：矿工获得12.5个比特币的奖励，其实就是区块链有一个记录：“xxx地址获得12.5个比特币”。正是这行记录，导致该矿工获得了大笔金钱。如果区块链突然增加了一条记录，记载你的地址获得了1000个比特币，你就真的会有1000个比特币。这到底是为什么？</p>
+<p>这篇文章已经够长了，这个问题就留到下次再谈，欢迎关注本系统的最后一篇文章《数字货币的本质》。</p>
+<h1 id="九-参考链接">九、参考链接</h1>
+<ul>
+<li><a href="https://arstechnica.com/tech-policy/2017/12/how-bitcoin-works/">How Bitcoin works</a>，by Timothy B.Lee</li>
+<li><a href="http://www.righto.com/2014/02/bitcoins-hard-way-using-raw-bitcoin.html">Bitcoins the hard way:Using the raw Bitcoin protocol</a> by Ken Shirriff</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[(转载)分享我的学习方法——还是坚持+努力]]></title>
+        <id>https://jumpalang.github.io//post/zhuan-zai-fen-xiang-wo-de-xue-xi-fang-fa-huan-shi-jian-chi-nu-li</id>
+        <link href="https://jumpalang.github.io//post/zhuan-zai-fen-xiang-wo-de-xue-xi-fang-fa-huan-shi-jian-chi-nu-li">
+        </link>
+        <updated>2019-04-18T08:14:54.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文转载自：开涛博客 <a target="_blank" href="https://jinnianshilongnian.iteye.com/blog/1709268">链接</a></p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文转载自：开涛博客 <a target="_blank" href="https://jinnianshilongnian.iteye.com/blog/1709268">链接</a></p>
+</blockquote>
+<!--more-->
+<h1 id="我的学习方法">我的学习方法</h1>
+<h2 id="目的">目的</h2>
+<p>目的就是这个技术完成什么功能，解决哪类问题。拿JSON举个例子：
+<strong><a href="http://www.json.org" title="json">http://www.json.org/</a></strong> 写道</p>
+<blockquote>
+<p>JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.
+即：
+JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。易于人阅读和编写，同时也易于机器解析和生成。它基于JavaScript（Standard ECMA-262 3rd Edition - December 1999）的一个子集。 JSON采用完全独立于语言的文本格式，但是也使用了类似于C语言家族的习惯（包括C, C++, C#, Java, JavaScript, Perl, Python等）。这些特性使JSON成为理想的数据交换语言。</p>
+</blockquote>
+<p>从定义我们可以总结出几个关键点：</p>
+<ul>
+<li>轻量级</li>
+<li><em><strong>数据交换格式</strong></em></li>
+<li>易于编写和阅读</li>
+<li>基于JavaScript的一个子集</li>
+<li><em><strong>纯文本独立于语言和平台</strong></em>
+重点是它以纯文本存储，可以独立于任何语言和平台，且主要用于数据交换。</li>
+</ul>
+<p>再比如Spring:
+<a href="http://www.oschina.net/p/spring">http://www.oschina.net/p/spring</a> 写道</p>
+<blockquote>
+<p>Spring Framewok 是一个开源的Java/Java EE全功能栈（full-stack）的应用程序框架，以Apache许可证形式发布，也有.NET平台上的移植版本。该框架基于Expert One-on-One Java EE Design and Development(ISBN 0-7645-4385-7)一书中的代码，最初由 Rod Johnson 和 Juergen Hoeller等开发。Spring Framework提供了一个简易的开发方式，这种开发方式，将避免那些可能致使底层代码变得繁杂混乱的大量属性文件和帮助类。</p>
+<blockquote>
+<p>Spring中包含的关键特性：
+请前往<a href="http://www.oschina.net/p/spring">http://www.oschina.net/p/spring</a>浏览
+spring Framework官网 http://www.springsource.org/spring-framework</p>
+</blockquote>
+</blockquote>
+<p>从定义我们可以总结几个关键点：
+Java/JavaEE一站式解决方案（即不管是开发普通Java应用还是JavaEE企业应用都能提供解决方案）框架基于Expert One-on-One Java EE Design and Development（告诉我们需要去读这本书 这本书介绍了Spring的设计思想）
+IoC容器（此时我们需要问什么是IoC容器）
+数据库事务的一般化抽象层（此时需要问自己怎么个一般化抽象）
+JDBC抽象层（怎么个抽象法，比普通JDBC调用有哪些好处）等等……</p>
+<p>再比如Jsoup：
+<a href="http://jsoup.org/">http://jsoup.org/</a>写道</p>
+<blockquote>
+<p>jsoup是一款 Java的HTML解析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力的API，可通过DOM，CSS以及类似于JQuery的操作方法来取出和操作数据。
+从定义上可以总结几个关键点：</p>
+</blockquote>
+<ol>
+<li>Java版的HTML解析器</li>
+<li>提供了类似于DOM、CSS及类似于Jquery的操作方法来取出和操作数据（重点是DOM、CSS、Jquery我们都有所了解，再学这个应该不难）</li>
+</ol>
+<p><code>从一个技术的定义上，找关键词，我们能总结出它的核心目的。</code>而且能提出一系列问题，有了这一系列问题我们能知道我们接下来要学习什么，只有了解了这些功能才能真正理解设计的目的和是什么。</p>
+<h2 id="适用场景">适用场景</h2>
+<p>就是我们这个技术的适应的环境，可以在哪些场景中使用。
+比如JSON适用于：</p>
+<ul>
+<li>数据交换，尤其跨平台的数据交流</li>
+<li>表示JavaSccript对象</li>
+</ul>
+<p>比如Spring：
+在Java/JavaEE开发的整个过程中都有帮助。此时需要问有哪些帮助？为什么？</p>
+<p>比如Jsoup：
+只要我们想在Java里解析HTML就可以考虑使用它。</p>
+<h2 id="如何使用">如何使用</h2>
+<p>到这一步其实是最简单的，可以按照如下步骤学习：</p>
+<ol>
+<li>根据官网的hello world进行简单入门，了解最基本的使用，到此我们入门了；</li>
+<li>如果官网提供了单元测试用例，最好的学习方式就是跟着单元测试挨着试，到此该技术的所有特性就有所了解了；</li>
+<li>写自己的功能，根据之前学的知识开始开发自己需要的功能；</li>
+<li>如果需要经常使用/涉及项目核心技术，一定要读读官方文档，有时候读读API做到心中有数。</li>
+</ol>
+<h2 id="类似的技术">类似的技术</h2>
+<p>每当我们学习完一个新技术的时候，都要留一手，防止一个技术有bug/性能问题造成后续无替代方案。</p>
+<p>比如Jsoup类似的技术有：
+HTMLParser
+NekoHTML
+这两个解析工具功能十分强大，但是使用上没Jsoup简单。</p>
+<p>比如我要实现论坛内容过滤问题：
+过滤掉所有的事件注册，如&lt;a onclick=&quot;……&quot;&gt;需要删除onclick
+删除form相关的表单元素，防止恶意用户注入表单窃取用户数据这个功能我使用Jsoup实现的。</p>
+<p>比如我要抓取iteye的论坛内容（主题、内容、发布人、发布时间）等，使用Jsoup十分方便，因为它的选择器语法类似于Jquery语法，十分方便，而且学习成本很低，基本上只要会Jquery，10几分钟就能上手。</p>
+<h2 id="优缺点">优缺点</h2>
+<p>我们应该对我们经常使用的核心技术做到心中有数，即了解优缺点，对于普通的技术只要基本会用即可（有时候可以对比）。
+比如hibernate和ibatis，springmvc和struts2等等，做个对比，总结不出来几点说明自己对这个玩意还是了解不深，需要断续学习和研究。</p>
+<h2 id="为什么">为什么</h2>
+<p>对于一些项目中使用的核心技术，需要掌握：
+做好了解为什么，即为什么有这个东西，即了解发展历史和产生的背景
+如何实现的，读源码，知其所以然
+重复发明个轮子，这样可以更好的了解原理，而且学习效果更佳，这样比读N遍源码效果更好
+有朋友会说我看不懂咋办？不会写啊！
+<code>告诉你个笨办法： 之前我学习CGLIB，是照着人家单元测试挨着敲和试的；还有学习源码建议从低版本开始，因为功能少都是核心，好研究。</code>
+在此学习过程中一定要有把握度：
+有些东西只需了解目的和怎么使用既可；
+有些需要理解到为什么，像spring、junit、slf4j/logback、ehcache、proxool、tomcat、ibatis等等，有时间多读点源代码或者自己造个轮子；尽量做到每一个方面都有涉及（出问题我不怕），但要专一，如spring。）</p>
+<h1 id="我的学习历程">我的学习历程</h1>
+<h2 id="写自己的代码">写自己的代码</h2>
+<p>代码量非常重要，前期要写足一定量代码，再看一些书籍/读一些源码才有感觉。我是如何写代码的：</p>
+<ol>
+<li>项目代码，这个没得说，在写的过程中思考我们在读书时遇到的一些问题；</li>
+<li>在写项目的时候我们可以发现我们经常重复做一些事情，此时就需要考虑建立自己的代码工具库，如通用代码库、代码生成工具、常用工具类等；不要重复自己，遇到重复的就考虑往自己工具箱添加可利用的组件；</li>
+<li>按照自己兴趣发展一个方向，此时可以考虑写一些相关的轮子；通过轮子再反过来深入学习其他相关的技术。</li>
+<li>如果有能力就考虑构建自己的平台、简化重复劳动，提升开发效率。</li>
+</ol>
+<p>发明轮子我觉得是很有必要的，光看不练没有什么多大效果，发明个轮子可以帮助我们更好的理解，轮子不一定非得
+用到我们的项目，此时的轮子是帮助我们学习的。</p>
+<h2 id="阅经典的书籍">阅经典的书籍</h2>
+<p>读大师经典著作，如：
+<a href="http://blog.jobbole.com/5886/">《国外程序员推荐：每个程序员都应读的书》</a>
+<a href="http://blog.jobbole.com/1383/">《一些经典的计算机书籍》</a>
+或者关注如iteye等网站，推荐的一些好书。我经常到<a href="http://www.china-pub.com/?chinapub=eqf&amp;website_id=931693&amp;eu_id=00zp88bd355d38c42ed0&amp;ref=yqf">互动</a>、<a href="http://www.itpub.net/forum-61-1.html">itpub</a>、<a href="http://www.ituring.com.cn/">图灵社区</a>等看一些新书
+读书不是到用的时候再读，而是按照自己的方向和兴趣选择相关的书籍进行阅读，学习前人经验和思想，开阔自己思路。
+读书不是只读一遍，有些好书如《Effective Java》、《设计模式——可复用面向对象软件的基础》、《企业应用架构模式》、《敏捷软件开发：原则、模式与实践》、《面向对象软件构造 》等需要重复读，因为时间段不同积累的经验不同，理解会产生改变，每次读都有不同的收获。
+读书读不懂没关系，先放一放，过一段时间再来看，经验到了自然就明白，不要刻意去背，刻意去记，一定要理解着记，记住要理论指导实践，实践检验理论，不可脱节。
+不能心急，一下子啃N页，像看小说似的，这样什么都学不到，记不住，即使今天记住了过了几天就忘了，所以要温故而知新。
+读书要思考自己之前遇到过类似的场景吗？对比着记更容易，而且记忆的成本会很低。
+不要光看自己使用的技术相关的，其他方面的如产品、测试，数据库等相关书籍也建议阅读。在此推荐一本产品入门书：
+《Dont Mak Me Think》
+尤其在学习Java技术时，建议大家有时间把JDK的核心API（java.lang/java.util等这些我们经常用的）读一下/还有相关的规范（规范是最权威的指南）。</p>
+<p>##读优秀的代码
+阅读优秀的源代码可以帮助我们消化书籍中学到的理论，更好的去使用它，而且能开阔我们的思路，完善我们的思想。
+读源码思路：</p>
+<ol>
+<li>从使用进行阅读，按照调用关系深入到源代码中，不要一口吃胖子；</li>
+<li>跟着单元测试走；</li>
+<li>只需读最核心部分即可，无需读所有的代码；</li>
+<li>从简单的源码入手，刚开始放低难度，如阅读junit、slf4j、ehcache等相对简单的源码，再深入阅读如spring等源代码；</li>
+<li>阅读源代码要分而治之，一次读一块，不要混读，不要杂读。</li>
+</ol>
+<h2 id="记自己的博客">记自己的博客</h2>
+<p>记博客可以思维缜密，完善知识体系，扎实技术；而且可以分享自己的经验想法，如果有错误会有朋友指正，非常好的学习方式。</p>
+<p>记博客思路：</p>
+<ol>
+<li>记录自己工作中遇到的问题及解决方案；自己既然遇到了别人也可能遇到；</li>
+<li>不要怕写的简单，没面子，我觉得要厚脸皮；</li>
+<li>任何东西都可以记，留作回忆。</li>
+</ol>
+<h2 id="向同事学习">向同事学习</h2>
+<p>既然能作为同事，说明大家水平差不多，学习同事的优点。</p>
+<p>向同事学习思路：</p>
+<ol>
+<li>没事聊聊技术，听听它的想法；</li>
+<li>看他的源代码，从中学习；</li>
+<li>如果你的老大/同事都不上进，你又是很上进的，建议物以类聚，人以群分，换个环境好好发展自己。</li>
+</ol>
+<p>##善于观察细节
+善于观察细节，比如从最基本的同事怎么操作的那么快（观察他是如何进行操作的，如发现自己不会的快捷键）</p>
+<p>观察细节思路：</p>
+<ol>
+<li>眼要尖，关于发现自己不会的；</li>
+<li>嘴要勤，善于问自己不了解的（此处不是没事就去问，而是自己思考过，实在不会的，不要憋在肚子里，问一下又不会怀孕）；</li>
+<li>没事读同事的源代码，这个可是免费的，从中能学到好的编码习惯和好的解决问题思路。</li>
+</ol>
+<p><code>学习没有捷径，我不聪明，但我刻苦；刻苦还是不够，得善于思考和总结。学习不要怕丢人，学到手是自己的，学会厚脸皮。</code></p>
+<p>希望对需要的人有所帮助，每个人都有自己的学习方法，可以借鉴学习，但不要临摹，适合自己的才是最好的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[感悟及摘抄]]></title>
+        <id>https://jumpalang.github.io//post/gan-wu-ji-zhai-chao</id>
+        <link href="https://jumpalang.github.io//post/gan-wu-ji-zhai-chao">
+        </link>
+        <updated>2019-04-18T08:08:21.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>人生很多事，就像智齿。最佳的解决方式，是拔掉。而不是，忍受。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>人生很多事，就像智齿。最佳的解决方式，是拔掉。而不是，忍受。</p>
+</blockquote>
+<!--more-->
+<div style="text-align:center;">
+	<div>
+			<audio  controls="controls" >
+			<source src="http://jumpalang.1969com.cn/musicTheBeatitudes.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>
+	<!-- 正文-->
+> 能用来驾驭一个人命运的，唯有他的真情实感，对自己真实，一切都释怀了。———《半山文集》 2019.5.27
+<blockquote>
+<p>好多的美好，并不是被时光消磨殆尽的，是被内在的冲突消耗掉的，是被习惯抹平的。———《半山文集》 2019.5.27</p>
+</blockquote>
+<blockquote>
+<p>“过去我还以为，人是一年一年按部就班地增长岁数的哩，但不是那样，人是一瞬间长大长老的。” ——村上春树 2019.5.27</p>
+</blockquote>
+<blockquote>
+<p>人一辈子都在作茧自缚，也在不断地进行自我解放，或麻木，或清醒，不断地捡拾自己，也不断地抛弃自己，痛苦和欢愉都从这里面来。 ———《半山文集》 2019.5.27</p>
+</blockquote>
+<blockquote>
+<p>一个厌倦自己日常生活的人，即使是身边出现什么新人新事物，用不了多久，也一样会厌倦。能够战胜厌倦的人，只能是那种在日常生活中，也能看见自己内心风景的人。———《半山文集》 2019.5.27</p>
+</blockquote>
+<blockquote>
+<p>你若觉得自己体验到的，只是自己的痛苦，这样的痛苦就很疼；
+你若觉得自己体验到的是大家都会有的痛苦，也就没那么痛了；
+你若觉得自己体验到的是任何生命本来就有的痛苦，痛苦就消失了，但会给你留下莫名的悲伤。
+痛苦，也可以痛出一点人生的境界来。———《半山文集》 2019.5.27</p>
+</blockquote>
+<blockquote>
+<p>人们很少做他们相信是对的事，他们做比较方便的事，然后后悔。—— 鲍勃·迪伦 2019.5.20</p>
+</blockquote>
+<blockquote>
+<p>到了一个新地方，有人爱逛百货公司，有人爱逛书店，我宁可去逛逛菜市。看看生鸡活鸭、新鲜水灵的瓜菜、彤红的辣椒，热热闹闹，挨挨挤挤，让人感到一种生之乐趣。——汪曾祺《做饭》 2019.5.20</p>
+</blockquote>
+<blockquote>
+<p>你们必须努力寻找自己的声音。因为你越迟开始寻找，找到的可能性就越小。——《死亡诗社》2019.5.20</p>
+</blockquote>
+<blockquote>
+<p>教育的目的，是为了帮助一个人步入自我教育。教育是长大，自我的教育才是真正的成长。——《半山文集》2019.5.20</p>
+</blockquote>
+<blockquote>
+<p>对别人的好奇，仍出自于对自己的好奇，人们看不见自己，需要把目光投出去，反射回来看见自己。——《半山文集》2019.5.20</p>
+</blockquote>
+<blockquote>
+<p>能从多种角度去看待事物，即使矛盾对立内心也不会起任何冲突，既能追求自我的成就，也能允许自我的虚无，这就是智慧。——《半山文集》2019.5.20</p>
+</blockquote>
+<blockquote>
+<p>生命给予人平等地感受到美的机会，审美的能力却并不平等，人感受到痛苦的能力与审美的能力关联，对痛苦理解得越深刻的人，对美的理解也越深沉。——《半山文集》 2019.5.20</p>
+</blockquote>
+<blockquote>
+<p>如果你独处时感到寂寞，这说明你没有和你自己成为好朋友。——萨特 2019.5.20</p>
+</blockquote>
+<blockquote>
+<p>年轻的时候以为不读书不足以了解人生，直到后来才发现如果不了解人生，是读不懂书的。读书的意义大概就是用生活所感去读书，用读书所得去生活吧。——杨绛  2019.5.20</p>
+</blockquote>
+<ul>
+<li>选择什么样的生活，取决于你怎样理解幸福。</li>
+<li>活在当下，要事第一。</li>
+</ul>
+<blockquote>
+<p>高效人士的七个习惯</p>
+<ul>
+<li>积极主动（be proactive -Your're in charge）</li>
+<li>以终为始（begin with the end in mind-Have a plan）</li>
+<li>要事第一（put first things first-Work First,Then Play）</li>
+<li>知己解彼（seek first tounderstand,then to be understood-listen before you talk）</li>
+<li>共赢思维（think win/win-everyone can win）</li>
+<li>统合综效（synergize-together is better）</li>
+<li>不断更新（sharpen the saw-balance feels best）</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>那个医生以前教我养生，竟然比我先死了  --森田志郎79岁</p>
+</blockquote>
+<blockquote>
+<p>恋人啊，我现在终于有闲又有钱了 --纸谷义和67岁</p>
+</blockquote>
+<blockquote>
+<p>凡你总需要反复向人倾诉的问题，都是为了在答案上努力欺瞒自己。而唯一能解决问题的方式不是倾诉，而是醒过来。</p>
+</blockquote>
+<blockquote>
+<p>愿你学会在孤独中，与自己交谈，听自己说话，从而学会深刻。——周国平</p>
+</blockquote>
+<blockquote>
+<p>对任何一种事物的始终如一，到后来都可能变成了某种成就。--半山文集</p>
+</blockquote>
+<blockquote>
+<p>人最应该溯源的，是去看看自己关于“美好”的价值观念是什么，是怎么得来的，自己是否真正反省和确认过。这个会影响人一生的观念，常常是在还没有得到自己用心去确认的状况下，已经影响和操纵了人的大半生。——《半山文集》</p>
+</blockquote>
+<blockquote>
+<p>生活中好多的事情，只要是真诚就会有答案，不管是对自己，还是对别人真诚。——《半山文集》</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>努力去拼吧，别让任何人夺走你的力量</li>
+<li>要敢于冒险，要无所畏惧</li>
+<li>做自己</li>
+<li>想获得力量，先奉献你的力量</li>
+<li>请求原谅可比请求许可容易得多</li>
+<li>要经常为你的胜利和自己庆祝 别忘了为朋友庆祝</li>
+<li>不要害怕犯错，重点是如何振作，继续前进</li>
+<li>花时间去爱</li>
+<li>生命是一场旅程，请享受它，你不必太着急，请为自己的所有成就自豪</li>
+<li>人生没有彩排，向前冲吧</li>
+</ol>
+<ul>
+<li>摘自：<a href="https://weibo.com/tv/v/HaX5VFwTn?fid=1034:4326104320679525" target="_blank">给25岁自己的建议</a></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>阴天的云也能分辨出明淡，但少有人凝望阴天。</li>
+<li>去拥抱一个人与被人拥抱，感受是完全不同的。同理，主动去拥抱痛苦与被痛苦所环绕，完全是两回事，你敢抱它在怀里，它就会听你的。</li>
+<li>也许某一天，人们会自己发现，自己对某一个人，某一件物，某一件事所产生的心动，其实是自己对某一个自己的心动，是对于某种状态之下的自己产生的心动。一旦有这样的领悟，生命就豁然开朗了，就彻底觉悟了，生命中的一切原动力都可以归于，我们对于自己，还是太陌生了……</li>
+<li>爱一个人的本质，是把理想中的自己投射到另一个人身上，每一个人理想中的自己都是极不稳定的，“爱情”的行为只能塑造其中很少的一部分，并且往往以失败而告终。人常把这种“理想的自己”的失败，归于爱情的失败，归咎于爱的对象的失败。一个人对自己还不太满意，期待通过爱上另一个人来让自己对自己满意，出发点就极其荒谬。</li>
+<li>人们最善于把生活放在一旁，然后想象一个自己，去帮自己生活。</li>
+<li>但凡会变成习惯的事情，都应该特别慎重，形成一个习惯不易，想要去掉一个习惯更不容易。习惯控制一个人，而非人可以控制着习惯。——《半山文集</li>
+<li>时间，多数人拿来变质，少数人用来保鲜。</li>
+<li>摘自《半山文集》</li>
+</ul>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Beautitudes]]></title>
+        <id>https://jumpalang.github.io//post/the-beautitudes</id>
+        <link href="https://jumpalang.github.io//post/the-beautitudes">
+        </link>
+        <updated>2019-04-18T06:59:12.000Z</updated>
+        <summary type="html"><![CDATA[<div style="text-align:center;">
+	<div>
+			<audio  controls="controls">
+			<source src="http://prsaiy327.bkt.clouddn.com/musicTheBeatitudes.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>]]></summary>
+        <content type="html"><![CDATA[<div style="text-align:center;">
+	<div>
+			<audio  controls="controls">
+			<source src="http://prsaiy327.bkt.clouddn.com/musicTheBeatitudes.mp3" type="audio/mpeg" />
+	</audio>
+	</div>
+	</div>
+<!--more-->
+<div style="text-align:center;">
+	 <div>
+		<video controls="controls" >
+		<source src="http://prsaiy327.bkt.clouddn.com/TheBeatitude.mp4" type="video/mp4" />
+		</video>
+	</div>
+	</div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[5.4.1 字面值]]></title>
+        <id>https://jumpalang.github.io//post/541-zi-mian-zhi</id>
+        <link href="https://jumpalang.github.io//post/541-zi-mian-zhi">
+        </link>
+        <updated>2019-04-17T08:30:39.000Z</updated>
+        <content type="html"><![CDATA[<p>xml中共有5个特殊字符，分别是&amp;、&lt;、&gt;、&quot;、'。如果配置文件中的注入值包括这些特殊字符，就需要进行特别处理。有两种解决方法：其一，采用本例中的<![CDATA[]]]]><![CDATA[>特殊标签，将包含特殊字符的字符串装起来；其二，使用XML转义序列表示这些特殊字符，这5个特殊字符所对应的XML转义序列如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">特殊符号</th>
+<th style="text-align:center">转义序列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:center">&amp;lt;</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center">&amp;gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center">&amp;amp;</td>
+</tr>
+<tr>
+<td style="text-align:center">&quot;</td>
+<td style="text-align:center">&amp;quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">'</td>
+<td style="text-align:center">&amp;apos;</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+</feed>
