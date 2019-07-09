@@ -9,8 +9,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="D:/Front/gitStudy/gridea_src/output/favicon.ico?v=1562642318605">
-<link rel="stylesheet" href="D:/Front/gitStudy/gridea_src/output/styles/main.css">
+<link rel="shortcut icon" href="https://jumpalang.github.io//favicon.ico?v=1562672546259">
+<link rel="stylesheet" href="https://jumpalang.github.io//styles/main.css">
 
 
   
@@ -34,8 +34,8 @@
       <div class="sidebar" :class="{ 'full-height': menuVisible }">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
-      <a class="site-title-container" href="D:/Front/gitStudy/gridea_src/output">
-        <img src="D:/Front/gitStudy/gridea_src/output/images/avatar.png?v=1562642318605" class="site-logo">
+      <a class="site-title-container" href="https://jumpalang.github.io/">
+        <img src="https://jumpalang.github.io//images/avatar.png?v=1562672546259" class="site-logo">
         <h1 class="site-title">Jump!Alang</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -115,13 +115,29 @@
 <li>Java源码是经典的学习范例。Spring的源码设计精妙、结构清晰、匠心独运，处处体现着大师对Java设计模式的灵活运用及对Java技术的高深造诣。Spring框架源码无疑是Java技术的最佳实践范例。如果想在短时间内迅速提高自己的Java技术水平和应用开发水平，学习和研究Spring源码将会收到意想不到的效果。</li>
 </ul>
 <h2 id="14-spring体系结构">1.4 Spring体系结构</h2>
-<p><img src="D:/Front/gitStudy/gridea_src/output/post-images/1562642306584.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1562642306584.png" alt=""></p>
+<ol>
+<li>IoC
+Spring核心模块实现了IoC的功能，它将类与类之间的依赖从代码中脱离出来，用配置的方式进行依赖关系描述，由IoC容器负责依赖类之间的创建、拼接、管理、获取等工作。BeanFactory接口是Spring框架的核心接口，它实现了容器许多核心的功能。
+Context模块构建于核心模块之上，扩展了BeanFactory的功能，添加了i18n国际化、Bean生命周期控制、框架事件体系、资源加载透明化等多项功能。此外，该模块还提供了许多企业级服务的支持，如邮件服务、任务调度、JNDI获取、EJB集成、远程访问等。ApplicationContext是Context模块的核心接口。
+表达式语言模块是统一表达式语言（Unfied EL）的一个扩展，该表达式语言用于查询和管理运行期的对象，支持设置/获取对象属性，调用对象方法，操作数组、集合等。此外，该模块还提供了逻辑表达式运算、变量定义等功能，可以方便地通过表达式串和Spring IoC容器进行交互。</li>
+<li>AOP
+AOP是继OOP之后，对编程设计思想影响极大的技术之一。AOP是进行横切逻辑编程的思想，它开拓了考虑问题的思路。在AOP模块里，Spring提供了满足AOP Alliance规范的实现，还整合了AspectJ这种AOP语言级的框架。在Spring里实现AOP编程有众多选择。Java5.0引入了java.lang.instrument,允许在JVM启动时启用一个代理类，通过该代理类在运行期修改类的字节码，改变一个类的功能，从而实现AOP功能。</li>
+<li>数据访问和集成
+任何应用程序的核心问题是对数据的访问和操作。数据有多处表现形式，如数据表、XML、消息等，而每种数据形式又拥有不同的数据访问技术（如数据表的访问既可以直接通过JDBC，也可以通过Hibernate或MyBatis）。
+首先，Spring站在DAO的抽象层面，建立了一套面向DAO层的统一的异常体系，同时将各种访问数据的检查型异常转换为非检查型异常，为整合各种持久层框架提供基础。其次，Spring通过模板化技术对各种数据访问技术进行了薄层封装，将模式化的代码隐藏起来，使数据访问的程序得到大幅简化。这样，Spring就建立了和数据形式访问技术无关的统一的DAO层，借助AOP技术，Spring提供了声明式事务的功能。
+<ol start="4">
+<li>Web及远程操作
+该</li>
+</ol>
+</li>
+</ol>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="D:/Front/gitStudy/gridea_src/output/tag/jtspringqyyykfsz/index.html" class="tag">
+                  <a href="https://jumpalang.github.io//tag/jtspringqyyykfsz" class="tag">
                     精通Spring 4.x 企业应用开发实战
                   </a>
                 
@@ -130,7 +146,7 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="D:/Front/gitStudy/gridea_src/output/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng/index.html">
+                <a href="https://jumpalang.github.io//post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
                   <h3 class="post-title">
                     （转载）怎样向上跨越阶层
                   </h3>
