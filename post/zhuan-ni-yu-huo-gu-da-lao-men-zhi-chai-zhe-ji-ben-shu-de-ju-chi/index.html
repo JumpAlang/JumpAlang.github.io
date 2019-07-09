@@ -1,15 +1,18 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>（转）你与硅谷大佬们，只差这几本书的距离！ | Jump!Alang</title>
 <meta name="description" content="永远年轻！永远热泪盈眶！">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://jumpalang.github.io//favicon.ico?v=1562672546259">
+<link rel="shortcut icon" href="https://jumpalang.github.io//favicon.ico?v=1562672804860">
 <link rel="stylesheet" href="https://jumpalang.github.io//styles/main.css">
 
 
@@ -23,88 +26,85 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 
 
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://jumpalang.github.io/">
-        <img src="https://jumpalang.github.io//images/avatar.png?v=1562672546259" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://jumpalang.github.io/">
+        <img class="avatar" src="https://jumpalang.github.io//images/avatar.png?v=1562672804860" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://jumpalang.github.io/">
         <h1 class="site-title">Jump!Alang</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="/archives" class="site-nav">
+          <a href="/archives" class="menu purple-link">
             所有
           </a>
         
       
         
-          <a href="/tags" class="site-nav">
+          <a href="/tags" class="menu purple-link">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="site-nav">
+          <a href="/post/about" class="menu purple-link">
             关于
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      永远年轻！永远热泪盈眶！
-    </div>
-    <div class="site-footer">
-      <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">（转）你与硅谷大佬们，只差这几本书的距离！</h2>
-            <div class="post-date">2019-06-04</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://jumpalang.github.io//post-images/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi.webp')">
+            </div>
+          
+          <h2 class="post-title">（转）你与硅谷大佬们，只差这几本书的距离！</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-06-04</span>
             
-              <div class="feature-container" style="background-image: url('https://jumpalang.github.io//post-images/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi.webp')">
-              </div>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://jumpalang.github.io//tag/booklist">
+                    书单
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content">
-              <p>如果你正思索在职业生涯中实现自己的价值或寻找突破，那么养成阅读习惯，并接触领域内最前沿的书籍，是帮助你在短时间内获取更多的信息有效方式。</p>
+          </div>
+          <div class="post-content">
+            <p>如果你正思索在职业生涯中实现自己的价值或寻找突破，那么养成阅读习惯，并接触领域内最前沿的书籍，是帮助你在短时间内获取更多的信息有效方式。</p>
 <p>为了让自己有更高的阅读量，马克·扎克伯格、比尔·盖茨这些科技大牛，甚至为自己建立了私人图书馆。比尔·盖茨一直保持着每年50本书以上的阅读量......</p>
 <p>这些顶尖的投资者和创业者需要超越现有的文化范式去探索，思考普通人的视野忽视了什么，下一步可能会发生什么，什么又是恒久不变的。</p>
 <p>在2019年4月23日世界读书日到来之际，总结了一些硅谷大佬在采访和社交媒体中被反复提及、引用和推荐的书。这些书往往意在揭示关于人性中的隐性思考模式和深层状况。</p>
@@ -262,46 +262,49 @@ Zero to One:</p>
 <h1 id="原文链接">原文链接</h1>
 <p><a href="https://mp.weixin.qq.com/s?__biz=MzI4MzA1Mzg0Mg==&amp;mid=2649661379&amp;idx=1&amp;sn=0b044896188f8fb4306790bbf2e0d06e&amp;chksm=f38aa5bec4fd2ca8131b41bb4f60f1be5af62e6ff22a20b510fe5ecccfa2e6b0b6957453a966&amp;token=449027753&amp;lang=zh_CN#rd">跳转</a></p>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://jumpalang.github.io//tag/booklist" class="tag">
-                    书单
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://jumpalang.github.io//post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo">
-                  <h3 class="post-title">
-                    （转）为什么这些书影响了马云、乔布斯一生，你却没有读过？
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://jumpalang.github.io//post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo">
+              <h3 class="post-title">
+                下一篇：（转）为什么这些书影响了马云、乔布斯一生，你却没有读过？
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan">永远年轻！永远热泪盈眶！</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
+
+
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
