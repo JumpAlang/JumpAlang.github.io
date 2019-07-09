@@ -1,17 +1,15 @@
-
+<!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>Jump!Alang</title>
 <meta name="description" content="永远年轻！永远热泪盈眶！">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://jumpalang.github.io//favicon.ico?v=1562672804860">
+<link rel="shortcut icon" href="https://jumpalang.github.io//favicon.ico?v=1562673138904">
 <link rel="stylesheet" href="https://jumpalang.github.io//styles/main.css">
 
 
@@ -19,403 +17,279 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://jumpalang.github.io/">
-        <img class="avatar" src="https://jumpalang.github.io//images/avatar.png?v=1562672804860" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://jumpalang.github.io/">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://jumpalang.github.io/">
+        <img src="https://jumpalang.github.io//images/avatar.png?v=1562673138904" class="site-logo">
         <h1 class="site-title">Jump!Alang</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             所有
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
-
-
-      <div class="content-container">
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
         
+      
         
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/di-yi-zhang-spring-gai-shu">
-        <h2 class="post-title">第一章-spring概述</h2>
-      </a>
-      <div class="post-abstract">
+      
         
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-07-09</span>
+      
         
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/jtspringqyyykfsz">
-                精通Spring 4.x 企业应用开发实战
-                
-              </a>
-            
-          </span>
+      
         
-      </div>
+      
     </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
-        <h2 class="post-title">（转载）怎样向上跨越阶层</h2>
-      </a>
-      <div class="post-abstract">
-        <p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-07-05</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/think">
-                感悟
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://jumpalang.github.io//tag/summary">
-                摘抄
-                
-              </a>
-            
-          </span>
-        
-      </div>
+    <div class="site-description">
+      永远年轻！永远热泪盈眶！
     </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
-        <h2 class="post-title">《这个世界既残酷又温柔》摘抄</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-07-04</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/think">
-                感悟
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://jumpalang.github.io//tag/summary">
-                摘抄
-                
-              </a>
-            
-          </span>
-        
-      </div>
+    <div class="site-footer">
+      <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
     </div>
-    
-      <a href="https://jumpalang.github.io//post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
-        <div class="feature-container" style="background-image: url('http://jumpalang.two3.cn/image/%E9%A3%8E%E8%BD%A6%E5%B2%9B-%E9%A3%8E%E8%BD%A62.jpg')">
-        </div>
-      </a>
-    
-  </section>
+  </div>
+</div>
 
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">
-        <h2 class="post-title">（转）你与硅谷大佬们，只差这几本书的距离！</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-06-04</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/booklist">
-                书单
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://jumpalang.github.io//post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">
-        <div class="feature-container" style="background-image: url('https://jumpalang.github.io//post-images/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi.webp')">
-        </div>
-      </a>
-    
-  </section>
 
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo">
-        <h2 class="post-title">（转）为什么这些书影响了马云、乔布斯一生，你却没有读过？</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-06-04</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/booklist">
-                书单
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/di-yi-zhang-spring-gai-shu">
+                  <h2 class="post-title">第一章-spring概述</h2>
+                </a>
+                <div class="post-date">
+                  2019-07-09
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
+                  <h2 class="post-title">（转载）怎样向上跨越阶层</h2>
+                </a>
+                <div class="post-date">
+                  2019-07-05
+                </div>
+                <div class="post-abstract">
+                  <p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
 
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/da-lao-shu-dan-er">
-        <h2 class="post-title">大佬书单（二）</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-06-04</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/booklist">
-                书单
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/wu-wei-zi-ben-quan-da-lao-qiang-tui-shu-dan">
-        <h2 class="post-title">五位资本圈大佬“强推”书单</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-06-04</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/booklist">
-                书单
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/da-lao-shu-dan">
-        <h2 class="post-title">大佬书单（一）</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-06-03</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/booklist">
-                书单
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://jumpalang.github.io//post/da-lao-shu-dan">
-        <div class="feature-container" style="background-image: url('https://jumpalang.github.io//post-images/da-lao-shu-dan.webp')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/wo-xi-huan-de-ge-qu-mv">
-        <h2 class="post-title">我喜欢的歌曲MV</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-05-22</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/music">
-                音乐
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://jumpalang.github.io//post/wo-xi-huan-de-ge-qu-mv">
-        <div class="feature-container" style="background-image: url('http://jumpalang.two3.cn/image/%E6%9C%88%E4%BA%AE%E6%B9%BE.jpg')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/wei-ai-chi-kuang">
-        <h2 class="post-title">为爱痴狂</h2>
-      </a>
-      <div class="post-abstract">
-        <div style="text-align:center;">
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
+                  <h2 class="post-title">《这个世界既残酷又温柔》摘抄</h2>
+                </a>
+                <div class="post-date">
+                  2019-07-04
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://jumpalang.github.io//post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
+                  <div class="feature-container" style="background-image: url('http://jumpalang.two3.cn/image/%E9%A3%8E%E8%BD%A6%E5%B2%9B-%E9%A3%8E%E8%BD%A62.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">
+                  <h2 class="post-title">（转）你与硅谷大佬们，只差这几本书的距离！</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-04
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://jumpalang.github.io//post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">
+                  <div class="feature-container" style="background-image: url('https://jumpalang.github.io//post-images/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi.webp')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo">
+                  <h2 class="post-title">（转）为什么这些书影响了马云、乔布斯一生，你却没有读过？</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-04
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/da-lao-shu-dan-er">
+                  <h2 class="post-title">大佬书单（二）</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-04
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/wu-wei-zi-ben-quan-da-lao-qiang-tui-shu-dan">
+                  <h2 class="post-title">五位资本圈大佬“强推”书单</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-04
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/da-lao-shu-dan">
+                  <h2 class="post-title">大佬书单（一）</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-03
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://jumpalang.github.io//post/da-lao-shu-dan">
+                  <div class="feature-container" style="background-image: url('https://jumpalang.github.io//post-images/da-lao-shu-dan.webp')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/wo-xi-huan-de-ge-qu-mv">
+                  <h2 class="post-title">我喜欢的歌曲MV</h2>
+                </a>
+                <div class="post-date">
+                  2019-05-22
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://jumpalang.github.io//post/wo-xi-huan-de-ge-qu-mv">
+                  <div class="feature-container" style="background-image: url('http://jumpalang.two3.cn/image/%E6%9C%88%E4%BA%AE%E6%B9%BE.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://jumpalang.github.io//post/wei-ai-chi-kuang">
+                  <h2 class="post-title">为爱痴狂</h2>
+                </a>
+                <div class="post-date">
+                  2019-05-20
+                </div>
+                <div class="post-abstract">
+                  <div style="text-align:center;">
 	<div>
 			<audio  controls="controls">
 			<source src="http://jumpalang.two3.cn/music/%E4%B8%BA%E7%88%B1%E7%97%B4%E7%8B%82-%E9%92%A2%E7%90%B4%E8%BD%BB%E6%9F%94.mp3" type="audio/mpeg" />
 	</audio>
 	</div>
 	</div>
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-05-20</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://jumpalang.github.io//tag/music">
-                音乐
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://jumpalang.github.io//post/wei-ai-chi-kuang">
-        <div class="feature-container" style="background-image: url('http://jumpalang.two3.cn//image/%E5%88%98%E8%8B%A5%E8%8B%B1%E5%85%AC%E8%B7%AF%E8%B5%B0.png')">
-        </div>
-      </a>
-    
-  </section>
+                </div>
+              </div>
+              
+                <a class="right" href="https://jumpalang.github.io//post/wei-ai-chi-kuang">
+                  <div class="feature-container" style="background-image: url('http://jumpalang.two3.cn//image/%E5%88%98%E8%8B%A5%E8%8B%B1%E5%85%AC%E8%B7%AF%E8%B5%B0.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
 
-
-<div class="pagination-container">
+          <div class="pagination-container">
   
   
     <a href="https://jumpalang.github.io//page/2/" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
   
 </div>
 
-
+        </div>
       </div>
-
-      <div class="site-footer">
-  <div class="slogan">永远年轻！永远热泪盈眶！</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
 
