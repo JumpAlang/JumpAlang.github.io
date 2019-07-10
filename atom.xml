@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://jumpalang.coding.me</id>
+    <id>https://jumpalang.github.io/</id>
     <title>Jump!Alang</title>
-    <updated>2019-07-10T14:00:06.272Z</updated>
+    <updated>2019-07-10T14:00:44.029Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://jumpalang.coding.me"/>
-    <link rel="self" href="http://jumpalang.coding.me/atom.xml"/>
+    <link rel="alternate" href="https://jumpalang.github.io/"/>
+    <link rel="self" href="https://jumpalang.github.io//atom.xml"/>
     <subtitle>永远年轻！永远热泪盈眶！</subtitle>
-    <logo>http://jumpalang.coding.me/images/avatar.png</logo>
-    <icon>http://jumpalang.coding.me/favicon.ico</icon>
+    <logo>https://jumpalang.github.io//images/avatar.png</logo>
+    <icon>https://jumpalang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Jump!Alang</rights>
     <entry>
         <title type="html"><![CDATA[第一章-spring概述-精通spring4.x企业应用开发实战]]></title>
-        <id>http://jumpalang.coding.me/post/di-yi-zhang-spring-gai-shu</id>
-        <link href="http://jumpalang.coding.me/post/di-yi-zhang-spring-gai-shu">
+        <id>https://jumpalang.github.io//post/di-yi-zhang-spring-gai-shu</id>
+        <link href="https://jumpalang.github.io//post/di-yi-zhang-spring-gai-shu">
         </link>
         <updated>2019-07-09T02:36:16.000Z</updated>
         <content type="html"><![CDATA[<h2 id="13-spring带给我们什么">1.3 Spring带给我们什么</h2>
@@ -30,7 +30,7 @@
 <li>Java源码是经典的学习范例。Spring的源码设计精妙、结构清晰、匠心独运，处处体现着大师对Java设计模式的灵活运用及对Java技术的高深造诣。Spring框架源码无疑是Java技术的最佳实践范例。如果想在短时间内迅速提高自己的Java技术水平和应用开发水平，学习和研究Spring源码将会收到意想不到的效果。</li>
 </ul>
 <h2 id="14-spring体系结构">1.4 Spring体系结构</h2>
-<p><img src="http://jumpalang.coding.me/post-images/1562642306584.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1562642306584.png" alt=""></p>
 <ol>
 <li>IoC
 Spring核心模块实现了IoC的功能，它将类与类之间的依赖从代码中脱离出来，用配置的方式进行依赖关系描述，由IoC容器负责依赖类之间的创建、拼接、管理、获取等工作。BeanFactory接口是Spring框架的核心接口，它实现了容器许多核心的功能。
@@ -55,8 +55,8 @@ WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑�
     </entry>
     <entry>
         <title type="html"><![CDATA[（转载）怎样向上跨越阶层]]></title>
-        <id>http://jumpalang.coding.me/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng</id>
-        <link href="http://jumpalang.coding.me/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
+        <id>https://jumpalang.github.io//post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng</id>
+        <link href="https://jumpalang.github.io//post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
         </link>
         <updated>2019-07-05T03:44:07.000Z</updated>
         <summary type="html"><![CDATA[<p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
@@ -129,8 +129,8 @@ WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑�
     </entry>
     <entry>
         <title type="html"><![CDATA[《这个世界既残酷又温柔》摘抄]]></title>
-        <id>http://jumpalang.coding.me/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao</id>
-        <link href="http://jumpalang.coding.me/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
+        <id>https://jumpalang.github.io//post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao</id>
+        <link href="https://jumpalang.github.io//post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
         </link>
         <updated>2019-07-04T05:18:56.000Z</updated>
         <content type="html"><![CDATA[<ol>
@@ -176,8 +176,8 @@ WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑�
     </entry>
     <entry>
         <title type="html"><![CDATA[（转）你与硅谷大佬们，只差这几本书的距离！]]></title>
-        <id>http://jumpalang.coding.me/post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi</id>
-        <link href="http://jumpalang.coding.me/post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">
+        <id>https://jumpalang.github.io//post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi</id>
+        <link href="https://jumpalang.github.io//post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">
         </link>
         <updated>2019-06-04T02:39:55.000Z</updated>
         <content type="html"><![CDATA[<p>如果你正思索在职业生涯中实现自己的价值或寻找突破，那么养成阅读习惯，并接触领域内最前沿的书籍，是帮助你在短时间内获取更多的信息有效方式。</p>
@@ -186,7 +186,7 @@ WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑�
 <p>在2019年4月23日世界读书日到来之际，总结了一些硅谷大佬在采访和社交媒体中被反复提及、引用和推荐的书。这些书往往意在揭示关于人性中的隐性思考模式和深层状况。</p>
 <p>也许你与硅谷大佬们，只差这几本书的距离！</p>
 <h1 id="穷查理宝典查理芒格智慧箴言录">《穷查理宝典：查理·芒格智慧箴言录》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559616173203.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559616173203.webp" alt="">
 Poor Charlie’s Almanack:</p>
 <p>The Wit and Wisdom of Charles T. Munger</p>
 <p>By Charlie Munger</p>
@@ -194,7 +194,7 @@ Poor Charlie’s Almanack:</p>
 <p>《穷查理宝典：查理·芒格智慧箴言录》</p>
 <p>查理·芒格 著 彼得·考夫曼 编</p>
 <p>中信出版集团 | 2016.12
-<img src="http://jumpalang.coding.me/post-images/1559616218181.webp" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559616218181.webp" alt=""></p>
 <blockquote>
 <p>在我的一生中，我所认识的各个领域的智者，他们无不每时每刻都在读书。如果知道巴菲特读了多少书，或者知道我读了多少书，你一定会感到惊讶。我的孩子们经常调侃我说，你就是一本长了两条腿的书。              ——查理·T.芒格《穷查理宝典：查理·芒格智慧箴言录》
 查理·芒格是我们这个时代最伟大的商业思想家之一。</p>
@@ -203,14 +203,14 @@ Poor Charlie’s Almanack:</p>
 <p>芒格是一个博学多才、思想独立的人。通过经济学、历史学、生物学、物理学和心理学等领域的钻研，芒格提出一些“有益心智模型”，它们有的与我们的直觉相悖，但却像一套高分辨率的镜头，让我们更深刻地认识世界。正是这些模型让芒格了解复杂情况，认清现实问题——也顺便送他成了亿万富翁。</p>
 <p>《穷查理宝典》一书是查理·芒格的个人传记，展现了芒格的投资哲学、学习理念与人生心得，书中收录了芒格的公开演讲、媒体访谈、写作素材以及一些金句，贯穿全书的是芒格的聪慧、机智，其令人敬服的价值观和深不可测的修辞天赋，读这本书可以领略芒格如何透过纷纷扰扰的表面看清事物本质的特点。</p>
 <h1 id="别闹了费曼先生">《别闹了，费曼先生》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559616407200.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559616407200.webp" alt="">
 Surely you're joking, Mr. Feynman!</p>
 <p>By Richard P. Feynman
-<img src="http://jumpalang.coding.me/post-images/1559616413121.webp" alt="">
+<img src="https://jumpalang.github.io//post-images/1559616413121.webp" alt="">
 《别闹了，费曼先生》</p>
 <p>理查德·费曼 著</p>
 <p>生活·读书·新知三联书店 | 1997.12</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559616400390.webp" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559616400390.webp" alt=""></p>
 <blockquote>
 <p>我没有责任去完成别人期待我完成的事情，没有责任去迎合他人的期待。这是他们的错误，没有做到不代表我的失败。              ——理查德·费曼《别闹了，费曼先生》</p>
 </blockquote>
@@ -219,14 +219,14 @@ Surely you're joking, Mr. Feynman!</p>
 <p>弗里曼·戴森曾评价他：“半是天才，半是滑稽演员”。除去在物理学领域的造诣之外，费曼还擅长演奏邦戈鼓，擅长画画，并对生物学做出了很多的贡献。</p>
 <p>他的一生精彩地诠释了——挑战常规和跨界思维如何打开新世界的大门。</p>
 <h1 id="富兰克林传">《富兰克林传》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559616511348.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559616511348.webp" alt="">
 Benjamin Franklin</p>
 <p>by Walter Isaacson</p>
 <p>中文版</p>
 <p>《富兰克林传》</p>
 <p>沃尔特·艾萨克森 著</p>
 <p>中信出版集团 | 2016.7
-<img src="http://jumpalang.coding.me/post-images/1559616520461.webp" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559616520461.webp" alt=""></p>
 <blockquote>
 <p>那些为了获得暂时的安全而放弃自由的人，既不配获得自由，也终将丧失安全。  ——本杰明·富兰克林</p>
 </blockquote>
@@ -234,14 +234,14 @@ Benjamin Franklin</p>
 <p>为了让自己具有足够的精力去从事发明活动，富兰克林创建了他独有的生产力系统，并在他的自传中对其进行了详细的描述和介绍。这令他的自传内容非常特别，像是发明者的自助书。</p>
 <p>同样也是发明控的埃隆·马斯克这样评价到：富兰克林是真的了不起！嗯，是迷弟无疑了。</p>
 <h1 id="自下而上万物进化史">《自下而上：万物进化史》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559616655753.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559616655753.webp" alt="">
 The Evolution of Everything (and anything)</p>
 <p>by Matt Ridley</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559616616003.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559616616003.webp" alt="">
 《自下而上：万物进化史》</p>
 <p>马特·里德利 著</p>
 <p>机械工业出版社 | 2017.8
-<img src="http://jumpalang.coding.me/post-images/1559616683011.webp" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559616683011.webp" alt=""></p>
 <blockquote>
 <p>进化，就在我们的身边。它是我们了解人类以及自然世界如何变化的最佳方式。
 人类制度、人工制品和习惯的改变，都是渐进的、必然的、不可避免的。它遵循从一个阶段到下一个阶段的叙述方式；它慢慢推进而非跳跃式发展；它有自己自发的势头，不为外部力量所推动；它心里没有什么目标，也没有具体的终点；它基本上是靠不断地尝试与碰撞错误而产生的，而这也正是自然选择的一种形式。   ——《自下而上：万物进化史》</p>
@@ -250,14 +250,14 @@ The Evolution of Everything (and anything)</p>
 <p>通过列举各领域的大量案例，里德利阐述了进化的力量具体是如何在各个系统中发挥作用，促使其发生变化和迭代。本书展示了如何自下而上、仅仅通过迭代和交互来构建极其复杂的系统。</p>
 <p>全美最大的股权众筹网站 AngelList 创始人 Naval Ravikant 是里德利的忠实拥趸者，他曾说过：“在我最喜欢的20本书中，马特·里德利的作品足足占了4席。”</p>
 <h1 id="黑天鹅">《黑天鹅》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559616808619.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559616808619.webp" alt="">
 The Black Swan</p>
 <p>by Nassim Nicholas Taleb</p>
 <p>中文版</p>
 <p>《黑天鹅》</p>
 <p>纳西姆·塔勒布 著</p>
 <p>中信出版集团 | 2011.10</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559616816706.webp" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559616816706.webp" alt=""></p>
 <blockquote>
 <p>与其权衡事件发生的概率大或小，不如去衡量事件一旦发生可能带来多大的危害。  ——《黑天鹅：如何应对不可知的未来》
 《黑天鹅》是当下讲风险概率问题最具影响力的书之一。什么是黑天鹅事件？所谓黑天鹅事件是指小发生概率、但却会产生很大影响的事件，例如毁灭性的陨石撞击事件（恐龙的危机）或者是毁灭性的金融大崩溃（人类的危机）。</p>
@@ -265,14 +265,14 @@ The Black Swan</p>
 <p>除了《黑天鹅》之外，塔勒布“不确定性”系列丛书还包括：《随机漫步的傻瓜》、《反脆弱》和《非对称风险》。</p>
 <p>如果说在《黑天鹅》中，塔勒布向我们揭示了罕见而不可预测的事件如何潜伏在世间万物的背后，那么《随机漫步的傻瓜》指出“随机性”是整个世界的运行方式。在《反脆弱》中，塔勒布又提出“反脆弱性”概念，以引导人们在“黑天鹅”的世界中继续生存下去，而增强自身的“反脆弱性”不能以牺牲他人的利益为代价。在《非对称风险》中，塔勒布进一步指出，人类社会应建立一种“做出决定”（权利）和“承担后果”（责任）相互平衡的机制，也特别强调了决策者本人的担当精神。</p>
 <h1 id="人类简史">《人类简史》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559616909871.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559616909871.webp" alt="">
 Sapiens</p>
 <p>by Yuval Noah Harari</p>
 <p>中文版</p>
 <p>《人类简史》</p>
 <p>尤瓦尔·赫拉利 著</p>
 <p>中信出版集团 | 2014.11</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559616916829.webp" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559616916829.webp" alt=""></p>
 <blockquote>
 <p>历史只告诉我们极少数人在做些什么，而实际上大多数人就是在不停地挑水和耕地中度过。 ——《人类简史》</p>
 </blockquote>
@@ -280,48 +280,48 @@ Sapiens</p>
 <p>该书的主要观点之一是人类得以生存和繁荣发展的关键在于“讲故事的能力”。得益于故事的形成和讲述，我们才能在不同部落之间建立合作关系，进行交易、发动战争，通过宗教和神话的力量来形成紧密的联系。</p>
 <p>这是一部宏大的人类简史，更见微知著、以小写大，让人类重新审视自己。虽然，赫拉利关于人类历史发展方面的一些看法存在争议性，但是，他所探讨的每一个议题都堪称横向思维和创造力的结晶。</p>
 <h1 id="沉思录">《沉思录》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559617022451.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559617022451.webp" alt="">
 Meditations</p>
 <p>by Marcus Aurelius</p>
 <p>中文版
 《沉思录》是公版书，版本众多
-<img src="http://jumpalang.coding.me/post-images/1559617026790.webp" alt="">
+<img src="https://jumpalang.github.io//post-images/1559617026790.webp" alt="">
 豆瓣上评价比较高的是译林出版社在2009年出版的，译者是梁实秋。这本书的内地版基本就两位译者——梁实秋和何怀宏，大家按喜好选择吧。</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559617082420.webp" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559617082420.webp" alt=""></p>
 <blockquote>
 <p>你有控制自己思想的力量，除此之外一切皆不可控。意识到这一点，你终将发现自身的优势。 ——《沉思录》</p>
 </blockquote>
 <p>《沉思录》是古代罗马皇帝马可·奥勒留的日记，记录了他对于美好生活的思考。他之前并无意将这些内容发表面世，但机缘巧合，这本书成为斯多葛哲学思想最重要的参考作品之一。硅谷科技巨头们从各个角度解读《沉思录》，提炼出“斯多葛主义”——一种训练心智的操作方法论。</p>
 <p>马可·奥勒留在《沉思录》中详细记录了自己的生活：如何追求自律、节制、自控、驯服欲望、避免落入追求奢侈的陷阱以及避免自负。培养这些美德比追求幸福、快乐更重要。通过公正的行为，让自己顺应世界的秩序、达成内心的和平。</p>
 <h1 id="雪崩">《雪崩》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559617196902.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559617196902.webp" alt="">
 Snow Crash</p>
 <p>by Neal Stephenson</p>
 <p>中文版
-<img src="http://jumpalang.coding.me/post-images/1559617213535.webp" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559617213535.webp" alt=""></p>
 <p>《雪崩》</p>
 <p>尼尔•史蒂芬森 著</p>
 <p>四川科学技术出版社 | 2009</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559617235509.webp" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559617235509.webp" alt=""></p>
 <p>作为计算机赛博朋克小说的经典之作，《雪崩》的故事背景设置在有点乌托邦、又有点反乌托邦色彩的未来。美国政府垮台，美国社会彻底公司化，公司统治的微小国家成为新形式的政府。一场可以在生物上杀死程序员的病毒爆发。主人公 Hiro Protagonist 是一名黑客，当雪崩病毒爆发之后，他成为了制服这一计算机病毒的最佳人选。</p>
 <p>《雪崩》也是硅谷科技企业家们忠爱之作，据LinkedIn创始人Reid Hoffman的朋友、也是PayPal的创始人Peter Thiel说，《雪崩》在1992年出版之后，Hoffman就迷上了它。当时的互联网世界与现在截然不同，社交媒体也不存在，但正是这本书在 Hoffman 的脑海中播下了一个庞大的社交网络的种子。Hoffman 在1999年将这一想法应用于实践，推出了SocialNet，虽然以失败告终，但这为2002年LinkedIn的诞生奠定了基础。</p>
 <p>值得一提的是，在 Hoffman 钟情于《雪崩》的同时，另一位硅谷传奇人物比尔·盖茨力荐了作者史蒂芬森的另一本赛博朋克著作“SEVENEVES”（《七夏娃》）。这本书再次突破了人们的认知界限，将人类未来的生活图景放置在月亮爆炸后的七个星球上，黑科技的脑洞冲击自不在话下，更有意思的是，这位男性作家在男性抑或女性主宰未来世界这一问题上做出了值得玩味的设定，而这也成就了这本书充满想象空间的书名“七夏娃”。</p>
 <h1 id="对赌">《对赌》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559617307851.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559617307851.webp" alt="">
 Thinking in Bets</p>
 <p>by Annie Duke</p>
 <p>中文版</p>
 <p>《对赌》</p>
 <p>安妮·杜克 著</p>
 <p>中信出版社出品 | 2018.12</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559617317731.webp" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559617317731.webp" alt=""></p>
 <p>作者安妮·杜克是传奇职业扑克手，	世界扑克系列赛冠军、认知心理学博士，后来她成为了一名概率论的普及者，先后为多个世界500强企业提供决策咨询。作为职业扑克手，在信息不足时，扑克手需要在两分钟内做出20个决策，玩牌本质上是一场又一场的决策实验。这本书就是她“对赌”思维多年的集大成之作——在信息不对称的情况下如何做出有效决策。</p>
 <p>网景创始人、硅谷著名投资人Marc Andreessen曾盛赞这本书：</p>
 <blockquote>
 <p>一本关于如何像扑克手或者风险投资人运用概率进行决策的实用手册。推荐给所有想知道这个真实世界运行法则的人一读。”</p>
 </blockquote>
 <h1 id="从0到1开启商业与未来的秘密">《从0到1：开启商业与未来的秘密》</h1>
-<p><img src="http://jumpalang.coding.me/post-images/1559617450753.webp" alt="">
+<p><img src="https://jumpalang.github.io//post-images/1559617450753.webp" alt="">
 Zero to One:</p>
 <p>Notes on Startups, or How to Build the Future</p>
 <p>by Peter Thiel
@@ -329,7 +329,7 @@ Zero to One:</p>
 <p>《从0到1：开启商业与未来的秘密》</p>
 <p>彼得·蒂尔 著</p>
 <p>中信出版集团 | 2015.1</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559617481049.webp" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559617481049.webp" alt=""></p>
 <blockquote>
 <p>商业世界从零到一的时刻不会重演。下一个比尔·盖茨不会再开发操作系统，下一个拉里·佩奇或谢尔盖·布林是不会再研发搜索引擎，下一个马克·扎克伯格也不会去创建社交网络。 ——《从零到一：开启商业与未来的秘密》</p>
 </blockquote>
@@ -341,8 +341,8 @@ Zero to One:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[（转）为什么这些书影响了马云、乔布斯一生，你却没有读过？]]></title>
-        <id>http://jumpalang.coding.me/post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo</id>
-        <link href="http://jumpalang.coding.me/post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo">
+        <id>https://jumpalang.github.io//post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo</id>
+        <link href="https://jumpalang.github.io//post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo">
         </link>
         <updated>2019-06-04T02:37:57.000Z</updated>
         <content type="html"><![CDATA[<p>今天（4月23日），除了是私募大佬们赶考的日子，还是第22个世界读书日，也是“世界书籍与版权日”，此外，这一天还是大文豪莎士比亚逝世400周年纪念日。</p>
@@ -383,91 +383,91 @@ Zero to One:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[大佬书单（二）]]></title>
-        <id>http://jumpalang.coding.me/post/da-lao-shu-dan-er</id>
-        <link href="http://jumpalang.coding.me/post/da-lao-shu-dan-er">
+        <id>https://jumpalang.github.io//post/da-lao-shu-dan-er</id>
+        <link href="https://jumpalang.github.io//post/da-lao-shu-dan-er">
         </link>
         <updated>2019-06-04T02:03:05.000Z</updated>
         <content type="html"><![CDATA[<h3 id="阿里巴巴集团总裁">阿里巴巴集团总裁</h3>
 <p>金建杭
 推荐书：《三体》、《互联网从ID到DT》
-<img src="http://jumpalang.coding.me/post-images/1559613896742.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559613896742.jpg" alt=""></p>
 <h3 id="大众点评首席执行官">大众点评首席执行官</h3>
 <p>张涛
 推荐书：《国家的选择》、《想你、创造性的原理》
-<img src="http://jumpalang.coding.me/post-images/1559614037101.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559614037101.jpg" alt=""></p>
 <h3 id="互动百科创始人">互动百科创始人</h3>
 <p>潘海东
 推荐书：《从0到1-开启商业与未来秘密》、《下一个倒下的会不会是华为》
-<img src="http://jumpalang.coding.me/post-images/1559614178474.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559614178474.jpg" alt=""></p>
 <h3 id="猎豹移动首席执行官">猎豹移动首席执行官</h3>
 <p>傅盛
 推荐书：《从0到1-开启商业与未来秘密》
-<img src="http://jumpalang.coding.me/post-images/1559615257556.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559615257556.jpg" alt=""></p>
 <h3 id="网易公司首席执行官">网易公司首席执行官</h3>
 <p>丁磊
 推荐书：《设计中的设计》、《专业主义》
-<img src="http://jumpalang.coding.me/post-images/1559615329017.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559615329017.jpg" alt=""></p>
 <h3 id="微软亚太研发集团主席">微软亚太研发集团主席</h3>
 <p>洪小文
 推荐书：《零边际成本社会》
-<img src="http://jumpalang.coding.me/post-images/1559615427747.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559615427747.jpg" alt=""></p>
 <h3 id="京东集团首席执行官">京东集团首席执行官</h3>
 <p>刘强东
 推荐书：《促销的本质》
-<img src="http://jumpalang.coding.me/post-images/1559615542286.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559615542286.jpg" alt=""></p>
 <h3 id="奇虎360董事长">奇虎360董事长</h3>
 <p>周鸿祎
 推荐书：《奇点临近》、《从0到1-开启商业与未来秘密》
-<img src="http://jumpalang.coding.me/post-images/1559615690452.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559615690452.jpg" alt=""></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[五位资本圈大佬“强推”书单]]></title>
-        <id>http://jumpalang.coding.me/post/wu-wei-zi-ben-quan-da-lao-qiang-tui-shu-dan</id>
-        <link href="http://jumpalang.coding.me/post/wu-wei-zi-ben-quan-da-lao-qiang-tui-shu-dan">
+        <id>https://jumpalang.github.io//post/wu-wei-zi-ben-quan-da-lao-qiang-tui-shu-dan</id>
+        <link href="https://jumpalang.github.io//post/wu-wei-zi-ben-quan-da-lao-qiang-tui-shu-dan">
         </link>
         <updated>2019-06-04T01:48:18.000Z</updated>
         <content type="html"><![CDATA[<h3 id="博时基金董事长-张光华">博时基金董事长 张光华</h3>
 <p>推荐书目：《反脆弱》 作者:[美]塔勒布</p>
 <p>张光华推荐理由：塔勒布的《反脆弱》与之前的《黑天鹅》一脉相承，都聚焦于“不确定性”。他认为，世界本质上是不确定的，确定性只存在于人类的思维当中。人类害怕不确定，希望世界按照我们的意图运转，却往往会获得和初衷相反的结果。与此同时，很多事物能从“不确定性”的冲击中受益。当暴露在波动、随机、混乱、压力、风险之下时，它们反而能茁壮成长、日益壮大——这个特性，就是能够抵抗黑天鹅的“反脆弱性”。“风吹熄蜡烛，却助长大火。不论是随机、不确定或混乱，我们都要学会利用它们，而不是躲避它们”；勇敢面对并积极利用资本市场永恒的变化波动和不确定性，从而不断探索和培育新的差异化的竞争优势——对于处在激烈竞争和变革时期的资管机构来说，这一点尤为重要。
-<img src="http://jumpalang.coding.me/post-images/1559613008719.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559613008719.jpg" alt=""></p>
 <h3 id="国泰基金副总经理-陈星德">国泰基金副总经理  陈星德</h3>
 <p>推荐书目：《一以贯之：戴立宁的经历和坚持》作者:戴立宁</p>
 <p>陈星德推荐理由：这本书可以说是戴立宁先生对台湾金融和证券市场发展的回忆录。戴立宁先生是美国哈佛大学法学硕士，曾任台湾地区“财政部”金融司司长、首席参事、保险司司长、证券管理委员会主任委员、常务次长，现任中国证监会国际顾问委员会委员，是集金融、法律、政治为一身的大家。</p>
 <p>台湾地区证券市场发展早于大陆20年，大陆市场许多制度学习于台湾（例如QFII、基金业的一些规则）。许多台湾市场发生过的事在大陆地区又一一重现身影。戴先生作为台湾市场30年的亲历者和主要政策制定者，本书的许多内容一定会引起大陆市场同业者的共鸣和思考。前中国证监会主席肖钢曾经发表的“五指理论”也来源于戴先生。</p>
 <p>本书中戴先生还根据对大陆市场的观察及与台湾市场的比较，在每章都写了大陆的借鉴，实在难能可贵。
-<img src="http://jumpalang.coding.me/post-images/1559613099721.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559613099721.jpg" alt=""></p>
 <p>推荐书目：《选一条人少的路走》作者:王鸿嫔</p>
 <p>陈星德推荐理由：这是我的老同事上投摩根首任总经理王鸿嫔女士最近新著。</p>
 <p>王鸿嫔女士2003年从台湾来到大陆筹建上投摩根基金管理公司，引入百年摩根在海外的先进管理经验和营销理念，开创国内基金业一代之先，成为同行竞相学习的榜样，被称为“基金女王”。王女士离任时上投摩根基金规模近千亿，创下多项业界记录。</p>
 <p>这本书以多篇杂文的方式记录了王女士对行业、投资理财乃至幸福生活的理解，深入浅出、娓娓道来。可贵的是王女士在追求业绩的同时把职业道德和操守放在首位，多篇文章强调了“做令人尊敬的金融从业者”，这在我们目前P2P跑路、金融诈骗不断的市场中又多了一分特别的贡献。
-<img src="http://jumpalang.coding.me/post-images/1559613225028.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559613225028.jpg" alt=""></p>
 <h3 id="招商证券投资银行部总经理-谢继军">招商证券投资银行部总经理 谢继军</h3>
 <p>推荐书目：《门口的野蛮人》作者:(美)布赖恩·伯勒 约翰·希利亚</p>
 <p>谢继军推荐理由：作者应该参与了整个并购的过程，内容非常详实，把并购双方的需求、难题、被他人收购的过程写得非常详细；人物形象亦栩栩如生。它如同一个画卷在你眼前展现，让你想起当年惊心动魄的感觉。它虽然不是商业教程，但比商业教程更深刻，是我目前见到财经类同体裁中最好的一部。
-<img src="http://jumpalang.coding.me/post-images/1559613304546.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559613304546.jpg" alt=""></p>
 <p>推荐书目：《历史深处的民国》作者:江城</p>
 <p>谢继军推荐理由：这本书把我们过去对民国支离破碎的印象，通过幽默的语调，把历史还原展现。它描述了清末到1945年间的历史，表达方式连贯流畅，整个过程写得非常好。
-<img src="http://jumpalang.coding.me/post-images/1559613375023.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559613375023.jpg" alt=""></p>
 <h3 id="星石投资总经理-杨玲">星石投资总经理 杨玲</h3>
 <p>推荐书目：《超越金融》作者:(美)乔治·索罗斯</p>
 <p>杨玲推荐理由：2009年10月，索罗斯在布达佩斯的中欧大学(索罗斯于1991年创建)发表了一个系列讲座，本书即为此讲稿集。索罗斯在宏观对冲领域有着杰出的成就，尤其在研究泡沫理论方面的宝贵经验值得我们认真琢磨。
-<img src="http://jumpalang.coding.me/post-images/1559613418535.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559613418535.jpg" alt=""></p>
 <p>推荐书目：《逃不开的经济周期》作者:（挪威）拉斯•特维德 著</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559613474155.jpg" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559613474155.jpg" alt=""></p>
 <h3 id="上善若水投资总监-侯安扬">上善若水投资总监 侯安扬</h3>
 <p>推荐书目：《货币的教训》作者:周其仁</p>
 <p>侯安扬推荐理由：周其仁写的，对中国的货币政策做很多有用的概括，把货币和通胀现象讲得非常深入浅出，不需要太高深的基础知识都能看得懂。
-<img src="http://jumpalang.coding.me/post-images/1559613539107.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559613539107.jpg" alt=""></p>
 <p>推荐书目：《历史的巨镜》作者:金观涛</p>
 <p>侯安扬推荐理由：金观涛以系统论的视角来解读社会变迁，对现代性、社会组织、国家等进行有启发的论述。
-<img src="http://jumpalang.coding.me/post-images/1559613574442.jpg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559613574442.jpg" alt=""></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[大佬书单（一）]]></title>
-        <id>http://jumpalang.coding.me/post/da-lao-shu-dan</id>
-        <link href="http://jumpalang.coding.me/post/da-lao-shu-dan">
+        <id>https://jumpalang.github.io//post/da-lao-shu-dan</id>
+        <link href="https://jumpalang.github.io//post/da-lao-shu-dan">
         </link>
         <updated>2019-06-03T14:30:19.000Z</updated>
         <content type="html"><![CDATA[<h3 id="蚂蚁金融服务集团首席技术官">蚂蚁金融服务集团首席技术官</h3>
@@ -476,21 +476,21 @@ Zero to One:</p>
 <li>《素数之恋》：保持好奇心
 《素数之恋》是一本 400 页的厚书，目标是让非数学专业的读者可以理解这个数学中最深奥的问题。作者在序言中说道：“如果你读完我的书以后还不理解黎曼假设，那么你可以断定，你将永远理解不了它”，读完这本书后，深感此言不虚。
 原打算每天晚上读两章当作休闲，结果压抑不住的好奇心总是让我再多读几章。这种欲罢不能的感觉，和小学时读《天龙八部》时一样。
-<img src="http://jumpalang.coding.me/post-images/1559572536998.webp" alt=""></li>
+<img src="https://jumpalang.github.io//post-images/1559572536998.webp" alt=""></li>
 <li>《刻意练习》：所有的天赋都来自于通过正确的练习对大脑布线的改变
 2017 年元旦，始于钉钉群中的一句“苟日新、又日新、日日新”祝愿。带着这个愿望，拿了一本《刻意练习》看了起来。类似的励志书看了不少，原本也没有抱很大的期望，但一看就无法释手，一气读完。
 本书可以用一句话概括，所有的天赋都来自于通过正确的练习对大脑布线的改变：确定一个明确的目标，找到一个正确的方法，专注地练习足够的时间与强度，能成为绝大多数领域的专家。从莫扎特、国际象棋世界冠军、王牌飞行员到诺贝尔奖得主，都是如此。
 看完这本书，才知道过去在无效的学习上浪费了多少时间。
-<img src="http://jumpalang.coding.me/post-images/1559631043374.jpeg" alt=""></li>
+<img src="https://jumpalang.github.io//post-images/1559631043374.jpeg" alt=""></li>
 <li>《英语耳》：用正确的方法“刻意练习”
 读完《刻意练习》，让我拣回了过英语“聋哑关”的勇气。随着公司的服务沿着一带一路出海，英文听说也变得越来越重要起来。过去学校里英文听说基础打得不好，工作十几年更是丢得差不多了。既然“正确的方法”很重要，就上淘宝淘一本好教材，被一本名叫《英语耳》的书的广告吸引了：“一天 20 分钟，100 天你就可以打开耳朵、张开嘴巴”。
 抱着对这个广告半信半疑的态度，把书买回来，开始每天晚上临睡前花 20 分钟按照书中的方法“刻意练习”。每两天学一遍短文，20 分钟的练习包含跟着录音看书读 5 遍，跟着录音不看书读 7 遍，不跟录音看书读 7 遍，然后背出来默写一遍。除了出差外，基本上每天不间断练习，从 2 月份开始，到 6 月份完成。
 最后说说效果，虽然没有广告上说的那么神奇，但完成这本书的所有练习后，和老外交流沟通基本不是障碍了。正好之后也有机会参与到公司更多全球化的工作中，算是学以致用。
-<img src="http://jumpalang.coding.me/post-images/1559572802165.webp" alt=""></li>
+<img src="https://jumpalang.github.io//post-images/1559572802165.webp" alt=""></li>
 <li>《区块链核心算法解析》：把复杂问题以简洁+严谨的方式讲明白
 去年这一年也啃了不少区块链的书，但其中高价值的不多。这本《区块链核心算法解析》是值得向工程师们推荐的一本。
 区块链核心算法解析，其实讲的是分布式系统的核心算法。它从分布式系统最基本的两阶段协议、到 Paxos、到拜占庭协议、仲裁系统、到一致性和分布式存储，逻辑严谨。关键的关键是，它把各种臭名昭著的复杂问题以简洁+严谨的方式讲明白了。其中关于 Paxos 原理、算法与证明，是我这几年看到的无数版本中最简明易懂的。
-<img src="http://jumpalang.coding.me/post-images/1559572956226.webp" alt=""></li>
+<img src="https://jumpalang.github.io//post-images/1559572956226.webp" alt=""></li>
 <li>《商业的本质》：以一种更简单的方式看商业、看管理、看领导力
 除了技术与英文外，为了匹配工作职责的一些调整，去年也开始通过读书给自己补一些商业的课。在读过的商业书中，我选《商业的本质》推荐给大家。作者是名门正宗的商业大师杰克.韦尔奇，十年前公司几乎人手一本他写的《赢》，十年后他的这本新书，是否会带给我们更深刻的商业洞见？
 看目录，就让人那么心动：增长是王道、错综复杂的全球化、财务其实很简单、如何做好市场营销、大数据时代的危机管理、建立一个卓越团队…… 每一堂课，应该都价值万金吧。
@@ -498,7 +498,7 @@ Zero to One:</p>
 比团队认同自己更重要的是，认同共同的目标。
 最顺利的时候总是最危险的时候。
 今天很残酷，明天更残酷，但是后天很美好。
-<img src="http://jumpalang.coding.me/post-images/1559573104567.webp" alt=""></li>
+<img src="https://jumpalang.github.io//post-images/1559573104567.webp" alt=""></li>
 </ol>
 <h3 id="极客邦科技总裁">极客邦科技总裁</h3>
 <p>池建强</p>
@@ -514,7 +514,7 @@ Zero to One:</p>
 </blockquote>
 <p>在人类漫长的文明史中，书是上天对人类最美好的馈赠之一，是对历史和文明的记录和传承，而阅读差不多是我们现代人最常见的行为，只不过有的人书越读越多，从薄到厚，从厚到薄，融汇贯通，知行天下。有些人则越读越少，慢慢的不读书了。书的作用也不一样，好书可以影响一代人，坏书却能给一个民族带来灾难，我个人更偏爱那些记录了时代情感的书和文字。历朝历代会产生很多思想，有些思想可以光照千古，有些只是短暂留存。但人类的情感却通过音乐、书承载下来，源远流长，这些东西才是我们存在的本质。</p>
 <p>所以在今年的读书日，第一本推荐的书就是《阅读是一座随身携带的避难所》，希望能够开启你的阅读之旅。
-<img src="http://jumpalang.coding.me/post-images/1559574491980.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559574491980.jpeg" alt=""></p>
 <ol start="2">
 <li>《我的职业是小说家》
 作者:   [日] 村上春树</li>
@@ -522,7 +522,7 @@ Zero to One:</p>
 <p>出版社: 南海出版公司</p>
 <p>推荐理由：</p>
 <p>村上春树是我非常喜欢的日本作家，我最近读他的作品也是一本自传类随笔《我的职业是小说家》。内容涵盖了小说家本身，原创性，写作，长篇小说，人物塑造，为何而写等等，笔锋细腻流畅，又不失力度，文字直抵人心，是我一年内看到最好的随笔。比如村上对原创性上的阐述：「新鲜，充满活力，并且深深的打上了创作者的烙印。在人们的心灵之窗上开辟一扇新的窗户，让新鲜的空气吹进来」。从某种角度而言，这本书对我的启发非常大，尤其是写作方面。
-<img src="http://jumpalang.coding.me/post-images/1559574554342.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559574554342.jpeg" alt=""></p>
 <ol start="3">
 <li>《成为乔布斯》
 作者:   [美] 布伦特·施兰德 / [美] 里克·特策利</li>
@@ -532,7 +532,7 @@ Zero to One:</p>
 <p>第三本书推荐《成为乔布斯》，我个人以为这本书比《乔布斯传》好看，也更真实。在回顾了和乔布斯交往经历之后，作者道出了写作本书的初衷：乔布斯去世以后，关于他的报道和图书铺天盖地，大部分只是在重复关于史蒂夫的那些传说和成见，要么天才，要么魔鬼。所有人都以为了解了乔布斯，一方面，他是一位天才，伟大的产品经理和未来的预见者，可以产生「扭曲现实」的魔力，激励人们完成不可能的任务。另一方面，他是个自以为是的混蛋，一味追求完美，完全不顾他人的感受，冷酷，薄情，从不听任何建议，等等。</p>
 <p>不是这样的。</p>
 <p>在作者看来，史蒂夫比他在任何文章里读到的形象都更复杂，更有人性，更多愁善感，也更聪明。他的一生犹如莎士比亚的戏剧，充满着傲慢、阴谋和豪情，充斥着十恶不赦的坏蛋和笨手笨脚的呆子。在短短几十年的时间里，人生如此跌宕起伏。人们在他活着的时候，根本不可能刻画他的生活轨迹，现在，时间给出了距离和答案，布伦特·施兰德，这位记者和乔布斯的老朋友，穿透了30年时光的迷雾，用大量的采访笔记、磁带和文档、邮件，为大家讲述了一个改变和成长的故事。
-<img src="http://jumpalang.coding.me/post-images/1559574614096.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559574614096.jpeg" alt=""></p>
 <ol start="4">
 <li>《十年一觉电影梦》
 作者:  张靓蓓</li>
@@ -541,7 +541,7 @@ Zero to One:</p>
 <p>推荐理由：</p>
 <p>这本书记录了李安电影生涯前十年的第一个大高潮。他在序言中写道：「每做一部片子，无论翻江倒海，我也就拍了。但是片子拍完，我仍有许多地方不明所以。这本书得以将那些隐藏在旮旮角角的困惑再翻出来，理清楚，连成线，重回旧日时光」。书中描写了他从青年到中年，从低谷到巅峰，从一马平川到峰峦叠嶂，人生起伏，让人感慨。</p>
 <p>现代社会节奏快压力大，很多人心理上容易出问题，建议读读李安导演的这句话：人生如练功，一份功一份松，松了一环之后，再往紧处练，层层而上。功力越深，无论环境如何变化，综合实力越强的人，越不容易被击败。
-<img src="http://jumpalang.coding.me/post-images/1559574709554.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559574709554.jpeg" alt=""></p>
 <ol start="5">
 <li>《解释的工具》
 作者:  熊秉元</li>
@@ -551,7 +551,7 @@ Zero to One:</p>
 <p>以前经济类图书读的少，其实相关领域的优秀图书很多，经济学并不是枯燥的学术问题，对我们的日常生活都有涉及。《解释的工具》的作者熊秉元教授是著名经济学家，但这本书并不是经济学教科书，而是通过经济学原理去解释我们生活中的现象和美景。比如，书中会帮你搞清楚为什么人们喜欢贴标签，财富真正的意义是什么，蝴蝶效应和囚笼困境是怎么回事，经济学与政治学、法学有什么关系等等。</p>
 <p>寻找一个新的通道，可以帮助我们更好的理解中国古老的文明。经济学就是这样一把开启通道的钥匙。</p>
 <p>最近半年读了多少书呢？没算过，随取随看，小几十本应该是有的。小说类的有刘震云、阿城、林语堂、村上春树、毛姆、菲茨杰拉德、钱德勒的作品。画册有肖全的《我们这一代》《文艺复兴三杰》《世界最美的书店》等等。技术和产品类的书就更多了，不再一一列举。这些书都是我喜欢的，希望你也会喜欢。找到最适合自己读的书，找到自己的阅读兴趣，是最重要的。</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559574820283.jpeg" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559574820283.jpeg" alt=""></p>
 <h3 id="著名互联网人士从业十年的产品经理">著名互联网人士，从业十年的产品经理</h3>
 <p>邱岳 人称“二爷”，公众号“二爷鉴书”的作者</p>
 <ol>
@@ -565,7 +565,7 @@ Zero to One:</p>
 <p>这本书着重强调了「准备工作」在成功演讲中的作⽤，也给出了了很多具体的演讲准备⼯工作的⽅法。所谓台上一分钟，台下⼗年功，演讲也是一样。书中提到某次 MacWorld ⼤大会上对 iDVD 软件的 5 分钟演示，竟⽤了将近 100 个⼩时进行准备，让⼈印象深刻。</p>
 <p>除了 iDVD 之外，作者围绕乔布斯历次教科书般的 Keynote 做了了⼤量的分析和讲解，如果你曾经看过乔布斯的演讲，这本书一定会为你带来更直观的收获。</p>
 <p>记得要买第二版，第一版翻译得很糟糕。
-<img src="http://jumpalang.coding.me/post-images/1559575281680.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559575281680.jpeg" alt=""></p>
 <ol start="2">
 <li>《演说》
 作者: Nancy Duarte</li>
@@ -576,7 +576,7 @@ Zero to One:</p>
 <p>《演说》介绍了准备一场演讲幻灯片的全过程，从创意到设计到制作一应俱全，很有系统性。</p>
 <p>书中还包含⼤量的实例——由于作者的独特背景（著名的演讲专家），书⾥的实例都⾼端⼤气，让⼈很有现场感。</p>
 <p>她有很多听起来平淡⽆奇，但如果有一点演讲经验，⼜又深以为然的观点。这本书虽然价格略高，但值得一读，推荐。
-<img src="http://jumpalang.coding.me/post-images/1559575402393.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559575402393.png" alt=""></p>
 <ol start="3">
 <li>《简单法则》
 作者:  [美] 前田约翰
@@ -586,7 +586,7 @@ Zero to One:</p>
 <p>如果演讲结束，听众只能记住⼀句话，你希望是哪⼀句？</p>
 <p>删繁就简，⼒出一孔，才能形成有效的信息传递。这本书虽然不直接跟演讲相关，我却认为它讲出了演讲最重要的原则，就是要在信息、逻辑和形式上，不断做减法、做提炼，当你的⼒量集中在某一个或少数几个（通常认为不能超过3个）观点上时，产⽣的效果要远远⾼于百科全书似的罗列。</p>
 <p>简化看起来好像⼿起⼑落就好，其实却很不容易，这本书中汇聚了了⼗个关于简单的原则，其中包含了不少「如何简单」的技巧，推荐⼤家翻看，如果你不想读完全书，去看一下⾖瓣上其他人的读书笔记也可以。
-<img src="http://jumpalang.coding.me/post-images/1559575516493.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559575516493.jpeg" alt=""></p>
 <ol start="4">
 <li>《从&quot;为什么&quot;开始》
 作者:  [美] 西蒙·斯涅克</li>
@@ -596,7 +596,7 @@ Zero to One:</p>
 <p>当演讲者侃侃⽽谈时，每个听众心中都会默默地问：「我为什么要关⼼这个？」</p>
 <p>西蒙·斯涅克在书中建立了了⼀个「黄⾦圈」的模型，外围是 What（做什么），然后是How（怎样做），最中心是 Why（为什么），在他看来，所有的思考、判断和逻辑，以及所有的信息传达，都应该从中心开始向外发散，所有的 How 和 What 都应该围绕着 Why。</p>
 <p>演讲本⾝就是信息传达与沟通，自然也应当采⽤类似的原则，作者在书中利用黄金圈框架解释了很多案例，其中一部分带给我很多启发，值得一读。如果不想读完整本，也可以去找作者的演讲视频来看，他没有⽤幻灯片，只是用一⽀笔和两张纸，就把⾃己想讲的事情讲得清清楚楚。这给我的触动很深，虽然没有用 PowerPoint ，但既有 Power，⼜有 Point，很酷。</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559575614156.jpeg" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559575614156.jpeg" alt=""></p>
 <ol start="5">
 <li>如何把你的观点深深地刻在别⼈的脑海中 ——《粘住》【如何演讲系列】</li>
 </ol>
@@ -608,13 +608,13 @@ Zero to One:</p>
 <p>书中作者总结了6个让你的观点更具影响⼒的诀窍，分别是简约、意外、具体、可信、情感、故事。我认为其中的核心是「故事」，整本书都是在教你如何「讲故事」。</p>
 <p>别⼩看讲故事，演讲中让听众记忆最久的是故事，新闻报道中最打动⼈的也是故事，伟⼤的小说家、编剧花毕⽣生精力讲出的还是故事。不⼀定必须有时间地点⼈人物情节才叫故事，在我看来，凡是能让人在脑海中产⽣画⾯感的话语或文字，就是故事。</p>
 <p>书⾥有许多具有可操作性的窍⻔，非常值得⼀读，推荐你试试。
-<img src="http://jumpalang.coding.me/post-images/1559575699412.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559575699412.jpeg" alt=""></p>
 <ol start="6">
 <li>《魏斯曼演讲圣经》
 作者:  [美] 杰瑞·魏斯曼</li>
 </ol>
 <p>出版社: 中国人民大学出版社
-<img src="http://jumpalang.coding.me/post-images/1559575778945.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559575778945.jpeg" alt=""></p>
 <ol start="7">
 <li>《看懂肢体语言》
 作者:  [美] 马克•鲍登 (Mark Bowden)</li>
@@ -625,7 +625,7 @@ Zero to One:</p>
 <p>每次当众讲话之前和刚刚开始的时候，我都会有些慌乱，不知道应该怎样安放双手——该放到身体两边，还是插进⼝袋，还是要抱在胸前，还是在空中挥舞？如果你也有和我一样的困惑，不妨看看这两本书。</p>
 <p>著名的「肢体定律」说，在沟通中，交流者所表现出来的感情、态度和意图，由肢体语⾔表达的占55%，语调表达的占38%，而通过⽂字表达的只占7%。也就是说在沟通效果上，讲话的方式比讲话的内容重要得多。你的思维内容以语言的形式传递出去，⽽非语言的暗⽰却会以它十倍的感染⼒让听众深信不疑。</p>
 <p>这两本书有不同的理论框架，和丰富使用的⽅法，甚⾄一些细节上还会有矛盾。越是这样，我越建议⼤大家两本对照着读读看，博采众长，找到适合⾃己的⽅式。
-<img src="http://jumpalang.coding.me/post-images/1559575865919.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559575865919.jpeg" alt=""></p>
 <h3 id="知名博主阮一峰的书单探索自然">知名博主阮一峰的书单：探索自然</h3>
 <p>阮一峰，著名技术博客作者，《ES6 标准入门》的作者，《黑客与画家》的译者。</p>
 <ol>
@@ -636,7 +636,7 @@ Zero to One:</p>
 </ol>
 <p>去年，有一部电影《77天》，讲述一个青年独自一人穿越羌塘荒原的故事。这是根据探险家杨柳松的真人真事改编的。</p>
 <p>《北方的空地》这本书就是杨柳松的荒原日记，比电影好看得多，记录了他在1500公里无人区的所见所闻，以及内心对生命和世界的思考。读完这本书，你会对那块荒原和那种远行的冲动，充满了向往。</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559576054159.jpeg" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559576054159.jpeg" alt=""></p>
 <ol start="2">
 <li>《最后的熊猫》
 作者：〔美〕乔治•夏勒</li>
@@ -645,7 +645,7 @@ Zero to One:</p>
 <p>推荐理由：</p>
 <p>1980年，夏勒博士以世界自然基金会特聘专家的身份，来到中国研究熊猫。他一待就是五年，在野外第一线追踪考察熊猫，亲身参与了卧龙大熊猫保护中心的筹建。</p>
 <p>《最后的熊猫》就是夏勒博士的回忆录，讲述了他的熊猫考察记，那几只他亲身参与捕捉的野生大熊猫的故事，以及他与中国同事相处的经历、四川原始森林里面的美景，改革开放初期中国老百姓的生活等等。
-<img src="http://jumpalang.coding.me/post-images/1559576125613.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559576125613.jpeg" alt=""></p>
 <ol start="3">
 <li>《大灭绝时代》
 作者：[美] 伊丽莎白·科尔伯特</li>
@@ -654,7 +654,7 @@ Zero to One:</p>
 <p>推荐理由：</p>
 <p>地球的历史上，已经发生了五次生物大灭绝。恐龙就是在第五次大灭绝时消失的。作者伊丽莎白•科尔伯特是《纽约客》杂志的科学记者，提出了一个问题：人类是否正在经历第六次大灭绝？</p>
 <p>她以小故事的形式，讲述自己在全球各地的采访经历，读来异常有趣。她思考着那些生物为什么会灭绝，不可避免地将读者引向那个终极问题：我们人类是否正在加速自己的灭绝？
-<img src="http://jumpalang.coding.me/post-images/1559576213371.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559576213371.jpeg" alt=""></p>
 <ol start="4">
 <li>《英格兰简史》
 作者：[英] 西蒙·詹金斯</li>
@@ -663,7 +663,7 @@ Zero to One:</p>
 <p>推荐理由：</p>
 <p>如果你想通过一本书了解英格兰的历史，那就读这本吧。在300多页的篇幅里，从古罗马时期一直讲到脱离欧盟，不仅理清了历史的脉络，而且充满了各种逸闻趣事，读来饶有趣味。同时，书里还配有许多图片，令读者大开眼界。</p>
 <p>作者是英国著名历史学家，但是这本书是以普通人的饭后读物为写作目标的，写得轻松诙谐，读来毫不费力。
-<img src="http://jumpalang.coding.me/post-images/1559576299345.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559576299345.jpeg" alt=""></p>
 <ol start="5">
 <li>《纳尔奇思与歌尔得蒙》
 作者：[德] 黑塞</li>
@@ -672,7 +672,7 @@ Zero to One:</p>
 <p>推荐理由：</p>
 <p>《纳尔奇思与歌尔得蒙》是诺贝尔文学奖得主、德国作家黑塞的代表作，讲述了一个扣人心弦的欧洲中世纪故事。</p>
 <p>纳尔奇思与歌尔得蒙从小在修道院里认识，结为好友，但是不久他们分道扬镳，走上不同的人生道路。两个男孩一个追求理性、献身宗教，另一个追求感性、听从内心的欲望。小说就是他们各自的人生故事，读者仿佛跟随主人公的脚步穿行在中世纪的欧洲。虽然是不同的人生道路，但是他们都在追寻心中的梦想，只有等到重逢时，才最终从对方身上悟到了人生的意义是什么。</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559576379221.jpeg" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559576379221.jpeg" alt=""></p>
 <h3 id="语雀工程师平侠的书单发现更大的世界">语雀工程师平侠的书单：发现更大的世界</h3>
 <p>平侠
 移动互联网的兴起给人们带来了便捷的生活、触手可及的信息获取方式，但也让我们的宝贵时间被碎片化知识所吞噬，以至于很多人已淡忘了“看书”这个获取知识、认识世界的最佳途径，甚至还找出各种不看书的理由。其实看完一本书并不难，每天晚上花半小时，一年下来就可以看好几本书。语雀研发团队有很多喜欢看书的人，我们从书中也找到不少产品灵感，细心的朋友想必已发现语雀知识库就是参考一本书来设计的，每个知识库其实就是一本书。这份书单，<strong>主题是「发现」</strong>，希望以它们为引子，与大家一起重回读书之路，打开探索世界的大门。作为一个知识协同平台，语雀希望帮助大家沉淀结构化、体系化知识，更希望有招一日在这里也能产生一批优秀书籍，帮助人们更好地发现世界、品味人生。</p>
@@ -680,225 +680,225 @@ Zero to One:</p>
 <li>
 <p>身边之美 - 《怎样观察一棵树》
 在忙碌的工作和生活中，我们会忽略身边的很多细微事物，比如：柳树发芽了、油菜结籽了、云雀叫了、蚂蚁冬眠了...火遍中国的经典咏流传里，一首《苔花》让很多人意识到毫不起眼的苔藓原来这么美。其实，美就在身边，只不过我们缺少了发现美的耐心与眼睛。《怎样观察一棵树》这本书由美国园艺师 Nancy Ross Hugo 和摄影师 Robert Llewellyn 共同创作，讲述了他们定期观察树木的收获，图文并茂地呈现了树木微妙而常被忽略的细节构造，教会人们从认识身边的一草一木开始发现自然和生命的奇迹。如果你的孩子恰好在上小学或初中，这本书将是你与孩子一起亲近自然的参考书，也是培养孩子好奇心和观察能力的教材。
-<img src="http://jumpalang.coding.me/post-images/1559576579263.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559576579263.jpeg" alt=""></p>
 </li>
 <li>
 <p>认识中国 -《论中国》
 生在中国，我们在与它相关的海量知识的耳濡目染中长大，中国元素已经融入我们的血液。但我们真的了解中国吗？我想恐怕没谁敢自信地说：“非常了解”。其实，我们每个人了解到的中国只是它的一面，即便是穷极一生恐怕都不能完全了解中国，唯一能做的就是从不同的视角去认识它，与它一起成长。这本《论中国》是美国外交家、前国务卿基辛格晚年的一本专著，他在推动中美正常建交中扮演了重要角色，在书中他以政治家的视角、国际话的眼光解读了中国的过去、现在与未来。新加坡首任总理李光耀的《论中国与世界》也是从政治视角看中国的一本难得之作，习大大对李光耀的评价很高，他的这本书有助于我们认识中国和周边国际的关系。
-<img src="http://jumpalang.coding.me/post-images/1559576654900.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559576654900.png" alt=""></p>
 </li>
 <li>
 <p>开拓想象 -《银河帝国》
 科幻小说致力于拓展人类想象力的边界，一些科幻小说中的场景已经变成现实。阿西莫夫的《银河帝国》把人类的发展推演到了极致，是科幻小说难以超越的巅峰之作，书中的心理史学、机器人三大定律两大构思非常巧妙。银河帝国总共 15 本，每本独立成章，但又相互关联形成一个完整的故事，全书的精髓是基地三部曲。据悉，苹果正在制作基于基地三部曲的科幻电视剧。与银河帝国齐名的是丹·西蒙斯的《海伯利安》，但看起来比较烧脑，有趣的是这部书引入了很多中国元素。这两本书的主角都有 AI，讲述的是 AI 与人类的故事，但角度和细节上有差别，在 AI 飞速发展的当下，书中对未来的推演还是值得思考的。</p>
 </li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559576719868.jpeg" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559576719868.jpeg" alt=""></p>
 <ol start="4">
 <li>
 <p>洞见未来 -《失控》
 很多人都听过这本书名字，或许书架上还藏有一本，但我相信有不少人只是买了当摆设，并未认真读完。凯文凯利的《失控》成作与 1994 年，但在移动互联网时代才在中国广为流传，被互联网界奉为圣经，以至于没看过这本书都不好意说自己是产品经理。这本书记录了他对当时科技、社会和经济的思考，以及借此所窥得的未来图景。书中关于科技的很多“预言”已成为现实，但还隐藏着很多尚待探索和破解的密码。虽然是一本老书，但其中的观点、思考方式在当下仍不过时。洞见科技的未来，可以从这本书开始。
-<img src="http://jumpalang.coding.me/post-images/1559576776649.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559576776649.jpeg" alt=""></p>
 </li>
 <li>
 <p>认识生命 -《癌症传》
 癌症是人类的主要杀手，谈癌色变是很多人的第一反应，但癌症也是我们认识生命、珍爱健康的一扇大门。肿瘤学家悉达多·穆克吉的这本历时 6 年的匠心之作《众病之王-癌症传》向人们展示了癌症的起源与发展，人类对抗癌症、预防癌症的斗争史，是一本难得的科普佳作。读完本书，你会对癌症及健康有全新的认识。作者还有一本新书《基因传:众生之源》，讲述了基因理论的起源、发展和未来。
-<img src="http://jumpalang.coding.me/post-images/1559576855596.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559576855596.jpeg" alt=""></p>
 </li>
 <li>
 <p>了解人性 -《人性中的善良天使》
 人性是一个复杂的话题，与之相关的书也非常多，人性本善还是人性本恶已经争论了数千年，但很难有答案。比尔·盖茨多次推荐的这本《人性中的善良天使》是思想家史蒂芬·平克的大作，通过详尽的史实和数据讨论了暴力如何以及为什么在我们的历史中呈现稳步下降的趋势，以及我们该如何使这趋势继续下去。这本书有助于引导我们用全新的角度看人性、看历史、看世界，去深思人类社会的未来命运。
-<img src="http://jumpalang.coding.me/post-images/1559576909137.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559576909137.jpeg" alt=""></p>
 </li>
 <li>
 <p>有诗为伴 -《给孩子的诗》
 诗歌是中国文化的精髓之一，也是古人留给我们的珍贵精神财富。但中国的诗歌实在是太多了，于是在不同时期都会有人精选一批供人诵读，《诗经》、《古诗十九首》、《唐诗三百首》、《千家诗》等都属于这种。这本由北岛选编的《给孩子的诗》精选了古今中外优秀诗作中最适于孩子诵读、领悟的短诗，是学习诗歌、亲子阅读的佳作。“生活不止眼前的苟且，还有诗与远方”，有诗为伴，人生路上会少一分孤单、多一分精彩。
-<img src="http://jumpalang.coding.me/post-images/1559576972629.jpeg" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559576972629.jpeg" alt=""></p>
 </li>
 <li>
 <p>不忘初心 -《禅者的初心》
 “初心”是近几年入镜率非常高的一个词汇，在各种场合时常撞见，习大大也多次强调“不忘初心，牢记使命”。但可能很多人并不知道，这个词来与佛教颇有渊源。日本著名禅师铃木俊隆的《禅者的初心》，从禅者的视角向我们展示了什么是初心，以及如何在日常生活中习得初心，禅者那种平静的内心、鲜活的生命力、朴实的生活在这本书中有很好的体现。据说，这本书也深受乔布斯喜爱。与这个话题相关的还有一本值得推荐的佳作：一行禅师的《活在此时此刻》，向我们展示了正念这个备受西方关注的禅修方式给生命所带来的奇迹。</p>
 </li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559577081585.jpeg" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559577081585.jpeg" alt=""></p>
 <h3 id="蚂蚁金服ceo井贤栋与30余城图书馆馆长每人推荐一本书">蚂蚁金服CEO井贤栋与30余城图书馆馆长，每人推荐一本书</h3>
 <p>蚂蚁金服董事长兼CEO井贤栋与三十余城图书馆馆长，每人推荐一本书，涉及科技、历史、人文等多方面内容。</p>
 <ol>
 <li>《瓦尔登湖》
 作为自然主义的代表作，它试图告诉我们要简化生活，将时间腾出来深入生命，品味人生。</li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559577375679.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559577375679.png" alt=""></p>
 <ol start="2">
 <li>《重庆之眼》
 不忘历史，珍爱和平！</li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559577428973.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559577428973.png" alt=""></p>
 <ol start="3">
 <li>
 <p>《枢纽》
 规划未来，更要洞察过去。从时间和空间的维度重新梳理了中国历史，囊括三千年，纵横九千里，一场认知的大爆炸。
-<img src="http://jumpalang.coding.me/post-images/1559577493212.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559577493212.png" alt=""></p>
 </li>
 <li>
 <p>《平凡的世界》
 生活不能等待别人来安排，要自己去争取和奋斗；不论结果是喜是悲，总不枉在这世上活了一场。</p>
 </li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559577559739.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559577559739.png" alt=""></p>
 <ol start="5">
 <li>
 <p>《图书馆狮子》
 哪怕是凶猛的大狮子，只要你爱书爱故事，图书馆的大门就永远向你敞开。好的故事本就是为所有爱故事的人准备的。
-<img src="http://jumpalang.coding.me/post-images/1559577646312.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559577646312.png" alt=""></p>
 </li>
 <li>
 <p>《海伦娜的奇迹》
 如何在完成应试教育指标的前提下开展素质教育，以全面提高学生综合能力，海伦娜中学的成功实践不仅为自己赢得了「联合国教科文组织模范学校」「德国最佳学校」等称号，更为家长、老师和孩子找到了一条切实可行的途径。
-<img src="http://jumpalang.coding.me/post-images/1559577765804.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559577765804.png" alt=""></p>
 </li>
 </ol>
 <p>7.《女儿四岁了，我们开始聊哲学》
 一日之计在于晨，人生成长重在幼。这本书给我们提供了很好的思路和实践。尤其建议年轻的父母们和孩子一起好好阅读、好好「读图」。
-<img src="http://jumpalang.coding.me/post-images/1559577826724.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559577826724.png" alt=""></p>
 <p>8.《阅读力》
 阅读力的培养实际是对人们思维能力的培养。</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559577868866.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559577868866.png" alt=""></p>
 <p>9.《活着》
 感悟生命的脆弱与坚韧。</p>
-<p><img src="http://jumpalang.coding.me/post-images/1559577926608.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559577926608.png" alt=""></p>
 <ol start="10">
 <li>《论语别裁》
 将对原文的串讲撮编为一个个历史故事，蕴意深邃而妙趣横生。</li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559578005610.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559578005610.png" alt=""></p>
 <ol start="11">
 <li>《朱子读书法》
 循序渐进、熟读精思、虚心涵泳、切己体察、着紧用力、居敬持志。</li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559578064572.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559578064572.png" alt=""></p>
 <ol start="12">
 <li>《丝绸之路：一部全新的世界史》
 一部包罗万象、全新的世界史巨著。对于理解当前中国「一带一路」战略价值具有重要的参考意义。
-<img src="http://jumpalang.coding.me/post-images/1559578135864.png" alt=""></li>
+<img src="https://jumpalang.github.io//post-images/1559578135864.png" alt=""></li>
 </ol>
 <p>13.《胡适演讲集：读书与人生》
 「人生意义就在我们怎样看人生」，胡适先生以其深邃的思想拨开纷乱的世事迷雾，引导人们更好地阅读经典和理解人生。
-<img src="http://jumpalang.coding.me/post-images/1559578329024.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559578329024.png" alt=""></p>
 <ol start="14">
 <li>
 <p>《泥步修行》
 余秋雨封笔之作。老人之言，皆为心声。
-<img src="http://jumpalang.coding.me/post-images/1559578370016.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559578370016.png" alt=""></p>
 </li>
 <li>
 <p>《苏东坡传》
 看才子如何演绎才子。</p>
 </li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559578440508.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559578440508.png" alt=""></p>
 <ol start="16">
 <li>《未来简史》
 我们立足现在，同时需要放眼未来。等到无意识却高度智能的算法比我们更了解我们自己时，社会、政治和日常生活将会有什么变化？</li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559578770921.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559578770921.png" alt=""></p>
 <ol start="17">
 <li>《原则》
 一本基于逻辑、理性和常识的系统思考智慧的图书，既有思想的积淀，又有较强的实用性。</li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559578792342.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559578792342.png" alt=""></p>
 <ol start="18">
 <li>《红色家书》
 传家风晒家训重家教，人格亲情智慧力量跃然纸上，爱国爱家大爱无疆初心无忘。可以平淡地生活，不可以平凡人生。</li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559578820418.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559578820418.png" alt=""></p>
 <ol start="19">
 <li>《尘埃落定》
 这本小说为我们提供了一种别样的眼光，一种普遍的人类情怀，更展现了一种不一样的藏人生活，一部不一样的中国现代史。堪称中国的「旧制度与大革命」。</li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559578847067.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559578847067.png" alt=""></p>
 <ol start="20">
 <li>
 <p>《可怕的科学》
 人们读过太多的历史文化书籍，却时常在水膜的张力上莫名其妙。当今时代，科学知识、科学常识应该成为阅读引领者阅读推荐选项。
-<img src="http://jumpalang.coding.me/post-images/1559578948974.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559578948974.png" alt=""></p>
 </li>
 <li>
 <p>《海昏候刘贺》
 惊世考古发现背后鲜活而惊心动魄的历史。通过海昏侯刘贺充满戏剧性的一生，呈现出大汉王朝在汉武帝身后的政局变动，从不同侧面让中国历史上在位时间最短的皇帝刘贺走到寻常百姓眼前。
-<img src="http://jumpalang.coding.me/post-images/1559579023209.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559579023209.png" alt=""></p>
 </li>
 <li>
 <p>《山西密码》
 山西的「小通史」。认识山西、推介山西的「撬动灵魂」之作，堪称山西版的《五百年来谁著史》。</p>
 </li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559579078420.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559579078420.png" alt=""></p>
 <ol start="23">
 <li>
 <p>《细菌不小点儿人体历险记》
 这是一本生动、有趣、形象的儿童科普读物，告诉小朋友如何防止坏细菌入侵、如何打败坏细菌、如何爱惜自己的小身体，适合亲子阅读。
-<img src="http://jumpalang.coding.me/post-images/1559579141554.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559579141554.png" alt=""></p>
 </li>
 <li>
 <p>《诗经现场》
 跟随流沙河先生的脚步，重回2500年前的诗经现场，去感知其时的景、物、人、情。
-<img src="http://jumpalang.coding.me/post-images/1559579191649.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559579191649.png" alt=""></p>
 </li>
 <li>
 <p>《激荡十年水大鱼大》
 书中的每一幕都真实地发生在我们经历的过去十年的每一天，展现了中国过去十年的社会经济浮沉片影。
-<img src="http://jumpalang.coding.me/post-images/1559579315107.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559579315107.png" alt=""></p>
 </li>
 <li>
 <p>《财产、法律与政府》
 逻辑的力量，历史的经验，照亮每一颗追求自由的心灵。</p>
 </li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559579409917.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559579409917.png" alt=""></p>
 <ol start="27">
 <li>
 <p>《君子之道》
 要复兴中华文化，需要践行「君子之道」。
-<img src="http://jumpalang.coding.me/post-images/1559579461757.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559579461757.png" alt=""></p>
 </li>
 <li>
 <p>《讲谈社中国的历史》
 一套严谨、专业、可读性很强的历史读本。由于文化传统和学术传统不同，他们观察中国历史的角度和兴趣、重点也不同，在许多方面给人以耳目一新之感。
-<img src="http://jumpalang.coding.me/post-images/1559579514620.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559579514620.png" alt=""></p>
 </li>
 <li>
 <p>《人类简史》
 比历史书生动、比哲学书易懂，是值得青少年阅读的一本了解人类历史的好书。</p>
 </li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559579548350.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559579548350.png" alt=""></p>
 <ol start="30">
 <li>《白居易传》
 对我们了解传主的传世名句、起伏人生以及那个风起云涌的时代大有裨益，值得一读。</li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559579583958.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559579583958.png" alt=""></p>
 <ol start="31">
 <li>
 <p>《如何阅读一本书》
 不懂阅读的人，初探阅读的人，读这本书可以少走冤枉路。对阅读有所体会的人，读这本书可以有更深的印证和领悟。
-<img src="http://jumpalang.coding.me/post-images/1559579617342.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559579617342.png" alt=""></p>
 </li>
 <li>
 <p>《这边风景》
 作品从一件粮食盗窃案入笔，以新疆农村为舞台，为读者展示了极具新疆特色的风土人情画卷。且该作品独具匠心，在每个章节后设计「小说人语」，当老年王蒙遇上中年王蒙，这场跨越40年的文学对话，会碰撞出怎样的火花？
-<img src="http://jumpalang.coding.me/post-images/1559579663305.png" alt=""></p>
+<img src="https://jumpalang.github.io//post-images/1559579663305.png" alt=""></p>
 </li>
 <li>
 <p>《中国的科学技术史》
 著名英籍科学史家李约瑟代表作《中国科学技术史》，对于中国现代的科技创新有重要借鉴意义。如果今天续写这部里程碑式的著作，相信当下的很多科技创新、移动支付应用、数字科技浪潮都将成为其中的重要篇章。</p>
 </li>
 </ol>
-<p><img src="http://jumpalang.coding.me/post-images/1559579719011.png" alt=""></p>
+<p><img src="https://jumpalang.github.io//post-images/1559579719011.png" alt=""></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[我喜欢的歌曲MV]]></title>
-        <id>http://jumpalang.coding.me/post/wo-xi-huan-de-ge-qu-mv</id>
-        <link href="http://jumpalang.coding.me/post/wo-xi-huan-de-ge-qu-mv">
+        <id>https://jumpalang.github.io//post/wo-xi-huan-de-ge-qu-mv</id>
+        <link href="https://jumpalang.github.io//post/wo-xi-huan-de-ge-qu-mv">
         </link>
         <updated>2019-05-22T03:06:34.000Z</updated>
         <content type="html"><![CDATA[<div style="text-align:center;">
@@ -955,8 +955,8 @@ Zero to One:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[为爱痴狂]]></title>
-        <id>http://jumpalang.coding.me/post/wei-ai-chi-kuang</id>
-        <link href="http://jumpalang.coding.me/post/wei-ai-chi-kuang">
+        <id>https://jumpalang.github.io//post/wei-ai-chi-kuang</id>
+        <link href="https://jumpalang.github.io//post/wei-ai-chi-kuang">
         </link>
         <updated>2019-05-20T04:27:19.000Z</updated>
         <summary type="html"><![CDATA[<div style="text-align:center;">
