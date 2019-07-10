@@ -1,304 +1,270 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>Jump!Alang</title>
-<link rel="shortcut icon" href="http://jumpalang.coding.me/favicon.ico?v=1562768494656">
+<meta name="description" content="永远年轻！永远热泪盈眶！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://jumpalang.coding.me/favicon.ico?v=1562768638900">
 <link rel="stylesheet" href="http://jumpalang.coding.me/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://jumpalang.coding.me">
-  <img class="avatar" src="http://jumpalang.coding.me/images/avatar.png?v=1562768494656" alt="">
-  </a>
-  <h1 class="site-title">
-    Jump!Alang
-  </h1>
-  <p class="site-description">
-    永远年轻！永远热泪盈眶！
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://jumpalang.coding.me">
+        <img src="http://jumpalang.coding.me/images/avatar.png?v=1562768638900" class="site-logo">
+        <h1 class="site-title">Jump!Alang</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            所有
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          所有
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="/post/world" class="site-nav" target="_blank">
+            世界
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="/post/world" class="menu" target="_blank">
-          世界
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-        <a href="https://github.com/JumpAlang" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+        
       
-    
+        
       
-    
+        
       
-        <a href="http://weibo.com/JumpAlang" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
+        
       
-    
+        
       
-    
-      
-    
+    </div>
+    <div class="site-description">
+      永远年轻！永远热泪盈眶！
+    </div>
+    <div class="site-footer">
+      <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="http://jumpalang.coding.me/post/lei-hai">
-        <h2 class="post-title">泪海</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-05-20 ·
-        </time>
-        
-          <a href="http://jumpalang.coding.me/tag/music" class="post-tag">
-            # 音乐
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <div style="text-align:center;">
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.coding.me/post/lei-hai">
+                  <h2 class="post-title">泪海</h2>
+                </a>
+                <div class="post-date">
+                  2019-05-20
+                </div>
+                <div class="post-abstract">
+                  <div style="text-align:center;">
 	<div>
 			<audio  controls="controls" autoplay="autoplay">
 			<source src="http://jumpalang.two3.cn/music%E6%B3%AA%E6%B5%B7-%E9%92%A2%E7%90%B4.m4a" type="audio/mpeg" />
 	</audio>
 	</div>
 	</div>
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="http://jumpalang.coding.me/post/ke-neng-fou">
-        <h2 class="post-title">可能否</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-05-18 ·
-        </time>
-        
-          <a href="http://jumpalang.coding.me/tag/music" class="post-tag">
-            # 音乐
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <div style="text-align:center;">
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.coding.me/post/ke-neng-fou">
+                  <h2 class="post-title">可能否</h2>
+                </a>
+                <div class="post-date">
+                  2019-05-18
+                </div>
+                <div class="post-abstract">
+                  <div style="text-align:center;">
 	<div>
 			<audio  controls="controls">
 			<source src="http://jumpalang.two3.cn/music%E5%8F%AF%E8%83%BD%E5%90%A6-%E9%92%A2%E7%90%B4.mp3" type="audio/mpeg" />
 	</audio>
 	</div>
 	</div>
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="http://jumpalang.coding.me/post/zhuan-zai-bi-te-bi-ru-men-jiao-cheng">
-        <h2 class="post-title">(转载)比特币入门教程</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-04-18 ·
-        </time>
-        
-          <a href="http://jumpalang.coding.me/tag/science" class="post-tag">
-            # 科普
-          </a>
-        
-          <a href="http://jumpalang.coding.me/tag/summary" class="post-tag">
-            # 摘抄
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <blockquote>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.coding.me/post/zhuan-zai-bi-te-bi-ru-men-jiao-cheng">
+                  <h2 class="post-title">(转载)比特币入门教程</h2>
+                </a>
+                <div class="post-date">
+                  2019-04-18
+                </div>
+                <div class="post-abstract">
+                  <blockquote>
 <p>作者：阮一峰 日期：2018年1月4日 摘自：<a target="_blank" href="http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html">链接</a></p>
 </blockquote>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="http://jumpalang.coding.me/post/zhuan-zai-fen-xiang-wo-de-xue-xi-fang-fa-huan-shi-jian-chi-nu-li">
-        <h2 class="post-title">(转载)分享我的学习方法——还是坚持+努力</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-04-18 ·
-        </time>
-        
-          <a href="http://jumpalang.coding.me/tag/study" class="post-tag">
-            # 学习方法
-          </a>
-        
-          <a href="http://jumpalang.coding.me/tag/summary" class="post-tag">
-            # 摘抄
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <blockquote>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.coding.me/post/zhuan-zai-fen-xiang-wo-de-xue-xi-fang-fa-huan-shi-jian-chi-nu-li">
+                  <h2 class="post-title">(转载)分享我的学习方法——还是坚持+努力</h2>
+                </a>
+                <div class="post-date">
+                  2019-04-18
+                </div>
+                <div class="post-abstract">
+                  <blockquote>
 <p>本文转载自：开涛博客 <a target="_blank" href="https://jinnianshilongnian.iteye.com/blog/1709268">链接</a></p>
 </blockquote>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="http://jumpalang.coding.me/post/gan-wu-ji-zhai-chao">
-        <h2 class="post-title">感悟及摘抄</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-04-18 ·
-        </time>
-        
-          <a href="http://jumpalang.coding.me/tag/think" class="post-tag">
-            # 感悟
-          </a>
-        
-          <a href="http://jumpalang.coding.me/tag/summary" class="post-tag">
-            # 摘抄
-          </a>
-        
-      </div>
-      
-        <a href="http://jumpalang.coding.me/post/gan-wu-ji-zhai-chao" class="post-feature-image" style="background-image: url('http://jumpalang.coding.me/post-images/gan-wu-ji-zhai-chao.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <blockquote>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.coding.me/post/gan-wu-ji-zhai-chao">
+                  <h2 class="post-title">感悟及摘抄</h2>
+                </a>
+                <div class="post-date">
+                  2019-04-18
+                </div>
+                <div class="post-abstract">
+                  <blockquote>
 <p>人生很多事，就像智齿。最佳的解决方式，是拔掉。而不是，忍受。</p>
 </blockquote>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="http://jumpalang.coding.me/post/the-beautitudes">
-        <h2 class="post-title">The Beautitudes</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-04-18 ·
-        </time>
-        
-          <a href="http://jumpalang.coding.me/tag/movie" class="post-tag">
-            # 电影
-          </a>
-        
-          <a href="http://jumpalang.coding.me/tag/music" class="post-tag">
-            # 音乐
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <div style="text-align:center;">
+                </div>
+              </div>
+              
+                <a class="right" href="http://jumpalang.coding.me/post/gan-wu-ji-zhai-chao">
+                  <div class="feature-container" style="background-image: url('http://jumpalang.coding.me/post-images/gan-wu-ji-zhai-chao.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.coding.me/post/the-beautitudes">
+                  <h2 class="post-title">The Beautitudes</h2>
+                </a>
+                <div class="post-date">
+                  2019-04-18
+                </div>
+                <div class="post-abstract">
+                  <div style="text-align:center;">
 	<div>
 			<audio  controls="controls">
 			<source src="http://jumpalang.two3.cn/musicTheBeatitudes.mp3" type="audio/mpeg" />
 	</audio>
 	</div>
 	</div>
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="http://jumpalang.coding.me/post/541-zi-mian-zhi">
-        <h2 class="post-title">5.4.1 字面值-精通spring4.x企业应用开发实战</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-04-17 ·
-        </time>
-        
-          <a href="http://jumpalang.coding.me/tag/spring" class="post-tag">
-            # spring
-          </a>
-        
-          <a href="http://jumpalang.coding.me/tag/summary" class="post-tag">
-            # 摘抄
-          </a>
-        
-          <a href="http://jumpalang.coding.me/tag/book" class="post-tag">
-            # 书籍
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-</div>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.coding.me/post/541-zi-mian-zhi">
+                  <h2 class="post-title">5.4.1 字面值-精通spring4.x企业应用开发实战</h2>
+                </a>
+                <div class="post-date">
+                  2019-04-17
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
 
-    
-        <div class="pagination-container">
+          <div class="pagination-container">
   
-    <a href="http://jumpalang.coding.me/" class="prev-page">上一页</a>
+    <a href="http://jumpalang.coding.me/" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
   
   
 </div>
 
-    
-        <div class="site-footer">
-  <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
+        </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>
