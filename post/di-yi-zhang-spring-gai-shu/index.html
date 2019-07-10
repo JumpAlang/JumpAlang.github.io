@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://jumpalang.github.io//favicon.ico?v=1562673138904">
+<link rel="shortcut icon" href="https://jumpalang.github.io//favicon.ico?v=1562742752756">
 <link rel="stylesheet" href="https://jumpalang.github.io//styles/main.css">
 
 
@@ -35,7 +35,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://jumpalang.github.io/">
-        <img src="https://jumpalang.github.io//images/avatar.png?v=1562673138904" class="site-logo">
+        <img src="https://jumpalang.github.io//images/avatar.png?v=1562742752756" class="site-logo">
         <h1 class="site-title">Jump!Alang</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -128,7 +128,11 @@ AOP是继OOP之后，对编程设计思想影响极大的技术之一。AOP是�
 首先，Spring站在DAO的抽象层面，建立了一套面向DAO层的统一的异常体系，同时将各种访问数据的检查型异常转换为非检查型异常，为整合各种持久层框架提供基础。其次，Spring通过模板化技术对各种数据访问技术进行了薄层封装，将模式化的代码隐藏起来，使数据访问的程序得到大幅简化。这样，Spring就建立了和数据形式访问技术无关的统一的DAO层，借助AOP技术，Spring提供了声明式事务的功能。
 <ol start="4">
 <li>Web及远程操作
-该</li>
+该模块建立在Application Context模块之上，提供了Web应用的各种工具类，如通过Listener或Servlet初始化Spring容器，将Spring容器注册到Web容器中。该模块还提供了多项面向Web的功能，如透明化文件上传，Velocity、FreeMarker、XSLT的支持。此外，Spring可以整合Struts、WebWork等MVC框架。</li>
+<li>Web及远程访问
+Spring自己提供了一个完整的类似于Struts的MVC框架，称为Spring MVC。相对于Servlet的MVC，Spring在简化Portlet的开发上也做了很多工作，开发者可以从中受益。</li>
+<li>WebSocket
+WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑到客户端（浏览器）和服务器之间的高频和低时延消息交换。一般的应用场景有在线交易、游戏、协作、数据可视化等。</li>
 </ol>
 </li>
 </ol>
