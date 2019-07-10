@@ -1,191 +1,196 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+  <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>感悟 | Jump!Alang</title>
-<meta name="description" content="永远年轻！永远热泪盈眶！">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+<link rel="shortcut icon" href="http://jumpalang.coding.me/favicon.ico?v=1562768494656">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://jumpalang.coding.me/favicon.ico?v=1562767511335">
 <link rel="stylesheet" href="http://jumpalang.coding.me/styles/main.css">
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="http://jumpalang.coding.me">
-        <img src="http://jumpalang.coding.me/images/avatar.png?v=1562767511335" class="site-logo">
-        <h1 class="site-title">Jump!Alang</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://jumpalang.coding.me">
+  <img class="avatar" src="http://jumpalang.coding.me/images/avatar.png?v=1562768494656" alt="">
+  </a>
+  <h1 class="site-title">
+    Jump!Alang
+  </h1>
+  <p class="site-description">
+    永远年轻！永远热泪盈眶！
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            所有
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          所有
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-        
-          <a href="/post/world" class="site-nav" target="_blank">
-            世界
-          </a>
-        
+        <a href="/tags" class="menu">
+          标签
+        </a>
       
-    </div>
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="/post/world" class="menu" target="_blank">
+          世界
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+        <a href="https://github.com/JumpAlang" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
       
-        
+    
       
-        
+    
       
-        
+        <a href="http://weibo.com/JumpAlang" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
       
-        
+    
       
-    </div>
-    <div class="site-description">
-      永远年轻！永远热泪盈眶！
-    </div>
-    <div class="site-footer">
-      <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </div>
+    
+      
+    
   </div>
 </div>
 
+        <div class="current-tag-container">
+            <h2 class="title">
+                标签：#感悟
+            </h2> 
+        </div>
+        <div class="post-container">
+  
+    <article class="post">
+      <a href="http://jumpalang.coding.me/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
+        <h2 class="post-title">（转载）怎样向上跨越阶层</h2>
+      </a>
+      <div class="post-info">
+        <time class="post-time">
+          · 2019-07-05 ·
+        </time>
+        
+          <a href="http://jumpalang.coding.me/tag/think" class="post-tag">
+            # 感悟
+          </a>
+        
+          <a href="http://jumpalang.coding.me/tag/summary" class="post-tag">
+            # 摘抄
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 感悟</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="http://jumpalang.coding.me/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
-                  <h2 class="post-title">（转载）怎样向上跨越阶层</h2>
-                </a>
-                <div class="post-date">
-                  2019-07-05
-                </div>
-                <div class="post-abstract">
-                  <p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
-
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="http://jumpalang.coding.me/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
-                  <h2 class="post-title">《这个世界既残酷又温柔》摘抄</h2>
-                </a>
-                <div class="post-date">
-                  2019-07-04
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-                <a class="right" href="http://jumpalang.coding.me/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
-                  <div class="feature-container" style="background-image: url('http://jumpalang.two3.cn/image/%E9%A3%8E%E8%BD%A6%E5%B2%9B-%E9%A3%8E%E8%BD%A62.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="http://jumpalang.coding.me/post/gan-wu-ji-zhai-chao">
-                  <h2 class="post-title">感悟及摘抄</h2>
-                </a>
-                <div class="post-date">
-                  2019-04-18
-                </div>
-                <div class="post-abstract">
-                  <blockquote>
+      </di>
+    </article>
+  
+    <article class="post">
+      <a href="http://jumpalang.coding.me/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
+        <h2 class="post-title">《这个世界既残酷又温柔》摘抄</h2>
+      </a>
+      <div class="post-info">
+        <time class="post-time">
+          · 2019-07-04 ·
+        </time>
+        
+          <a href="http://jumpalang.coding.me/tag/think" class="post-tag">
+            # 感悟
+          </a>
+        
+          <a href="http://jumpalang.coding.me/tag/summary" class="post-tag">
+            # 摘抄
+          </a>
+        
+          <a href="http://jumpalang.coding.me/tag/book" class="post-tag">
+            # 书籍
+          </a>
+        
+      </div>
+      
+        <a href="http://jumpalang.coding.me/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao" class="post-feature-image" style="background-image: url('http://jumpalang.two3.cn/image/%E9%A3%8E%E8%BD%A6%E5%B2%9B-%E9%A3%8E%E8%BD%A62.jpg')">
+        </a>
+      
+      <div class="post-abstract">
+        
+      </di>
+    </article>
+  
+    <article class="post">
+      <a href="http://jumpalang.coding.me/post/gan-wu-ji-zhai-chao">
+        <h2 class="post-title">感悟及摘抄</h2>
+      </a>
+      <div class="post-info">
+        <time class="post-time">
+          · 2019-04-18 ·
+        </time>
+        
+          <a href="http://jumpalang.coding.me/tag/think" class="post-tag">
+            # 感悟
+          </a>
+        
+          <a href="http://jumpalang.coding.me/tag/summary" class="post-tag">
+            # 摘抄
+          </a>
+        
+      </div>
+      
+        <a href="http://jumpalang.coding.me/post/gan-wu-ji-zhai-chao" class="post-feature-image" style="background-image: url('http://jumpalang.coding.me/post-images/gan-wu-ji-zhai-chao.jpg')">
+        </a>
+      
+      <div class="post-abstract">
+        <blockquote>
 <p>人生很多事，就像智齿。最佳的解决方式，是拔掉。而不是，忍受。</p>
 </blockquote>
 
-                </div>
-              </div>
-              
-                <a class="right" href="http://jumpalang.coding.me/post/gan-wu-ji-zhai-chao">
-                  <div class="feature-container" style="background-image: url('http://jumpalang.coding.me/post-images/gan-wu-ji-zhai-chao.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
+      </di>
+    </article>
+  
+</div>
 
-          <div class="pagination-container">
+        <div class="pagination-container">
   
   
 </div>
 
-        </div>
-      </div>
-    </div>
+        <div class="site-footer">
+  <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
-
-
-
+      </div>
+    </div>
   </body>
 </html>
