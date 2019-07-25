@@ -1,114 +1,119 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>5.4.1 字面值-精通spring4.x企业应用开发实战 | Jump!Alang</title>
-<meta name="description" content="永远年轻！永远热泪盈眶！">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+<meta name="description" content="永远年轻！永远热泪盈眶！" />
+<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564060564001">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564060300502">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://jumpalang.5a1.xyz/styles/main.css">
 
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="http://jumpalang.5a1.xyz">
-        <img src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564060300502" class="site-logo">
-        <h1 class="site-title">Jump!Alang</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://jumpalang.5a1.xyz">
+  <img class="avatar" src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564060564001" alt="">
+  </a>
+  <h1 class="site-title">
+    Jump!Alang
+  </h1>
+  <p class="site-description">
+    永远年轻！永远热泪盈眶！
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            所有
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          所有
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-        
-          <a href="/post/world" class="site-nav" target="_blank">
-            世界
-          </a>
-        
+        <a href="/tags" class="menu">
+          标签
+        </a>
       
-    </div>
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="/post/world" class="menu" target="_blank">
+          世界
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+        <a href="https://github.com/JumpAlang" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
       
-        
+    
       
-        
+    
       
-        
+        <a href="http://weibo.com/JumpAlang" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
       
-        
+    
       
-    </div>
-    <div class="site-description">
-      永远年轻！永远热泪盈眶！
-    </div>
-    <div class="site-footer">
-      <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://jumpalang.5a1.xyz/atom.xml" target="_blank">RSS</a>
-    </div>
+    
+      
+    
   </div>
 </div>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">5.4.1 字面值-精通spring4.x企业应用开发实战</h2>
-            <div class="post-date">2019-04-17</div>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              5.4.1 字面值-精通spring4.x企业应用开发实战
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-04-17
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="http://jumpalang.5a1.xyz/tag/spring" class="post-tag">
+                  # spring
+                </a>
+              
+                <a href="http://jumpalang.5a1.xyz/tag/summary" class="post-tag">
+                  # 摘抄
+                </a>
+              
+                <a href="http://jumpalang.5a1.xyz/tag/book" class="post-tag">
+                  # 书籍
+                </a>
+              
+            </div>
             
-            <div class="post-content">
-              <p>xml中共有5个特殊字符，分别是&amp;、&lt;、&gt;、&quot;、'。如果配置文件中的注入值包括这些特殊字符，就需要进行特别处理。有两种解决方法：其一，采用本例中的<![CDATA[]]>特殊标签，将包含特殊字符的字符串装起来；其二，使用XML转义序列表示这些特殊字符，这5个特殊字符所对应的XML转义序列如下：</p>
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>xml中共有5个特殊字符，分别是&amp;、&lt;、&gt;、&quot;、'。如果配置文件中的注入值包括这些特殊字符，就需要进行特别处理。有两种解决方法：其一，采用本例中的<![CDATA[]]>特殊标签，将包含特殊字符的字符串装起来；其二，使用XML转义序列表示这些特殊字符，这5个特殊字符所对应的XML转义序列如下：</p>
 <table>
 <thead>
 <tr>
@@ -140,85 +145,92 @@
 </tbody>
 </table>
 
+              </div>
+              <div class="toc-container">
+                
+              </div>
             </div>
-	     <div class="toc-container">
-                
-              </div>
-            
-              <div class="tag-container">
-                
-                  <a href="http://jumpalang.5a1.xyz/tag/spring" class="tag">
-                    spring
-                  </a>
-                
-                  <a href="http://jumpalang.5a1.xyz/tag/summary" class="tag">
-                    摘抄
-                  </a>
-                
-                  <a href="http://jumpalang.5a1.xyz/tag/book" class="tag">
-                    书籍
-                  </a>
-                
-              </div>
-            
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
+          </article>
         </div>
-      </div>
-    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
 
-<script type="application/javascript">
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-AOS.init();
+<div id="gitalk-container"></div>
 
-hljs.initHighlightingOnLoad()
+<script>
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  var gitalk = new Gitalk({
+    clientID: 'dd6b58508cc9af58fc1c',
+    clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
+    repo: 'JumpAlang.github.io',
+    owner: 'JumpAlang',
+    admin: ['JumpAlang'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
 
 </script>
 
+          
 
+          
+        
 
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
+        <div class="site-footer">
+  <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="http://jumpalang.5a1.xyz/atom.xml" target="_blank">RSS</a>
+</div>
 
-      var gitalk = new Gitalk({
-        clientID: 'dd6b58508cc9af58fc1c',
-        clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
-        repo: 'JumpAlang.github.io',
-        owner: 'JumpAlang',
-        admin: ['JumpAlang'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+<script>
+  hljs.initHighlightingOnLoad()
 
-      gitalk.render('gitalk-container')
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
 
-    </script>
-  
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
 
-  
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
 
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
 
+</script>
 
-
+      </div>
+    </div>
   </body>
 </html>
