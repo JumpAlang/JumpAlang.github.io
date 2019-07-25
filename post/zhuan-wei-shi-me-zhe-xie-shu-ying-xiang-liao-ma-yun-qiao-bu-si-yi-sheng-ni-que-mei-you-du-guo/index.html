@@ -1,194 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-      
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Jump!Alang</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8" >
 
-<meta name="description" content="永远年轻！永远热泪盈眶！"/>
-<meta name="keywords" content="永远年轻！永远热泪盈眶！"/>
+<title>（转）为什么这些书影响了马云、乔布斯一生，你却没有读过？ | Jump!Alang</title>
+<meta name="description" content="永远年轻！永远热泪盈眶！">
 
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564052152475">
 <link rel="stylesheet" href="http://jumpalang.5a1.xyz/styles/main.css">
 
-<!-- Modernizr JS -->
-<script src="http://jumpalang.5a1.xyz/media/scripts/_vendors/modernizr-2.6.2.min.js"></script>
-<!-- FOR IE9 below -->
-<!--[if lt IE 9]>
-<scripts src="http://jumpalang.5a1.xyz/media/scripts/_vendors/respond.min.js"></scripts>
-<![endif]-->
 
-<!-- Comment -->
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
 
-    
-        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-    
-
-    
+  
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/tomorrow-night.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-<link crossorigin="anonymous" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" href="https://lib.baomitu.com/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 
   </head>
   <body>
-  
-<div id="fh5co-offcanvas">
-    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
-        <span><i class="icon-cross3"></i> <span>Close</span></span>
-    </a>
-    <div class="fh5co-bio">
-        <figure>
-            <img src="http://jumpalang.5a1.xyz/media/images/avatar.png" alt="Jump!Alang" class="img-responsive">
-        </figure>
-        <h3 class="heading">ABOUT ME</h3>
-        <h2>Jump!Alang</h2>
-        <p>永远年轻！永远热泪盈眶！</p>
-        <ul class="fh5co-social">
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-        </ul>
-    </div>
+    <div id="app" class="main">
 
-    <div class="fh5co-menu">
-        <div class="fh5co-box">
-            <h3 class="heading">搜索</h3>
-            <form action="#">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="输入关键字">
-                </div>
-            </form>
-        </div>
-        <div class="fh5co-box">
-            <h3 class="heading">标签</h3>
-            <ul>
-                
-                    <li><a href="http://jumpalang.5a1.xyz/tag/think">感悟</a></li>
-                
-                    <li><a href="http://jumpalang.5a1.xyz/tag/summary">摘抄</a></li>
-                
-                    <li><a href="http://jumpalang.5a1.xyz/tag/spring">spring</a></li>
-                
-                    <li><a href="http://jumpalang.5a1.xyz/tag/book">书籍</a></li>
-                
-                    <li><a href="http://jumpalang.5a1.xyz/tag/booklist">书单</a></li>
-                
-                    <li><a href="http://jumpalang.5a1.xyz/tag/music">音乐</a></li>
-                
-                    <li><a href="http://jumpalang.5a1.xyz/tag/science">科普</a></li>
-                
-                    <li><a href="http://jumpalang.5a1.xyz/tag/study">学习方法</a></li>
-                
-                    <li><a href="http://jumpalang.5a1.xyz/tag/movie">电影</a></li>
-                
-            </ul>
-        </div>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://jumpalang.5a1.xyz">
+        <img src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564052152475" class="site-logo">
+        <h1 class="site-title">Jump!Alang</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            所有
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="/post/world" class="site-nav" target="_blank">
+            世界
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      永远年轻！永远热泪盈眶！
+    </div>
+    <div class="site-footer">
+      <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </div>
 </div>
 
-<header id="fh5co-header">
-    <div class="container-fluid">
-        <div class="row">
-            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-            <ul class="fh5co-social">
-                
-                    <li>
-                        <a href="/"
-                         >
-                            首页
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/archives"
-                         >
-                            所有
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/tags"
-                         >
-                            标签
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/post/about"
-                         >
-                            关于
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/post/world"
-                        
-                           target="_blank"
-                                 >
-                            世界
-                        </a>
-                    </li>
-                
-            </ul>
-            <div class="col-lg-12 col-md-12 text-center">
-                <h1 id="fh5co-logo">
-                    <a href="http://jumpalang.5a1.xyz">Jump!Alang</a>
-                </h1>
-            </div>
-        </div>
-    </div>
-</header>
 
-
-<!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
-<!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
-
-  <div class="container-fluid">
-      <div class="row fh5co-post-entry single-entry">
-          <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
-              <figure class="animate-box">
-                  
-              </figure>
-              <span class="fh5co-meta animate-box">
-                  
-                      <div class="tag-container">
-                          
-                              <a href="http://jumpalang.5a1.xyz/tag/booklist" class="tag">书单, </a>
-                          
-                      </div>
-                  
-              </span>
-              <h2 class="fh5co-article-title animate-box">（转）为什么这些书影响了马云、乔布斯一生，你却没有读过？</h2>
-              <span class="fh5co-meta fh5co-date animate-box">2019-06-04</span>
-
-              <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
-                  <div class="row">
-                      <div class="col-md-12 animate-box post-content">
-                          <p> <p>今天（4月23日），除了是私募大佬们赶考的日子，还是第22个世界读书日，也是“世界书籍与版权日”，此外，这一天还是大文豪莎士比亚逝世400周年纪念日。</p>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">（转）为什么这些书影响了马云、乔布斯一生，你却没有读过？</h2>
+            <div class="post-date">2019-06-04</div>
+            
+            <div class="post-content">
+              <p>今天（4月23日），除了是私募大佬们赶考的日子，还是第22个世界读书日，也是“世界书籍与版权日”，此外，这一天还是大文豪莎士比亚逝世400周年纪念日。</p>
 <p>和400年前不同的是，随科技的进步，今天我们读书，除了手捧厚重的实体书，还增加了电子书的形式。但无论形式如何改变，人们爱书、爱阅读的初心不改，阅读的习惯得以保留下来。</p>
 <p>胸怀文墨怀若谷，腹有诗书气自华。当你的才华还支撑不起梦想的时候，请静下心来读书。眼界决定境界，境界决定高度，读书将带给你不一样的视界，或许这些平日里的沉淀将改变你一生的命运。今天，几位不必参加赶考的企业家大佬为您推荐他们最欣赏的书籍。在这个碎片化阅读的时代，真正的思想者是不满足于碎片化阅读的。面对商业世界的巨变，企业家如何从书籍中找到方向？</p>
 <p>乔布斯生前最爱——《一个瑜伽行者的自传》</p>
@@ -222,88 +141,81 @@
 <p>在马尔克斯的《百年孤独》里，马尔克斯用非常丰富的魔幻现实主义语言，描述了拉美变革时一个家族成员为了独立和生存的不懈斗争。而俞敏洪认为，实际上它同《红楼梦》一样，都是写尽人生沧桑的书。</p>
 <h1 id="原文链接">原文链接</h1>
 <p><a href="http://www.kuqin.com/shuoit/20160426/351728.html">跳转</a></p>
- </p>
-                      </div>
-                  </div>
 
-                  <div class="row">
-                      <div class="col-md-12 animate-box">
-                          
-                              <div class="next-post">
-                                  <div class="next">下一篇</div>
-                                  <a href="http://jumpalang.5a1.xyz/post/da-lao-shu-dan-er">
-                                      <h3 class="post-title">
-                                          大佬书单（二）
-                                      </h3>
-                                  </a>
-                              </div>
-                          
-                      </div>
-                  </div>
-
-                  <div class="row">
-                      <div class="col-md-12 animate-box">
-                          
-                              
-                                  <div id="gitalk-container"></div>
-                              
-
-                              
-                          
-                      </div>
-                  </div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="http://jumpalang.5a1.xyz/tag/booklist" class="tag">
+                    书单
+                  </a>
+                
               </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="http://jumpalang.5a1.xyz/post/da-lao-shu-dan-er">
+                  <h3 class="post-title">
+                    大佬书单（二）
+                  </h3>
+                </a>
+              </div>
+            
 
-          </article>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
       </div>
-  </div>
+    </div>
 
-    
-<footer id="fh5co-footer">
-  <p><span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
-</footer>
-
-
-    
-<!-- jQuery -->
-<script src="http://jumpalang.5a1.xyz/media/scripts/_vendors/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="http://jumpalang.5a1.xyz/media/scripts/_vendors/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="http://jumpalang.5a1.xyz/media/scripts/_vendors/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="http://jumpalang.5a1.xyz/media/scripts/_vendors/jquery.waypoints.min.js"></script>
-<!-- Main JS -->
-<script src="http://jumpalang.5a1.xyz/media/scripts/_vendors/main.js"></script>
-<!-- Md5 Min JS -->
-<script src="http://jumpalang.5a1.xyz/media/scripts/_vendors/md5.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script type="application/javascript">
-    hljs.initHighlightingOnLoad();
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
 
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
 
-    
-        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-        <script>
+      var gitalk = new Gitalk({
+        clientID: 'dd6b58508cc9af58fc1c',
+        clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
+        repo: 'JumpAlang.github.io',
+        owner: 'JumpAlang',
+        admin: ['JumpAlang'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
 
-            var gitalk = new Gitalk({
-                clientID: 'dd6b58508cc9af58fc1c',
-                clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
-                repo: 'JumpAlang.github.io',
-                owner: 'JumpAlang',
-                admin: ['JumpAlang'],
-                id: md5(location.pathname),      // Ensure uniqueness and length less than 50
-                distractionFreeMode: false  // Facebook-like distraction free mode
-            })
+      gitalk.render('gitalk-container')
 
-            gitalk.render('gitalk-container')
+    </script>
+  
 
-        </script>
-    
-
-    
+  
 
 
 
