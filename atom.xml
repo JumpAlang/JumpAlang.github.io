@@ -2,11 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://jumpalang.5a1.xyz</id>
     <title>Jump!Alang</title>
-    <updated>2019-07-25T17:00:36.214Z</updated>
+    <updated>2019-07-25T17:05:00.974Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://jumpalang.5a1.xyz"/>
     <link rel="self" href="http://jumpalang.5a1.xyz/atom.xml"/>
-    <subtitle>永远年轻！永远热泪盈眶！</subtitle>
     <logo>http://jumpalang.5a1.xyz/images/avatar.png</logo>
     <icon>http://jumpalang.5a1.xyz/favicon.ico</icon>
     <rights>All rights reserved 2019, Jump!Alang</rights>
