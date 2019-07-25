@@ -1,146 +1,189 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" >
-
-<title>标签列表 | Jump!Alang</title>
-<meta name="description" content="永远年轻！永远热泪盈眶！">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564053205519">
+<html lang="zh-CN">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jump!Alang</title>	
+</style>
 <link rel="stylesheet" href="http://jumpalang.5a1.xyz/styles/main.css">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='http://jumpalang.5a1.xyz/media/scripts/script.js'></script>
+
+<style type="text/css">
+header {
+    text-align: center;
+    padding: 120px 0px 40px 0px;
+    background: #515865 center no-repeat;
+    font-size: 16px;
+    color: #fff;
+    background-size: cover;
+    background-image:url(
+			http://jumpalang.two3.cn/image/%E9%A3%8E%E8%BD%A6%E5%B2%9B-%E5%85%A8%E6%99%AF.jpg
+			);
+}
+		</style>
+
+</head>
+<body class="post-template-default single single-post postid-70 single-format-standard">
+    <div id="wrapper">
+        <!-- topbar -->
+			<header id="header headerimg" class="site-header" style="background-image:url(
+			
+			http://jumpalang.two3.cn/image/%E9%A3%8E%E8%BD%A6%E5%B2%9B-%E5%85%A8%E6%99%AF.jpg
+			
+			)">
+			<div class="site-branding">
+									<h1 class="site-title"><a href="http://jumpalang.5a1.xyz" rel="home">Jump!Alang</a></h1>
+										
+					<h2 class="site-description">永远年轻！永远热泪盈眶！</h2>
+										
+							</div>
+			<nav id="nav-wrapper">
+				<div class="container">
+					<div class="nav-toggle">
+						<div class="bars">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+						</div>
+					</div><!-- /nav-toggle -->
+					<div class="clear"></div>
+					<ul id="" class="vtmenu">
+		 
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/"> 首页</a></li>
+	
+    
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/archives"> 所有</a></li>
+	
+    
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/tags"> 标签</a></li>
+	
+    
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/post/about"> 关于</a></li>
+	
+    
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/post/world"> 世界</a></li>
+	
+    
+
+</ul>
+</li>		
+		
+</ul>				</div>
+			</nav><!-- #navigation -->
+
+<div class="jingge">
 
 
+    
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    
+			
+<a  href="jumpalang.github.com" target="_blank" ><i class="iconfont icon-github"></i></a>
+ 
+    
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        </header><!-- #masthead -->
+
+		<div id="content" class="container">
+			<div class="row">
+	<div class="col-md-8 site-main">
+	<script type="text/javascript">
+      $(document).ready(function() {
+         var tags_a = $("#tags a");
+         tags_a.each(function(){
+             var x = 2;
+             var y = 0;
+             var rand = parseInt(Math.random() * (x - y + 1) + y);
+             $(this).addClass("tags"+rand);
+          });
+      })   
+   </script>					
+<!-- #post-## -->
+	
+	 
 
 
-
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="http://jumpalang.5a1.xyz">
-        <img src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564053205519" class="site-logo">
-        <h1 class="site-title">Jump!Alang</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
+		 <div class="w95" id="tags">
+			 
+        <a href='http://jumpalang.5a1.xyz/tag/think'>感悟</a>
+         
+        <a href='http://jumpalang.5a1.xyz/tag/summary'>摘抄</a>
+         
+        <a href='http://jumpalang.5a1.xyz/tag/spring'>spring</a>
+         
+        <a href='http://jumpalang.5a1.xyz/tag/book'>书籍</a>
+         
+        <a href='http://jumpalang.5a1.xyz/tag/booklist'>书单</a>
+         
+        <a href='http://jumpalang.5a1.xyz/tag/music'>音乐</a>
+         
+        <a href='http://jumpalang.5a1.xyz/tag/science'>科普</a>
+         
+        <a href='http://jumpalang.5a1.xyz/tag/study'>学习方法</a>
+         
+        <a href='http://jumpalang.5a1.xyz/tag/movie'>电影</a>
         
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            所有
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-        
-          <a href="/post/world" class="site-nav" target="_blank">
-            世界
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      永远年轻！永远热泪盈眶！
-    </div>
-    <div class="site-footer">
-      <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
-            
-              <a class="tag" href="http://jumpalang.5a1.xyz/tag/think">感悟</a>
-            
-              <a class="tag" href="http://jumpalang.5a1.xyz/tag/summary">摘抄</a>
-            
-              <a class="tag" href="http://jumpalang.5a1.xyz/tag/spring">spring</a>
-            
-              <a class="tag" href="http://jumpalang.5a1.xyz/tag/book">书籍</a>
-            
-              <a class="tag" href="http://jumpalang.5a1.xyz/tag/booklist">书单</a>
-            
-              <a class="tag" href="http://jumpalang.5a1.xyz/tag/music">音乐</a>
-            
-              <a class="tag" href="http://jumpalang.5a1.xyz/tag/science">科普</a>
-            
-              <a class="tag" href="http://jumpalang.5a1.xyz/tag/study">学习方法</a>
-            
-              <a class="tag" href="http://jumpalang.5a1.xyz/tag/movie">电影</a>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
+    </div>		 
 
 
 
+		
+		
+			</div><!-- .site-main -->
+        
 
-  </body>
+
+			</div><!-- #end row-->
+		</div><!-- #end container-->
+
+		
+		 	<footer id="colophon" class="site-footer">
+
+			<div class="container">
+	
+				<div class="copyright"><span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br>Theme:   <a href="https://github.com/alterfang/gridea-theme-pan" target="_blank" title="Pan"><span>Pan</span></a>. Powered by <a href="https://gridea.dev/" target="_blank" title="Gridea"><span>Gridea</span></a></div>		
+			</div><!-- .container -->
+		
+		</footer><!-- #colophon -->
+
+</div><!-- #end wrapper-->
+
+<script src="https://cdn.bootcss.com/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+<script type='text/javascript' src='http://jumpalang.5a1.xyz/media/scripts/marlin-scripts.js'></script>
+
+</body>
 </html>
