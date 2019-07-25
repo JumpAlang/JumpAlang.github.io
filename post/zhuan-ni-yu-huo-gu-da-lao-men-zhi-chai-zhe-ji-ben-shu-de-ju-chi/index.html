@@ -1,113 +1,141 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>(转)你与硅谷大佬们，只差这几本书的距离！ | Jump!Alang</title>
-<meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564064806971">
+<meta name="description" content="永远年轻！永远热泪盈眶！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564066242309">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://jumpalang.5a1.xyz/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
+    <style>
+    	.toc-container .markdownIt-TOC {
+		position: sticky !important;
+		top: 32px !important;
+		width: 200px !important;
+		font-size: 12px !important;
+	}
+	.toc-container ul {
+		list-style: none !important; 
+	}
+	.toc-container li {
+		padding-left: 16px !important;
+	}
+	.toc-container .markdownIt-TOC:before {
+		content: "";
+		position: absolute !important;
+		top: 0 !important;
+		left: 8px !important;
+		bottom: 0 !important;
+		width: 1px !important;
+		background-color: #ebedef !important;
+		opacity: 0.5 !important;
+	}
+    </style>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://jumpalang.5a1.xyz">
-  <img class="avatar" src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564064806971" alt="">
-  </a>
-  <h1 class="site-title">
-    Jump!Alang
-  </h1>
-  <p class="site-description">
-    永远年轻！永远热泪盈眶！
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://jumpalang.5a1.xyz">
+        <img src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564066242309" class="site-logo">
+        <h1 class="site-title">Jump!Alang</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            所有
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          所有
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="/post/world" class="site-nav" target="_blank">
+            世界
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="/post/world" class="menu" target="_blank">
-          世界
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-        <a href="https://github.com/JumpAlang" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+        
       
-    
+        
       
-    
+        
       
-        <a href="http://weibo.com/JumpAlang" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
+        
       
-    
+        
       
-    
-      
-    
+    </div>
+    <div class="site-description">
+      永远年轻！永远热泪盈眶！
+    </div>
+    <div class="site-footer">
+      <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://jumpalang.5a1.xyz/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              (转)你与硅谷大佬们，只差这几本书的距离！
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-06-04
-              </span>
-              <span>
-                2 min read
-              </span>
-              
-                <a href="http://jumpalang.5a1.xyz/tag/booklist" class="post-tag">
-                  # 书单
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">(转)你与硅谷大佬们，只差这几本书的距离！</h2>
+            <div class="post-date">2019-06-04</div>
             
-              <img class="post-feature-image" src="http://jumpalang.5a1.xyz/post-images/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi.webp" alt="">
+              <div class="feature-container" style="background-image: url('http://jumpalang.5a1.xyz/post-images/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi.webp')">
+              </div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>如果你正思索在职业生涯中实现自己的价值或寻找突破，那么养成阅读习惯，并接触领域内最前沿的书籍，是帮助你在短时间内获取更多的信息有效方式。</p>
+            <div class="post-content">
+              <p>如果你正思索在职业生涯中实现自己的价值或寻找突破，那么养成阅读习惯，并接触领域内最前沿的书籍，是帮助你在短时间内获取更多的信息有效方式。</p>
 <p>为了让自己有更高的阅读量，马克·扎克伯格、比尔·盖茨这些科技大牛，甚至为自己建立了私人图书馆。比尔·盖茨一直保持着每年50本书以上的阅读量......</p>
 <p>这些顶尖的投资者和创业者需要超越现有的文化范式去探索，思考普通人的视野忽视了什么，下一步可能会发生什么，什么又是恒久不变的。</p>
 <p>在2019年4月23日世界读书日到来之际，总结了一些硅谷大佬在采访和社交媒体中被反复提及、引用和推荐的书。这些书往往意在揭示关于人性中的隐性思考模式和深层状况。</p>
@@ -265,8 +293,8 @@ Zero to One:</p>
 <h1 id="原文链接">原文链接</h1>
 <p><a href="https://mp.weixin.qq.com/s?__biz=MzI4MzA1Mzg0Mg==&amp;mid=2649661379&amp;idx=1&amp;sn=0b044896188f8fb4306790bbf2e0d06e&amp;chksm=f38aa5bec4fd2ca8131b41bb4f60f1be5af62e6ff22a20b510fe5ecccfa2e6b0b6957453a966&amp;token=449027753&amp;lang=zh_CN#rd">跳转</a></p>
 
-              </div>
-              <div class="toc-container">
+            </div>
+	     <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li><a href="#%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8%E6%9F%A5%E7%90%86%E8%8A%92%E6%A0%BC%E6%99%BA%E6%85%A7%E7%AE%B4%E8%A8%80%E5%BD%95">《穷查理宝典：查理·芒格智慧箴言录》</a></li>
 <li><a href="#%E5%88%AB%E9%97%B9%E4%BA%86%E8%B4%B9%E6%9B%BC%E5%85%88%E7%94%9F">《别闹了，费曼先生》</a></li>
@@ -282,97 +310,82 @@ Zero to One:</p>
 </ul>
 
               </div>
-            </div>
-          </article>
-        </div>
+            
+              <div class="tag-container">
+                
+                  <a href="http://jumpalang.5a1.xyz/tag/booklist" class="tag">
+                    书单
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="http://jumpalang.5a1.xyz/post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo">
+                  <h3 class="post-title">
+                    (转)为什么这些书影响了马云、乔布斯一生，你却没有读过？
+                  </h3>
+                </a>
+              </div>
+            
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="http://jumpalang.5a1.xyz/post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo">
-              <h3 class="post-title">
-                (转)为什么这些书影响了马云、乔布斯一生，你却没有读过？
-              </h3>
-            </a>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
-        
 
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'dd6b58508cc9af58fc1c',
-    clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
-    repo: 'JumpAlang.github.io',
-    owner: 'JumpAlang',
-    admin: ['JumpAlang'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="http://jumpalang.5a1.xyz/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
-</script>
-
+        </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dd6b58508cc9af58fc1c',
+        clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
+        repo: 'JumpAlang.github.io',
+        owner: 'JumpAlang',
+        admin: ['JumpAlang'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
