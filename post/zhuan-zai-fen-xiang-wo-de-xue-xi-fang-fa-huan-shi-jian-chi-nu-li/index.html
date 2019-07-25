@@ -1,115 +1,158 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>(转载)分享我的学习方法——还是坚持+努力 | Jump!Alang</title>
-<meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564060914552">
+<meta name="description" content="永远年轻！永远热泪盈眶！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564062305521">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://jumpalang.5a1.xyz/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
+    <style>
+    .toc-container {
+  .markdownIt-TOC {
+    position: sticky;
+    top: 32px;
+    width: 200px;
+    font-size: 12px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 8px;
+      bottom: 0;
+      width: 1px;
+      background-color: #ebedef;
+      opacity: .5;
+    }
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    padding-left: 16px;
+    a {
+      color: @oc-gray-6;
+      padding: 4px;
+      display: block;
+      transition: all 0.3s;
+      &:hover {
+        background: #fafafa;
+      }
+      &.current {
+        color: @main-color;
+        background: #fafafa;
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .toc-container {
+    display: none;
+  }
+}
+    </style>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://jumpalang.5a1.xyz">
-  <img class="avatar" src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564060914552" alt="">
-  </a>
-  <h1 class="site-title">
-    Jump!Alang
-  </h1>
-  <p class="site-description">
-    永远年轻！永远热泪盈眶！
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://jumpalang.5a1.xyz">
+        <img src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564062305521" class="site-logo">
+        <h1 class="site-title">Jump!Alang</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            所有
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          所有
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="/post/world" class="site-nav" target="_blank">
+            世界
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="/post/world" class="menu" target="_blank">
-          世界
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-        <a href="https://github.com/JumpAlang" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+        
       
-    
+        
       
-    
+        
       
-        <a href="http://weibo.com/JumpAlang" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
+        
       
-    
+        
       
-    
-      
-    
+    </div>
+    <div class="site-description">
+      永远年轻！永远热泪盈眶！
+    </div>
+    <div class="site-footer">
+      <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://jumpalang.5a1.xyz/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              (转载)分享我的学习方法——还是坚持+努力
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-04-18
-              </span>
-              <span>
-                2 min read
-              </span>
-              
-                <a href="http://jumpalang.5a1.xyz/tag/study" class="post-tag">
-                  # 学习方法
-                </a>
-              
-                <a href="http://jumpalang.5a1.xyz/tag/summary" class="post-tag">
-                  # 摘抄
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">(转载)分享我的学习方法——还是坚持+努力</h2>
+            <div class="post-date">2019-04-18</div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <blockquote>
+            <div class="post-content">
+              <blockquote>
 <p>本文转载自：开涛博客 <a target="_blank" href="https://jinnianshilongnian.iteye.com/blog/1709268">链接</a></p>
 </blockquote>
 <!--more-->
@@ -260,8 +303,8 @@ NekoHTML<br>
 <p><code>学习没有捷径，我不聪明，但我刻苦；刻苦还是不够，得善于思考和总结。学习不要怕丢人，学到手是自己的，学会厚脸皮。</code></p>
 <p>希望对需要的人有所帮助，每个人都有自己的学习方法，可以借鉴学习，但不要临摹，适合自己的才是最好的。</p>
 
-              </div>
-              <div class="toc-container">
+            </div>
+	     <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li><a href="#%E6%88%91%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95">我的学习方法</a>
 <ul>
@@ -284,97 +327,86 @@ NekoHTML<br>
 </ul>
 
               </div>
-            </div>
-          </article>
-        </div>
+            
+              <div class="tag-container">
+                
+                  <a href="http://jumpalang.5a1.xyz/tag/study" class="tag">
+                    学习方法
+                  </a>
+                
+                  <a href="http://jumpalang.5a1.xyz/tag/summary" class="tag">
+                    摘抄
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="http://jumpalang.5a1.xyz/post/gan-wu-ji-zhai-chao">
+                  <h3 class="post-title">
+                    感悟及摘抄
+                  </h3>
+                </a>
+              </div>
+            
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="http://jumpalang.5a1.xyz/post/gan-wu-ji-zhai-chao">
-              <h3 class="post-title">
-                感悟及摘抄
-              </h3>
-            </a>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
-        
 
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'dd6b58508cc9af58fc1c',
-    clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
-    repo: 'JumpAlang.github.io',
-    owner: 'JumpAlang',
-    admin: ['JumpAlang'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="http://jumpalang.5a1.xyz/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
-</script>
-
+        </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dd6b58508cc9af58fc1c',
+        clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
+        repo: 'JumpAlang.github.io',
+        owner: 'JumpAlang',
+        admin: ['JumpAlang'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
