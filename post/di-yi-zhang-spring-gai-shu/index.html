@@ -1,119 +1,144 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>第一章-spring概述-精通spring4.x企业应用开发实战 | Jump!Alang</title>
-<meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564060670886">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>第一章-spring概述-精通spring4.x企业应用开发实战 | Jump!Alang</title>	
+</style>
 <link rel="stylesheet" href="http://jumpalang.5a1.xyz/styles/main.css">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='http://jumpalang.5a1.xyz/media/scripts/script.js'></script>
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<style type="text/css">
+header {
+    text-align: center;
+    padding: 120px 0px 40px 0px;
+    background: #515865 center no-repeat;
+    font-size: 16px;
+    color: #fff;
+    background-size: cover;
+    background-image:url(
+			http://jumpalang.two3.cn/image/%E9%A3%8E%E8%BD%A6%E5%B2%9B-%E5%85%A8%E6%99%AF.jpg
+			);
+}
+		</style>
+
+ 	
+</head>
+<body class="post-template-default single single-post postid-70 single-format-standard">
+    <div id="wrapper">
+        
+			
+		<header id="header ddq" class="site-header" 
+		
+		>
+			<div class="site-branding">
+									<h1 class="site-title"><a href="http://jumpalang.5a1.xyz" rel="home">Jump!Alang</a></h1>
+										
+					<h2 class="site-description">永远年轻！永远热泪盈眶！</h2>
+										
+							</div>
+			<nav id="nav-wrapper">
+				<div class="container">
+					<div class="nav-toggle">
+						<div class="bars">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+						</div>
+					</div><!-- /nav-toggle -->
+					<div class="clear"></div>
+					<ul id="" class="vtmenu">
+		 
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/"> 首页</a></li>
+	
+    
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/archives"> 所有</a></li>
+	
+    
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/tags"> 标签</a></li>
+	
+    
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/post/about"> 关于</a></li>
+	
+    
+     			
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+	 
+	<a  href="/post/world"> 世界</a></li>
+	
+    
+
+</ul>
+</li>		
+		
+</ul>				</div>
+			</nav><!-- #navigation -->
+						<div class="jingge">
 
 
+    
 
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://jumpalang.5a1.xyz">
-  <img class="avatar" src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564060670886" alt="">
-  </a>
-  <h1 class="site-title">
-    Jump!Alang
-  </h1>
-  <p class="site-description">
-    永远年轻！永远热泪盈眶！
-  </p>
-  <div class="menu-container">
     
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
+			
+<a  href="jumpalang.github.com" target="_blank" ><i class="iconfont icon-github"></i></a>
+ 
     
-      
-        <a href="/archives" class="menu">
-          所有
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="/post/world" class="menu" target="_blank">
-          世界
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-        <a href="https://github.com/JumpAlang" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      
-    
-      
-    
-      
-        <a href="http://weibo.com/JumpAlang" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              第一章-spring概述-精通spring4.x企业应用开发实战
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-07-09
-              </span>
-              <span>
-                1 min read
-              </span>
-              
-                <a href="http://jumpalang.5a1.xyz/tag/spring" class="post-tag">
-                  # spring
-                </a>
-              
-                <a href="http://jumpalang.5a1.xyz/tag/summary" class="post-tag">
-                  # 摘抄
-                </a>
-              
-                <a href="http://jumpalang.5a1.xyz/tag/book" class="post-tag">
-                  # 书籍
-                </a>
-              
-            </div>
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h2 id="13-spring带给我们什么">1.3 Spring带给我们什么</h2>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        </header><!-- #masthead -->
+
+		<div id="content" class="container">
+			<div class="row">
+	<div class="col-md-8 site-main">
+				
+<article id="post-70" class="post-70 post type-post status-publish format-standard hentry category-5 tag-10 tag-9 tag-11">
+
+	
+	                      
+		<div class="entry-content">
+			<h1 class="entry-title">第一章-spring概述-精通spring4.x企业应用开发实战</h1>
+<div class="entry-meta">
+	
+	           <a href="http://jumpalang.5a1.xyz/post/di-yi-zhang-spring-gai-shu">
+							 <i class="iconfont icon-rili"> 
+							</i> 2019-07-09</a> 
+			
+</span>
+													 
+		</div>
+                  
+			<div class="entry-summary">
+				<p><h2 id="13-spring带给我们什么">1.3 Spring带给我们什么</h2>
 <ol>
 <li>Spring的好处（摘自第6页）</li>
 </ol>
@@ -145,35 +170,38 @@ Spring自己提供了一个完整的类似于Struts的MVC框架，称为Spring M
 <li>WebSocket<br>
 WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑到客户端（浏览器）和服务器之间的高频和低时延消息交换。一般的应用场景有在线交易、游戏、协作、数据可视化等。</li>
 </ol>
+</p>
+							</div>
+	<div class="vt-post-tags">
+ 
+				<a href="http://jumpalang.5a1.xyz/tag/spring" rel="tag">spring</a>	
+				 
+				<a href="http://jumpalang.5a1.xyz/tag/summary" rel="tag">摘抄</a>	
+				 
+				<a href="http://jumpalang.5a1.xyz/tag/book" rel="tag">书籍</a>	
+				 
+					</div>						
+<nav class="navigation3 post-navigation3" role="navigation">
+		
+		<div class="nav-links3">
+      
+		<div class="nav-previous3"><a href="http://jumpalang.5a1.xyz/post/zhuan-zai-wei-shi-me-jue-da-bu-fen-ren-du-diao-jin-liao-keng-li" rel="prev"> (转载)为什么绝大部分人都掉进了坑里</a></div>
+		 
+		 
+		<div class="nav-next3"><a href="http://jumpalang.5a1.xyz/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng" rel="next"> (转载)怎样向上跨越阶层</a></div>
+		
+		</div>
+	</nav>
+		</div>
+		
+ 
+		
+</article>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#13-spring%E5%B8%A6%E7%BB%99%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88">1.3 Spring带给我们什么</a></li>
-<li><a href="#14-spring%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84">1.4 Spring体系结构</a></li>
-</ul>
-</li>
-</ul>
+<div id="marlin_lite_about_widget-2" class="widget marlin_lite_about_widget">
+			<h4 class="widget-title">评论</h4>	
 
-              </div>
-            </div>
-          </article>
-        </div>
-
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
-              <h3 class="post-title">
-                (转载)怎样向上跨越阶层
-              </h3>
-            </a>
-          </div>
-        
-
-        
+			 
           
             <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
@@ -197,58 +225,121 @@ WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑�
 </script>
 
           
-
           
         
+   
+  
+ 
 
-        <div class="site-footer">
-  <span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="http://jumpalang.5a1.xyz/atom.xml" target="_blank">RSS</a>
+		</div>
+
+			</div>
+			
+
+
+<div class="col l3 hide-on-med-and-down">
+	
+        <div class="toc-widget">
+			
+            <div class="toc-title"></div>
+			
+            <div id="toc-content">
+			
+			
+			</div>
+        </div>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '.entry-summary',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('.entry-summary').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>										 
+
+ 
+       
+
+
+			</div>
+		</div>
+
+		
+		 	<footer id="colophon" class="site-footer">
+
+			<div class="container">
+	
+				<div class="copyright"><span style="color:black;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br>Theme:   <a href="https://github.com/alterfang/gridea-theme-pan" target="_blank" title="Pan"><span>Pan</span></a>. Powered by <a href="https://gridea.dev/" target="_blank" title="Gridea"><span>Gridea</span></a></div>		
+			</div><!-- .container -->
+		
+		</footer><!-- #colophon -->
+
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+<script src="https://cdn.bootcss.com/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+<script type='text/javascript' src='http://jumpalang.5a1.xyz/media/scripts/marlin-scripts.js'></script>
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
+		<script data-no-instant>
+    (function ($) {
+        $.extend({
+            adamsOverload: function () {
+                $('.navigation:eq(0)').remove();
+                $("").attr("rel" , "external");
+                $("a[rel='external'],a[rel='external nofollow']").attr("target","_blank");
+                $("a.vi").attr("rel" , "");
+                $.viewImage({
+                    'target'  : 'img',
+                    'exclude' : '.vsmile-icons img,.gallery img',
+                    'delay'   : 300
+                });
+                $.lately({
+                    'target' : '.commentmetadata a,.infos time,.post-list time'
+                });
+                prettyPrint();
+                
+                $('ul.links li a').each(function(){
+                    if($(this).parent().find('.bg').length==0){
+                        $(this).parent().append('<!---<div class="bg" style="background-image:url(https://c3.glgoo.top/s2/favicons?domain='+$(this).attr("href")+')"></div>--->')
+                    }
+                });
+            }
+        });
+    })(jQuery);
+    jQuery.adamsOverload();
 </script>
 
-      </div>
-    </div>
-  </body>
+</body>
 </html>
