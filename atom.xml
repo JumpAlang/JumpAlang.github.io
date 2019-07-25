@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://jumpalang.5a1.xyz</id>
     <title>Jump!Alang</title>
-    <updated>2019-07-25T12:20:26.427Z</updated>
+    <updated>2019-07-25T12:23:55.486Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://jumpalang.5a1.xyz"/>
     <link rel="self" href="http://jumpalang.5a1.xyz/atom.xml"/>
@@ -98,7 +98,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[（转载）为什么绝大部分人都掉进了坑里]]></title>
+        <title type="html"><![CDATA[(转载)为什么绝大部分人都掉进了坑里]]></title>
         <id>http://jumpalang.5a1.xyz/post/zhuan-zai-wei-shi-me-jue-da-bu-fen-ren-du-diao-jin-liao-keng-li</id>
         <link href="http://jumpalang.5a1.xyz/post/zhuan-zai-wei-shi-me-jue-da-bu-fen-ren-du-diao-jin-liao-keng-li">
         </link>
@@ -200,7 +200,7 @@ WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑�
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[（转载）怎样向上跨越阶层]]></title>
+        <title type="html"><![CDATA[(转载)怎样向上跨越阶层]]></title>
         <id>http://jumpalang.5a1.xyz/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng</id>
         <link href="http://jumpalang.5a1.xyz/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
         </link>
@@ -274,7 +274,7 @@ WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑�
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[《这个世界既残酷又温柔》摘抄]]></title>
+        <title type="html"><![CDATA[摘抄《这个世界既残酷又温柔》]]></title>
         <id>http://jumpalang.5a1.xyz/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao</id>
         <link href="http://jumpalang.5a1.xyz/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
         </link>
@@ -326,7 +326,7 @@ WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑�
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[（转）你与硅谷大佬们，只差这几本书的距离！]]></title>
+        <title type="html"><![CDATA[(转)你与硅谷大佬们，只差这几本书的距离！]]></title>
         <id>http://jumpalang.5a1.xyz/post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi</id>
         <link href="http://jumpalang.5a1.xyz/post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">
         </link>
@@ -491,7 +491,7 @@ Zero to One:</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[（转）为什么这些书影响了马云、乔布斯一生，你却没有读过？]]></title>
+        <title type="html"><![CDATA[(转)为什么这些书影响了马云、乔布斯一生，你却没有读过？]]></title>
         <id>http://jumpalang.5a1.xyz/post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo</id>
         <link href="http://jumpalang.5a1.xyz/post/zhuan-wei-shi-me-zhe-xie-shu-ying-xiang-liao-ma-yun-qiao-bu-si-yi-sheng-ni-que-mei-you-du-guo">
         </link>
