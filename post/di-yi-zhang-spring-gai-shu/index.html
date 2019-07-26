@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564128434001">
+<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1564128520565">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://jumpalang.5a1.xyz/styles/main.css">
 
@@ -78,7 +78,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="http://jumpalang.5a1.xyz">
-        <img src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564128434001" class="site-logo">
+        <img src="http://jumpalang.5a1.xyz/images/avatar.png?v=1564128520565" class="site-logo">
         <h1 class="site-title">Jump!Alang</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -321,6 +321,7 @@ var app = new Vue({
     });
   });
  }else{
+  console.log(1);
   let wrapper = document.querySelectorAll(".post-content-wrapper");
   wrapper[0].style.display='block';
  }
