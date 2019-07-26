@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://jumpalang.5a1.xyz</id>
     <title>Jump!Alang</title>
-    <updated>2019-07-26T08:56:32.527Z</updated>
+    <updated>2019-07-26T09:02:28.386Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://jumpalang.5a1.xyz"/>
     <link rel="self" href="http://jumpalang.5a1.xyz/atom.xml"/>
@@ -315,13 +315,14 @@ WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑�
 <li>我们生活在一个物质极为丰富、科技高度发达的时代，我们的使命是努力奋斗让宇宙万物都能够更好地满足人的需求，而不是压抑自己的需求。</li>
 <li>享受性活动的快乐本质上是不可持续的，而只有创造性活动的快乐才是持续的。</li>
 <li>爱情其实是两个独立灵魂的结盟。</li>
-<li>制定OKR,即目标和关键结果。目标是比较长远的，关键结果是眼前的。<br>
-—————————————————————————————————<br>
-读后感：</li>
-<li>能去大城市，尽量去大城市。</li>
-<li>教育是一个贵人，相当于让你脱离内卷化，注入外部资源。</li>
-<li>运气青睐于降临到那些敢于冒险，敢于拥抱不确定性的人身上。</li>
+<li>制定OKR,即目标和关键结果。目标是比较长远的，关键结果是眼前的。</li>
 </ol>
+<blockquote>
+<p>读后感:<br>
+能去大城市，尽量去大城市。*<br>
+教育是一个贵人，相当于让你脱离内卷化，注入外部资源。<br>
+运气青睐于降临到那些敢于冒险，敢于拥抱不确定性的人身上。</p>
+</blockquote>
 ]]></content>
     </entry>
     <entry>
