@@ -1,399 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta name="google-site-verification" content="uoXyxC0zAef0vcHWpdTgbpEL_tryheYsOnA4J8TISds" />
     <meta charset="utf-8" >
 
 <title>Jump!Alang</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1565536427389">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="http://jumpalang.5a1.xyz/favicon.ico?v=1565536442789">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://jumpalang.5a1.xyz/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="http://jumpalang.5a1.xyz">Jump!Alang</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                所有
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/world" class="menu" target="_blank">
-                世界
-              </a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
+    <div id="app" class="main">
 
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/mou-pao-xuan-ze-cha-ru-kuai-su-pai-xu-java-suan-fa">冒泡、选择、插入、快速排序JAVA算法</a>
-    </h2>
-    <p class="article-meta">
-      2019-08-11
-      
-        <a href="http://jumpalang.5a1.xyz/tag/algorithm" class="badge ">
-          算法
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/java" class="badge secondary">
-          java
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>熟能生巧！</p>
-
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/mou-pao-xuan-ze-cha-ru-kuai-su-pai-xu-java-suan-fa" class="readmore-link">
-        <button>
-          Read More
-        </button>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://jumpalang.5a1.xyz">
+        <img src="http://jumpalang.5a1.xyz/images/avatar.png?v=1565536442789" class="site-logo">
+        <h1 class="site-title">Jump!Alang</h1>
       </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/java-mian-shi-ti">JAVA面试题</a>
-    </h2>
-    <p class="article-meta">
-      2019-08-11
-      
-        <a href="http://jumpalang.5a1.xyz/tag/java" class="badge secondary">
-          java
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <blockquote>
-<p>机会是留给有准备的人！</p>
-</blockquote>
-
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/java-mian-shi-ti" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/xiao-kou-chang-kai-hao-cai-zi-ran-lai">笑口常开，好彩自然来</a>
-    </h2>
-    <p class="article-meta">
-      2019-08-07
-      
-        <a href="http://jumpalang.5a1.xyz/tag/smile" class="badge ">
-          笑口常开
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <blockquote>
-<p>小时候父母吵架闹到要离婚的地步时，我挺身而出劝解道：“难道你们就不能打一顿孩子消消气？非要闹到离婚不可？弟弟还那么小，你们打他，他又不会记仇！”</p>
-</blockquote>
-
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/xiao-kou-chang-kai-hao-cai-zi-ran-lai" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/idea-kuai-jie-jian">idea快捷键</a>
-    </h2>
-    <p class="article-meta">
-      2019-07-26
-      
-        <a href="http://jumpalang.5a1.xyz/tag/idea_strategy" class="badge warning">
-          idea技巧
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>此份快捷键是从myeclipse移植过来的，from<code>尚硅谷·宋红康 设置版</code></p>
-
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/idea-kuai-jie-jian" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-gao-kao-wan-liao-zen-yang-xuan-zhuan-ye-cai-neng-yue-xin-ba-wan">(转载)高考完了，怎样选专业才能月薪八万</a>
-    </h2>
-    <p class="article-meta">
-      2019-07-11
-      
-        <a href="http://jumpalang.5a1.xyz/tag/think" class="badge success">
-          感悟
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/summary" class="badge secondary">
-          摘抄
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <blockquote>
-<p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
-</blockquote>
-
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-gao-kao-wan-liao-zen-yang-xuan-zhuan-ye-cai-neng-yue-xin-ba-wan" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-wei-shi-me-jue-da-bu-fen-ren-du-diao-jin-liao-keng-li">(转载)为什么绝大部分人都掉进了坑里</a>
-    </h2>
-    <p class="article-meta">
-      2019-07-11
-      
-        <a href="http://jumpalang.5a1.xyz/tag/think" class="badge secondary">
-          感悟
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/summary" class="badge ">
-          摘抄
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <blockquote>
-<p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
-</blockquote>
-
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-wei-shi-me-jue-da-bu-fen-ren-du-diao-jin-liao-keng-li" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/di-yi-zhang-spring-gai-shu">第一章-spring概述-精通spring4.x企业应用开发实战</a>
-    </h2>
-    <p class="article-meta">
-      2019-07-09
-      
-        <a href="http://jumpalang.5a1.xyz/tag/spring" class="badge ">
-          spring
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/summary" class="badge secondary">
-          摘抄
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/book" class="badge warning">
-          书籍
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/di-yi-zhang-spring-gai-shu" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">(转载)怎样向上跨越阶层</a>
-    </h2>
-    <p class="article-meta">
-      2019-07-05
-      
-        <a href="http://jumpalang.5a1.xyz/tag/think" class="badge warning">
-          感悟
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/summary" class="badge ">
-          摘抄
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
-
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">摘抄《这个世界既残酷又温柔》</a>
-    </h2>
-    <p class="article-meta">
-      2019-07-04
-      
-        <a href="http://jumpalang.5a1.xyz/tag/think" class="badge warning">
-          感悟
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/summary" class="badge ">
-          摘抄
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/book" class="badge warning">
-          书籍
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="http://jumpalang.5a1.xyz/post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">(转)你与硅谷大佬们，只差这几本书的距离！</a>
-    </h2>
-    <p class="article-meta">
-      2019-06-04
-      
-        <a href="http://jumpalang.5a1.xyz/tag/booklist" class="badge secondary">
-          书单
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="http://jumpalang.5a1.xyz/post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
-        </div>
-        
-        <div class="row flex-edges">
-  
-  
-    <a href="http://jumpalang.5a1.xyz/page/2/" class="paper-btn">
-      下一页
-    </a>
-  
-</div>
-
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
       </div>
+    </div>
+    <div>
       
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="http://jumpalang.5a1.xyz/images/avatar.png?v=1565536427389" class="no-responsive avatar">
-    <div class="text-muted"></div>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            所有
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="/post/world" class="site-nav" target="_blank">
+            世界
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
       
         
@@ -407,169 +85,211 @@
         
       
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/mou-pao-xuan-ze-cha-ru-kuai-su-pai-xu-java-suan-fa">冒泡、选择、插入、快速排序JAVA算法</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/java-mian-shi-ti">JAVA面试题</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/xiao-kou-chang-kai-hao-cai-zi-ran-lai">笑口常开，好彩自然来</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/idea-kuai-jie-jian">idea快捷键</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-gao-kao-wan-liao-zen-yang-xuan-zhuan-ye-cai-neng-yue-xin-ba-wan">(转载)高考完了，怎样选专业才能月薪八万</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-wei-shi-me-jue-da-bu-fen-ren-du-diao-jin-liao-keng-li">(转载)为什么绝大部分人都掉进了坑里</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/di-yi-zhang-spring-gai-shu">第一章-spring概述-精通spring4.x企业应用开发实战</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">(转载)怎样向上跨越阶层</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">摘抄《这个世界既残酷又温柔》</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="http://jumpalang.5a1.xyz/post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">(转)你与硅谷大佬们，只差这几本书的距离！</a>
-            </li>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="http://jumpalang.5a1.xyz/tag/algorithm" class="badge success">
-          算法
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/java" class="badge secondary">
-          java
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/smile" class="badge warning">
-          笑口常开
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/idea_strategy" class="badge secondary">
-          idea技巧
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/think" class="badge ">
-          感悟
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/summary" class="badge secondary">
-          摘抄
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/spring" class="badge ">
-          spring
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/book" class="badge secondary">
-          书籍
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/booklist" class="badge secondary">
-          书单
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/music" class="badge secondary">
-          音乐
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/science" class="badge secondary">
-          科普
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/study" class="badge ">
-          学习方法
-        </a>
-      
-        <a href="http://jumpalang.5a1.xyz/tag/movie" class="badge success">
-          电影
-        </a>
+    <div class="site-description">
       
     </div>
-  </div>
-  <div class="paper">
-    <span style="color:white;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://jumpalang.5a1.xyz/atom.xml" target="_blank">RSS</a>
+    <div class="site-footer">
+      <span style="color:white;">JumpAlang</span> ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://jumpalang.5a1.xyz/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/mou-pao-xuan-ze-cha-ru-kuai-su-pai-xu-java-suan-fa">
+                  <h2 class="post-title">冒泡、选择、插入、快速排序JAVA算法</h2>
+                </a>
+                <div class="post-date">
+                  2019-08-11
+                </div>
+                <div class="post-abstract">
+                  <p>熟能生巧！</p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/java-mian-shi-ti">
+                  <h2 class="post-title">JAVA面试题</h2>
+                </a>
+                <div class="post-date">
+                  2019-08-11
+                </div>
+                <div class="post-abstract">
+                  <blockquote>
+<p>机会是留给有准备的人！</p>
+</blockquote>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/xiao-kou-chang-kai-hao-cai-zi-ran-lai">
+                  <h2 class="post-title">笑口常开，好彩自然来</h2>
+                </a>
+                <div class="post-date">
+                  2019-08-07
+                </div>
+                <div class="post-abstract">
+                  <blockquote>
+<p>小时候父母吵架闹到要离婚的地步时，我挺身而出劝解道：“难道你们就不能打一顿孩子消消气？非要闹到离婚不可？弟弟还那么小，你们打他，他又不会记仇！”</p>
+</blockquote>
+
+                </div>
+              </div>
+              
+                <a class="right" href="http://jumpalang.5a1.xyz/post/xiao-kou-chang-kai-hao-cai-zi-ran-lai">
+                  <div class="feature-container" style="background-image: url('http://jumpalang.two3.cn/image/%E7%AC%94%E6%9E%B6%E5%B1%B1.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/idea-kuai-jie-jian">
+                  <h2 class="post-title">idea快捷键</h2>
+                </a>
+                <div class="post-date">
+                  2019-07-26
+                </div>
+                <div class="post-abstract">
+                  <p>此份快捷键是从myeclipse移植过来的，from<code>尚硅谷·宋红康 设置版</code></p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-gao-kao-wan-liao-zen-yang-xuan-zhuan-ye-cai-neng-yue-xin-ba-wan">
+                  <h2 class="post-title">(转载)高考完了，怎样选专业才能月薪八万</h2>
+                </a>
+                <div class="post-date">
+                  2019-07-11
+                </div>
+                <div class="post-abstract">
+                  <blockquote>
+<p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
+</blockquote>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-wei-shi-me-jue-da-bu-fen-ren-du-diao-jin-liao-keng-li">
+                  <h2 class="post-title">(转载)为什么绝大部分人都掉进了坑里</h2>
+                </a>
+                <div class="post-date">
+                  2019-07-11
+                </div>
+                <div class="post-abstract">
+                  <blockquote>
+<p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
+</blockquote>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/di-yi-zhang-spring-gai-shu">
+                  <h2 class="post-title">第一章-spring概述-精通spring4.x企业应用开发实战</h2>
+                </a>
+                <div class="post-date">
+                  2019-07-09
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng">
+                  <h2 class="post-title">(转载)怎样向上跨越阶层</h2>
+                </a>
+                <div class="post-date">
+                  2019-07-05
+                </div>
+                <div class="post-abstract">
+                  <p>本文转载自微信公众号<strong>九边</strong>，作者：<code>二号头目</code></p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
+                  <h2 class="post-title">摘抄《这个世界既残酷又温柔》</h2>
+                </a>
+                <div class="post-date">
+                  2019-07-04
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="http://jumpalang.5a1.xyz/post/lesslesszhe-ge-shi-jie-ji-can-ku-you-wen-rou-greatergreater-zhai-chao">
+                  <div class="feature-container" style="background-image: url('http://jumpalang.two3.cn/image/%E9%A3%8E%E8%BD%A6%E5%B2%9B-%E9%A3%8E%E8%BD%A62.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://jumpalang.5a1.xyz/post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">
+                  <h2 class="post-title">(转)你与硅谷大佬们，只差这几本书的距离！</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-04
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="http://jumpalang.5a1.xyz/post/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi">
+                  <div class="feature-container" style="background-image: url('http://jumpalang.5a1.xyz/post-images/zhuan-ni-yu-huo-gu-da-lao-men-zhi-chai-zhe-ji-ben-shu-de-ju-chi.webp')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+    <a href="http://jumpalang.5a1.xyz/page/2/" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
+  
+</div>
+
+        </div>
+      </div>
     </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script type="application/javascript">
@@ -577,6 +297,13 @@
 AOS.init();
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
