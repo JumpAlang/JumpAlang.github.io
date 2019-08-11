@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://jumpalang.5a1.xyz</id>
     <title>Jump!Alang</title>
-    <updated>2019-08-11T14:52:01.210Z</updated>
+    <updated>2019-08-11T14:56:11.103Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://jumpalang.5a1.xyz"/>
     <link rel="self" href="http://jumpalang.5a1.xyz/atom.xml"/>
@@ -15,7 +15,11 @@
         <link href="http://jumpalang.5a1.xyz/post/mou-pao-xuan-ze-cha-ru-kuai-su-pai-xu-java-suan-fa">
         </link>
         <updated>2019-08-11T10:01:44.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="冒泡-选择-插入排序">冒泡、选择、插入排序</h1>
+        <summary type="html"><![CDATA[<p>熟能生巧！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>熟能生巧！</p>
+<!-- more -->
+<h1 id="冒泡-选择-插入">冒泡、选择、插入</h1>
 <pre><code class="language-java">public class OrdinarySortRepeat {
     public static void main(String[] args) {
         int[] arr = getRandomInts(10);
