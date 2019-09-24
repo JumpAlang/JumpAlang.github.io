@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-09-24T13:37:19.177Z</updated>
+    <updated>2019-09-24T14:56:03.646Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -16,9 +16,11 @@
         <link href="http://alang.two3.cn/post/thingsboard-gateway-gai-shu">
         </link>
         <updated>2019-09-24T00:46:02.000Z</updated>
-        <summary type="html"><![CDATA[<p>thingsboard网关可让您将与旧式和第三方系统连接的IoT设备与ThingsBoard集成在一起。</p>
+        <summary type="html"><![CDATA[<p>thingsboard网关可让您将与旧式和第三方系统连接的IoT设备与ThingsBoard集成在一起。<br>
+网关是ThingsBoard中的一种特殊类型的设备，能够充当连接到不同系统的外部设备和ThingsBoard之间的桥梁。网关API提供了使用单个MQTT连接在多个设备和平台之间交换数据的功能。网关还充当ThingsBoard设备，并且可以利用现有的MQTT Device API来报告统计信息，接收配置更新等等。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>thingsboard网关可让您将与旧式和第三方系统连接的IoT设备与ThingsBoard集成在一起。</p>
+        <content type="html"><![CDATA[<p>thingsboard网关可让您将与旧式和第三方系统连接的IoT设备与ThingsBoard集成在一起。<br>
+网关是ThingsBoard中的一种特殊类型的设备，能够充当连接到不同系统的外部设备和ThingsBoard之间的桥梁。网关API提供了使用单个MQTT连接在多个设备和平台之间交换数据的功能。网关还充当ThingsBoard设备，并且可以利用现有的MQTT Device API来报告统计信息，接收配置更新等等。</p>
 <!-- more -->
 <h1 id="架构">架构</h1>
 <p>对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对MQTT来说，网关只不过选择性监听了topic，构建了一个映射“map”关系。<br>
@@ -62,6 +64,10 @@
   }
 }
 </code></pre>
+<h1 id="参考">参考</h1>
+<p><a href="https://thingsboard.io/docs/iot-gateway/what-is-iot-gateway/">https://thingsboard.io/docs/iot-gateway/what-is-iot-gateway/</a> <em>什么是ThingsBoard IoT网关？</em><br>
+<a href="https://thingsboard.io/docs/iot-gateway/getting-started/">https://thingsboard.io/docs/iot-gateway/getting-started/</a> <em>ThingsBoard IoT网关入门</em><br>
+<a href="https://thingsboard.io/docs/reference/gateway-mqtt-api/">https://thingsboard.io/docs/reference/gateway-mqtt-api/</a> <em>MQTT网关API参考</em></p>
 ]]></content>
     </entry>
     <entry>

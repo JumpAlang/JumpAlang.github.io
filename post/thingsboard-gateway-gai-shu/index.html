@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jump!Alang</title>
 <meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://alang.two3.cn/favicon.ico?v=1569332224194">
+<link rel="shortcut icon" href="http://alang.two3.cn/favicon.ico?v=1569336956297">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -24,7 +24,7 @@
       <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
         <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
         <a href="http://alang.two3.cn">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://alang.two3.cn/images/avatar.png?v=1569332224194" alt="">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://alang.two3.cn/images/avatar.png?v=1569336956297" alt="">
         </a>
         <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Jump!Alang</h1>
       </div>
@@ -39,6 +39,7 @@
 <li><a href="#%E5%8F%AF%E4%BB%A5%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98">可以解决什么问题</a></li>
 <li><a href="#%E5%8A%9F%E8%83%BD">功能</a></li>
 <li><a href="#%E5%86%85%E9%83%A8%E6%9C%BA%E5%88%B6">内部机制</a></li>
+<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
 </ul>
 
           </div>
@@ -93,11 +94,12 @@
       <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
         <h1 class="text-3xl font-bold lg:mt-16">thingsboard gateWay概述</h1>
         <div class="text-sm text-gray-700 lg:my-8">
-          2019-09-24 / 2 min read
+          2019-09-24 / 3 min read
         </div>
         
         <div class="post-content yue">
-          <p>thingsboard网关可让您将与旧式和第三方系统连接的IoT设备与ThingsBoard集成在一起。</p>
+          <p>thingsboard网关可让您将与旧式和第三方系统连接的IoT设备与ThingsBoard集成在一起。<br>
+网关是ThingsBoard中的一种特殊类型的设备，能够充当连接到不同系统的外部设备和ThingsBoard之间的桥梁。网关API提供了使用单个MQTT连接在多个设备和平台之间交换数据的功能。网关还充当ThingsBoard设备，并且可以利用现有的MQTT Device API来报告统计信息，接收配置更新等等。</p>
 <!-- more -->
 <h1 id="架构">架构</h1>
 <p>对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对MQTT来说，网关只不过选择性监听了topic，构建了一个映射“map”关系。<br>
@@ -141,6 +143,10 @@
   }
 }
 </code></pre>
+<h1 id="参考">参考</h1>
+<p><a href="https://thingsboard.io/docs/iot-gateway/what-is-iot-gateway/">https://thingsboard.io/docs/iot-gateway/what-is-iot-gateway/</a> <em>什么是ThingsBoard IoT网关？</em><br>
+<a href="https://thingsboard.io/docs/iot-gateway/getting-started/">https://thingsboard.io/docs/iot-gateway/getting-started/</a> <em>ThingsBoard IoT网关入门</em><br>
+<a href="https://thingsboard.io/docs/reference/gateway-mqtt-api/">https://thingsboard.io/docs/reference/gateway-mqtt-api/</a> <em>MQTT网关API参考</em></p>
 
         </div>
 
