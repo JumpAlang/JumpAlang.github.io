@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jump!Alang</title>
 <meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://alang.two3.cn/favicon.ico?v=1569288107242">
+<link rel="shortcut icon" href="http://alang.two3.cn/favicon.ico?v=1569332224194">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -24,7 +24,7 @@
       <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
         <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
         <a href="http://alang.two3.cn">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://alang.two3.cn/images/avatar.png?v=1569288107242" alt="">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://alang.two3.cn/images/avatar.png?v=1569332224194" alt="">
         </a>
         <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Jump!Alang</h1>
       </div>
@@ -37,7 +37,8 @@
             <ul class="markdownIt-TOC">
 <li><a href="#%E6%9E%B6%E6%9E%84">架构</a></li>
 <li><a href="#%E5%8F%AF%E4%BB%A5%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98">可以解决什么问题</a></li>
-<li><a href="#%E5%8A%9F%E8%83%BD">功能：</a></li>
+<li><a href="#%E5%8A%9F%E8%83%BD">功能</a></li>
+<li><a href="#%E5%86%85%E9%83%A8%E6%9C%BA%E5%88%B6">内部机制</a></li>
 </ul>
 
           </div>
@@ -105,7 +106,7 @@
 <p>现实中大部分都是通过网关操作设备的，不管是MQTT还是modbus或者opc。<br>
 问题一：如果你有1万台设备如何连接： 若是你有一万个设备，不可能一个一个用token去连的。<br>
 网关就解决了这个问题，简单 的说，通过网关，是管理一批设备，不通过网关，是管理一个设备。</p>
-<h1 id="功能">功能：</h1>
+<h1 id="功能">功能</h1>
 <ul>
 <li>MQTT扩展，用于控制，配置和收集使用现有协议连接到外部MQTT代理的IoT设备的数据。</li>
 <li>OPC-UA扩展，用于从连接到OPC-UA服务器的IoT设备收集数据。</li>
@@ -115,8 +116,8 @@
 <li>自动重新连接到ThingsBoard集群。</li>
 <li>简单但功能强大的将传入数据和消息映射为统一格式。</li>
 </ul>
-<p>#内部机制<br>
-例如，下面列出的默认映射将强制网关订阅传感器主题，并将传入的JSON消息中的serialNumber用作设备名称。类似地，模型和温度 json对象字段将映射到相应的ThingsBoard设备属性和遥测字段。</p>
+<h1 id="内部机制">内部机制</h1>
+<p>例如，下面列出的默认映射将强制网关订阅传感器主题，并将传入的JSON消息中的serialNumber用作设备名称。类似地，模型和温度 json对象字段将映射到相应的ThingsBoard设备属性和遥测字段。</p>
 <pre><code class="language-json">{
   &quot;topicFilter&quot;: &quot;sensors&quot;,
   &quot;converter&quot;: {

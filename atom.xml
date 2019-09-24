@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-09-24T01:23:38.900Z</updated>
+    <updated>2019-09-24T13:37:19.177Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -27,7 +27,7 @@
 <p>现实中大部分都是通过网关操作设备的，不管是MQTT还是modbus或者opc。<br>
 问题一：如果你有1万台设备如何连接： 若是你有一万个设备，不可能一个一个用token去连的。<br>
 网关就解决了这个问题，简单 的说，通过网关，是管理一批设备，不通过网关，是管理一个设备。</p>
-<h1 id="功能">功能：</h1>
+<h1 id="功能">功能</h1>
 <ul>
 <li>MQTT扩展，用于控制，配置和收集使用现有协议连接到外部MQTT代理的IoT设备的数据。</li>
 <li>OPC-UA扩展，用于从连接到OPC-UA服务器的IoT设备收集数据。</li>
@@ -37,8 +37,8 @@
 <li>自动重新连接到ThingsBoard集群。</li>
 <li>简单但功能强大的将传入数据和消息映射为统一格式。</li>
 </ul>
-<p>#内部机制<br>
-例如，下面列出的默认映射将强制网关订阅传感器主题，并将传入的JSON消息中的serialNumber用作设备名称。类似地，模型和温度 json对象字段将映射到相应的ThingsBoard设备属性和遥测字段。</p>
+<h1 id="内部机制">内部机制</h1>
+<p>例如，下面列出的默认映射将强制网关订阅传感器主题，并将传入的JSON消息中的serialNumber用作设备名称。类似地，模型和温度 json对象字段将映射到相应的ThingsBoard设备属性和遥测字段。</p>
 <pre><code class="language-json">{
   &quot;topicFilter&quot;: &quot;sensors&quot;,
   &quot;converter&quot;: {
