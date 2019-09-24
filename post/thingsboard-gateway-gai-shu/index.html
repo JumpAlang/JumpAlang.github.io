@@ -34,7 +34,12 @@
             文章目录
           </p>
           <div class="toc-container hidden lg:block">
-            
+            <ul class="markdownIt-TOC">
+<li><a href="#%E6%9E%B6%E6%9E%84">架构</a></li>
+<li><a href="#%E5%8F%AF%E4%BB%A5%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98">可以解决什么问题</a></li>
+<li><a href="#%E5%8A%9F%E8%83%BD">功能：</a></li>
+</ul>
+
           </div>
         </div>
       
@@ -85,96 +90,78 @@
 <div class="mask" onclick="closeMenu()">
 </div>
       <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
-        <h1 class="text-3xl font-bold lg:mt-16">泪海</h1>
+        <h1 class="text-3xl font-bold lg:mt-16">thingsboard gateWay概述</h1>
         <div class="text-sm text-gray-700 lg:my-8">
-          2019-05-20 / 1 min read
+          2019-09-24 / 2 min read
         </div>
         
         <div class="post-content yue">
-          <div style="text-align:center;">
-	<div>
-			<audio  controls="controls" autoplay="autoplay">
-			<source src="http://jumpalang.two3.cn/music%E6%B3%AA%E6%B5%B7-%E9%92%A2%E7%90%B4.m4a" type="audio/mpeg" />
-	</audio>
-	</div>
-	</div>
-<!--more-->
-<!-- 正文-->
-<blockquote>
+          <p>thingsboard网关可让您将与旧式和第三方系统连接的IoT设备与ThingsBoard集成在一起。</p>
+<!-- more -->
+<h1 id="架构">架构</h1>
+<p>对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对MQTT来说，网关只不过选择性监听了topic，构建了一个映射“map”关系。<br>
+<img src="http://alang.two3.cn/post-images/1569286524998.png" alt=""></p>
+<h1 id="可以解决什么问题">可以解决什么问题</h1>
+<p>现实中大部分都是通过网关操作设备的，不管是MQTT还是modbus或者opc。<br>
+问题一：如果你有1万台设备如何连接： 若是你有一万个设备，不可能一个一个用token去连的。<br>
+网关就解决了这个问题，简单 的说，通过网关，是管理一批设备，不通过网关，是管理一个设备。</p>
+<h1 id="功能">功能：</h1>
 <ul>
-<li>演唱：许茹芸</li>
-<li>爱已不能动</li>
-<li>还有什么值得我心痛</li>
-<li>想你的天空 下起雨来</li>
-<li>没人心疼的黑夜</li>
-<li>脸颊两行咸咸的泪水</li>
-<li>是你 哦 是你</li>
-<li>让我望穿泪水肝肠寸断</li>
-<li>你怎么舍得让我的泪</li>
-<li>流向海</li>
-<li>付出的感情永远 找不回来</li>
-<li>你怎么舍得让我的爱</li>
-<li>流向海</li>
-<li>伤心的往事一幕幕</li>
-<li>就像潮水</li>
-<li>将我淹埋</li>
-<li>爱已不能动</li>
-<li>还有什么值得我心痛</li>
-<li>想你的天空 下起雨来</li>
-<li>没人心疼的黑夜</li>
-<li>脸颊两行咸咸的泪水</li>
-<li>是你 哦 是你</li>
-<li>让我望穿泪水肝肠寸断</li>
-<li>你怎么舍得让我的泪</li>
-<li>流向海</li>
-<li>付出的感情永远 找不回来</li>
-<li>你怎么舍得让我的爱</li>
-<li>流向海</li>
-<li>伤心的往事一幕幕</li>
-<li>就像潮水</li>
-<li>将我淹埋</li>
-<li>闭上了双眼</li>
-<li>还看见和你的缠绵</li>
-<li>眼角的泪水</li>
-<li>洗不去心中</li>
-<li>一遍一遍的誓言</li>
-<li>你怎么舍得让我的泪</li>
-<li>流向海</li>
-<li>付出的感情永远 找不回来</li>
-<li>你怎么舍得让我的爱</li>
-<li>流向海</li>
-<li>伤心的往事一幕幕</li>
-<li>就像潮水</li>
-<li>将我淹埋</li>
+<li>MQTT扩展，用于控制，配置和收集使用现有协议连接到外部MQTT代理的IoT设备的数据。</li>
+<li>OPC-UA扩展，用于从连接到OPC-UA服务器的IoT设备收集数据。</li>
+<li>Sigfox扩展，用于从连接到Sigfox后端的IoT设备收集数据。</li>
+<li>Modbus扩展可从通过Modbus协议连接的IoT设备收集数据。</li>
+<li>在网络和硬件故障的情况下，所收集数据的持久性可确保数据传输。</li>
+<li>自动重新连接到ThingsBoard集群。</li>
+<li>简单但功能强大的将传入数据和消息映射为统一格式。</li>
 </ul>
-</blockquote>
+<p>#内部机制<br>
+例如，下面列出的默认映射将强制网关订阅传感器主题，并将传入的JSON消息中的serialNumber用作设备名称。类似地，模型和温度 json对象字段将映射到相应的ThingsBoard设备属性和遥测字段。</p>
+<pre><code class="language-json">{
+  &quot;topicFilter&quot;: &quot;sensors&quot;,
+  &quot;converter&quot;: {
+    &quot;type&quot;: &quot;json&quot;,
+    &quot;filterExpression&quot;: &quot;&quot;,
+    &quot;deviceNameJsonExpression&quot;: &quot;${$.serialNumber}&quot;,
+    &quot;attributes&quot;: [
+      {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;key&quot;: &quot;model&quot;,
+        &quot;value&quot;: &quot;${$.model}&quot;
+      }
+    ],
+    &quot;timeseries&quot;: [
+      {
+        &quot;type&quot;: &quot;double&quot;,
+        &quot;key&quot;: &quot;temperature&quot;,
+        &quot;value&quot;: &quot;${$.temperature}&quot;
+      }
+    ]
+  }
+}
+</code></pre>
 
         </div>
 
         
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://alang.two3.cn/tag/music">
-            <span class="flex-auto">音乐</span>
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://alang.two3.cn/tag/iot">
+            <span class="flex-auto">物联网</span>
+          </a>
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://alang.two3.cn/tag/thingsboard">
+            <span class="flex-auto">thingsboard</span>
           </a>
         
 
 
         <div class="flex justify-between py-8">
           
-            <div class="prev-post">
-              <a href="http://alang.two3.cn/post/wei-ai-chi-kuang">
-                <h3 class="post-title">
-                  <i class="remixicon-arrow-left-line"></i>
-                  为爱痴狂
-                </h3>
-              </a>
-            </div>
-          
 
           
             <div class="next-post">
-              <a href="http://alang.two3.cn/post/ke-neng-fou">
+              <a href="http://alang.two3.cn/post/ni-chi-kai-liao-nan-jing-cong-ci-mei-you-ren-he-wo-shuo-hua">
                 <h3 class="post-title">
-                  可能否
+                  你离开了南京，从此没有人和我说话
                   <i class="remixicon-arrow-right-line"></i>
                 </h3>
               </a>
