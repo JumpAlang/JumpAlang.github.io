@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-09-27T08:10:04.305Z</updated>
+    <updated>2019-09-27T09:30:34.131Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -23,11 +23,11 @@ QQ群：China Thingsboard（726442610）</p>
 QQ群：China Thingsboard（726442610）</p>
 <!-- more -->
 <h1 id="苏州-大侠">苏州-大侠</h1>
-<p>1.正常 我们都是通过 mqtt，modbus，opc UA  向TB 抛数据<br>
-2.如果想要 通过TB 下方 指令或下方数据，就是通过 tb 的rpc<br>
-3.tb 有 rpc的专属  topic  ，对不同的协议(modbus ,mqtt,opc ua)有不同的格式<br>
-4.tb 下发 rpc 可以通过 规则链，部件或调 API<br>
-5.如用 gateway的 modbus 采集地址位的数据，如果想要修改地址位的数据，这是就用 rpc下方数据， gateway  接受到rpc 的数据，就会写入地址入中</p>
+<p>1.正常 我们都是通过 mqtt，modbus，opc UA向TB抛数据<br>
+2.如果想要通过TB下发指令或下发数据，就是通过tb的rpc<br>
+3.tb有rpc的专属topic，对不同的协议(modbus ,mqtt,opc ua)有不同的格式<br>
+4.tb下发rpc可以通过规则链，部件或调API<br>
+5.如用gateway的modbus采集地址位的数据，如果想要修改地址位的数据，这时就用rpc下发数据，gateway接受到rpc的数据，就会写入地址中</p>
 <h1 id="杭州~三升水">杭州～三升水</h1>
 <p>1.首先我们理解RPC是什么意思，RPC和框架中的远程服务调用是一样的<br>
 2.因为TB他不是单机的，就是有多个服务在一起部署的，多个机器是通过Akka模型进行通讯的<br>
@@ -35,11 +35,11 @@ QQ群：China Thingsboard（726442610）</p>
 4.这2个分别是用集群获取消息和发送消息，无论数据采集还有其他<br>
 <img src="http://alang.two3.cn/post-images/1569571494278.jpg" alt=""><br>
 <img src="http://alang.two3.cn/post-images/1569571500277.jpg" alt=""><br>
-5.TB区分把单机版和集群的API做了个区分<br>
+5.TB把单机版和集群的API做了个区分<br>
 6.所以你会看到2套API,总结就是，你不是集群部署的话，rpc那套用处不大，上面采集的接口（<code>就是mqtt,coap,http的通过主题发送消息</code>）也能满足你的要求<br>
 7.像这种，就是那种多个集群在一起通信的，交互消息的终端打印信息<br>
 <img src="http://alang.two3.cn/post-images/1569571672429.jpg" alt=""><br>
-8.网关的作用主要是对于单体没有联网能力的设备，在自组网或者局域网中，到一个有联网能力的设备上，统一上传数据</p>
+8.网关的作用主要是对于单体没有联网能力的设备，从自组网或者局域网中，到一个有联网能力的设备上，统一上传数据</p>
 ]]></content>
     </entry>
     <entry>
