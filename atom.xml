@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-09-25T01:08:18.076Z</updated>
+    <updated>2019-09-27T08:10:04.305Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>http://alang.two3.cn/images/avatar.png</logo>
     <icon>http://alang.two3.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[thingsboard rpc大佬总结]]></title>
+        <id>http://alang.two3.cn/post/thingsboard-rpc-da-lao-zong-jie</id>
+        <link href="http://alang.two3.cn/post/thingsboard-rpc-da-lao-zong-jie">
+        </link>
+        <updated>2019-09-27T07:42:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>感谢大佬：@苏州-大侠，@杭州～三升水<br>
+QQ群：China Thingsboard（726442610）</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>感谢大佬：@苏州-大侠，@杭州～三升水<br>
+QQ群：China Thingsboard（726442610）</p>
+<!-- more -->
+<h1 id="苏州-大侠">苏州-大侠</h1>
+<p>1.正常 我们都是通过 mqtt，modbus，opc UA  向TB 抛数据<br>
+2.如果想要 通过TB 下方 指令或下方数据，就是通过 tb 的rpc<br>
+3.tb 有 rpc的专属  topic  ，对不同的协议(modbus ,mqtt,opc ua)有不同的格式<br>
+4.tb 下发 rpc 可以通过 规则链，部件或调 API<br>
+5.如用 gateway的 modbus 采集地址位的数据，如果想要修改地址位的数据，这是就用 rpc下方数据， gateway  接受到rpc 的数据，就会写入地址入中</p>
+<h1 id="杭州~三升水">杭州～三升水</h1>
+<p>1.首先我们理解RPC是什么意思，RPC和框架中的远程服务调用是一样的<br>
+2.因为TB他不是单机的，就是有多个服务在一起部署的，多个机器是通过Akka模型进行通讯的<br>
+3.他用grpc来进行服务的调用和消息在多个实例上传递<br>
+4.这2个分别是用集群获取消息和发送消息，无论数据采集还有其他<br>
+<img src="http://alang.two3.cn/post-images/1569571494278.jpg" alt=""><br>
+<img src="http://alang.two3.cn/post-images/1569571500277.jpg" alt=""><br>
+5.TB区分把单机版和集群的API做了个区分<br>
+6.所以你会看到2套API,总结就是，你不是集群部署的话，rpc那套用处不大，上面采集的接口（<code>就是mqtt,coap,http的通过主题发送消息</code>）也能满足你的要求<br>
+7.像这种，就是那种多个集群在一起通信的，交互消息的终端打印信息<br>
+<img src="http://alang.two3.cn/post-images/1569571672429.jpg" alt=""><br>
+8.网关的作用主要是对于单体没有联网能力的设备，在自组网或者局域网中，到一个有联网能力的设备上，统一上传数据</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard rest api使用准备]]></title>
         <id>http://alang.two3.cn/post/thingsboard-rest-api-shi-yong-zhun-bei</id>
@@ -974,46 +1006,6 @@ ctrl+alt+f(favorites) 添加到收藏</p>
 <p>而且本能地对短期没效果的东西充满反感，没法再一个领域熬死竞争对手，也就没法再多条战线上同时进攻。</p>
 <p>综上，绝大部分人容易内卷化掉进坑里还不容易出来。</p>
 <p>文末多说一句，博主写这个不是说博主已经从坑里出来了，而是说把自己的一些思考和所见跟大家分享下。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[第一章-spring概述-精通spring4.x企业应用开发实战]]></title>
-        <id>http://alang.two3.cn/post/di-yi-zhang-spring-gai-shu</id>
-        <link href="http://alang.two3.cn/post/di-yi-zhang-spring-gai-shu">
-        </link>
-        <updated>2019-07-09T02:36:16.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="13-spring带给我们什么">1.3 Spring带给我们什么</h2>
-<ol>
-<li>Spring的好处（摘自第6页）</li>
-</ol>
-<ul>
-<li>方便解耦，简化开发。通过Spring提供的IOC容器，用户可以将对象之间的依赖关系交由Spring控制，避免硬编码所造成的过度程序耦合。有了Spring，用户不必再为单实例模式类、属性文件解析等这些底层的需求编写代码，可以专注于上层的应用。</li>
-<li>AOP编程的支持。通过Spring提供的AOP功能，方便进行面向切面的编程，很多不容易用传统OOP实现的功能可以通过AOP轻松应对。</li>
-<li>声明式事务的支持。在Spring中，用户可以从单调烦闷的事务管理代码中解脱出来，通过声明的方式灵活地进行事务管理，提高开发效率和质量。</li>
-<li>方便程序的测试。可以用非容器依赖的编程方式进行几乎所有的测试工作。在Spring里，测试不再是昂贵的操作，而是随手可做的事情。</li>
-<li>方便集成各种优秀框架。Spring不排斥各种优秀的开源框架，相反，Spring可以降低各种框架的使用难度。Spring提供了对各种优秀框架（如Sturs、Hibernate、Hessian、Quartz等）的直接支持。</li>
-<li>降低Java EE API的使用难度。Spring对很多难用的Java EE API(如JDBC、JavaMail、远程调用等)提供了一个薄层封装，通过Spring的简易封装，这些Java EE API的使用难度大大降低。</li>
-<li>Java源码是经典的学习范例。Spring的源码设计精妙、结构清晰、匠心独运，处处体现着大师对Java设计模式的灵活运用及对Java技术的高深造诣。Spring框架源码无疑是Java技术的最佳实践范例。如果想在短时间内迅速提高自己的Java技术水平和应用开发水平，学习和研究Spring源码将会收到意想不到的效果。</li>
-</ul>
-<h2 id="14-spring体系结构">1.4 Spring体系结构</h2>
-<figure data-type="image" tabindex="1"><img src="http://alang.two3.cn/post-images/1562642306584.png" alt=""></figure>
-<ol>
-<li>IoC<br>
-Spring核心模块实现了IoC的功能，它将类与类之间的依赖从代码中脱离出来，用配置的方式进行依赖关系描述，由IoC容器负责依赖类之间的创建、拼接、管理、获取等工作。BeanFactory接口是Spring框架的核心接口，它实现了容器许多核心的功能。<br>
-Context模块构建于核心模块之上，扩展了BeanFactory的功能，添加了i18n国际化、Bean生命周期控制、框架事件体系、资源加载透明化等多项功能。此外，该模块还提供了许多企业级服务的支持，如邮件服务、任务调度、JNDI获取、EJB集成、远程访问等。ApplicationContext是Context模块的核心接口。<br>
-表达式语言模块是统一表达式语言（Unfied EL）的一个扩展，该表达式语言用于查询和管理运行期的对象，支持设置/获取对象属性，调用对象方法，操作数组、集合等。此外，该模块还提供了逻辑表达式运算、变量定义等功能，可以方便地通过表达式串和Spring IoC容器进行交互。</li>
-<li>AOP<br>
-AOP是继OOP之后，对编程设计思想影响极大的技术之一。AOP是进行横切逻辑编程的思想，它开拓了考虑问题的思路。在AOP模块里，Spring提供了满足AOP Alliance规范的实现，还整合了AspectJ这种AOP语言级的框架。在Spring里实现AOP编程有众多选择。Java5.0引入了java.lang.instrument,允许在JVM启动时启用一个代理类，通过该代理类在运行期修改类的字节码，改变一个类的功能，从而实现AOP功能。</li>
-<li>数据访问和集成<br>
-任何应用程序的核心问题是对数据的访问和操作。数据有多处表现形式，如数据表、XML、消息等，而每种数据形式又拥有不同的数据访问技术（如数据表的访问既可以直接通过JDBC，也可以通过Hibernate或MyBatis）。<br>
-首先，Spring站在DAO的抽象层面，建立了一套面向DAO层的统一的异常体系，同时将各种访问数据的检查型异常转换为非检查型异常，为整合各种持久层框架提供基础。其次，Spring通过模板化技术对各种数据访问技术进行了薄层封装，将模式化的代码隐藏起来，使数据访问的程序得到大幅简化。这样，Spring就建立了和数据形式访问技术无关的统一的DAO层，借助AOP技术，Spring提供了声明式事务的功能。</li>
-<li>Web及远程操作<br>
-该模块建立在Application Context模块之上，提供了Web应用的各种工具类，如通过Listener或Servlet初始化Spring容器，将Spring容器注册到Web容器中。该模块还提供了多项面向Web的功能，如透明化文件上传，Velocity、FreeMarker、XSLT的支持。此外，Spring可以整合Struts、WebWork等MVC框架。</li>
-<li>Web及远程访问<br>
-Spring自己提供了一个完整的类似于Struts的MVC框架，称为Spring MVC。相对于Servlet的MVC，Spring在简化Portlet的开发上也做了很多工作，开发者可以从中受益。</li>
-<li>WebSocket<br>
-WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑到客户端（浏览器）和服务器之间的高频和低时延消息交换。一般的应用场景有在线交易、游戏、协作、数据可视化等。</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
