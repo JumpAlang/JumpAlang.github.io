@@ -31,38 +31,14 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            永远年轻！永远热泪盈眶！
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-                <a href="https://github.com/JumpAlang" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="remixicon-github-line"></i>
-                </a>
-              
-            
-              
-            
-              
-                <a href="https://weibo.com/JumpAlang" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="remixicon-weibo-line"></i>
-                </a>
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E6%9F%A5%E6%89%BE%E5%8E%9F%E5%9B%A0">查找原因</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">解决方案</a></li>
+</ul>
+
           </div>
         </div>
       
@@ -112,29 +88,81 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="remixicon-bookmark-line"></i> idea技巧
-        </h2>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">postgresql-11.5.1安装timescaledb-1.4.2后无法加载库解决方法</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2019-10-20 / 2 min read
+        </div>
         
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="http://alang.two3.cn/post/idea-kuai-jie-jian">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">idea快捷键</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        <p>此份快捷键是从myeclipse移植过来的，from<code>尚硅谷·宋红康 设置版</code></p>
+        <div class="post-content yue">
+          <p>之前为了尝鲜了，装了最新版的postgresql数据库，而后安装完时序数据库timescaledb报了如下错误<code>无法加载库 &quot;d:/program files/postgresql/11/lib/timescaledb-1.4.2.dll&quot;</code>，解决这个问题还是花费了不少时间，写在这希望能帮助遇到同样问题的人。</p>
+<!-- more -->
+<h1 id="查找原因">查找原因</h1>
+<p>在各种google后，终于在timescaledb的github的issues看到有网友碰到同样的问题。<br>
+<a href="https://github.com/timescale/timescaledb/issues/1398">https://github.com/timescale/timescaledb/issues/1398</a><br>
+在其中找到了答案：</p>
+<blockquote>
+<p>You would need libeay32.dll and ssleay32.dll from the bin folder of the 11.4 installation.<br>
+Zip file downloadable from here: https://get.enterprisedb.com/postgresql/postgresql-11.4-1-windows-x64-binaries.zip<br>
+应该算官方的一个bug:最新版postgredql-11.5.1缺少两个dll, <strong>libeay32.dll</strong> 和 <strong>ssleay32.dll</strong>。</p>
+</blockquote>
+<h1 id="解决方案">解决方案</h1>
+<p>至如下网址下载postgresql-11.4的安装包，然后找到bin下的这两个dll，复制到你安装的postgresql/bin目录下<br>
+<a href="https://get.enterprisedb.com/postgresql/postgresql-11.4-1-windows-x64-binaries.zip">https://get.enterprisedb.com/postgresql/postgresql-11.4-1-windows-x64-binaries.zip</a><br>
+或者至百度网盘下载我提取出来的dll：<br>
+链接: <a href="https://pan.baidu.com/s/1ZTRL3ukfABm6rmzyy_-42Q&amp;shfl=shareset">https://pan.baidu.com/s/1ZTRL3ukfABm6rmzyy_-42Q&amp;shfl=shareset</a> 提取码: jdzb</p>
 
-      </div>
-      <div class="text-gray-400 text-sm font-light">2019-07-26 / 3 min read</div>
-    </div>
-  </section>
+        </div>
 
-        <div class="pagination-container animated fadeIn">
-  
-  
-</div>
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://alang.two3.cn/tag/database">
+            <span class="flex-auto">数据库</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
+          
+
+          
+            <div class="next-post">
+              <a href="http://alang.two3.cn/post/thingsboard-xiu-gai-logo-ji-biao-ti">
+                <h3 class="post-title">
+                  ThingsBoard修改logo
+                  <i class="remixicon-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'dd6b58508cc9af58fc1c',
+    clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
+    repo: 'JumpAlang.github.io',
+    owner: 'JumpAlang',
+    admin: ['JumpAlang'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
 
       </div>
     </div>
