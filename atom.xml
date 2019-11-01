@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-11-01T09:17:32.616Z</updated>
+    <updated>2019-11-01T09:22:04.385Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>http://alang.two3.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, Jump!Alang</rights>
     <entry>
-        <title type="html"><![CDATA[thingsboard gateway http扩展 上传属性及遥测数据]]></title>
+        <title type="html"><![CDATA[thingsboard gateway http扩展 创建设备、上传属性及遥测数据]]></title>
         <id>http://alang.two3.cn/post/thingsboard-gateway-http-kuo-zhan-shang-chuan-shu-xing-ji-yao-ce-shu-ju</id>
         <link href="http://alang.two3.cn/post/thingsboard-gateway-http-kuo-zhan-shang-chuan-shu-xing-ji-yao-ce-shu-ju">
         </link>
