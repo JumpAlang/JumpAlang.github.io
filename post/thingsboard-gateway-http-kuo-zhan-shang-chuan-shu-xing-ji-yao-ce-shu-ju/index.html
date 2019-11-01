@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jump!Alang</title>
 <meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://alang.two3.cn/favicon.ico?v=1572600119468">
+<link rel="shortcut icon" href="http://alang.two3.cn/favicon.ico?v=1572600583228">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -24,7 +24,7 @@
       <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
         <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
         <a href="http://alang.two3.cn">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://alang.two3.cn/images/avatar.png?v=1572600119468" alt="">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://alang.two3.cn/images/avatar.png?v=1572600583228" alt="">
         </a>
         <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Jump!Alang</h1>
       </div>
@@ -37,7 +37,7 @@
             <ul class="markdownIt-TOC">
 <li><a href="#gateway%E6%BA%90%E7%A0%81%E6%9F%A5%E7%9C%8B">gateway源码查看</a></li>
 <li><a href="#gateway%E6%89%A9%E5%B1%95%E9%85%8D%E7%BD%AE">gateway扩展配置</a></li>
-<li><a href="#postman%E8%B0%83%E7%94%A8http%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE%E8%87%B3tb">postman调用http上传数据至tb</a></li>
+<li><a href="#postman%E8%B0%83%E7%94%A8http%E6%89%A9%E5%B1%95url">postman调用http扩展url</a></li>
 <li><a href="#%E8%87%B3tb%E5%B9%B3%E5%8F%B0%E4%B8%8A%E6%9F%A5%E7%9C%8B%E8%AE%BE%E5%A4%87%E5%8F%8A%E6%95%B0%E6%8D%AE">至tb平台上查看设备及数据</a></li>
 </ul>
 
@@ -97,7 +97,7 @@
         </div>
         
         <div class="post-content yue">
-          <p>thingsboard官网文档有介绍网关mqtt扩展的使用，http扩展找了许久也没找到。于是就想从thinsboard pe版本中的http整合找下灵感。pe版本中的http整合其实也就是提供中间的一个整合器服务和转换器（可以转换json/text/binary(base64)），然后跟着这个线索去查看gateway的源码，发现有一个controller有配置uplink上传链，至于downlink还待研究。<em><strong>对于thingsboard还是小白，如文章理解有误，希望看者多多帮忙指正，互相一起进步</strong></em></p>
+          <p>thingsboard官网文档有介绍网关mqtt扩展的使用，http扩展的使用方法找了许久也未找到。于是就想从thinsboard pe版本中的http整合找下灵感。pe版本中的http整合其实也就是提供中间的一个整合器服务和转换器（可以转换json/text/binary(base64)），然后跟着这个线索去查看gateway的源码，发现有一个controller有配置uplink上传链，至于downlink还待研究。<em><strong>对于thingsboard还是小白，如文章理解有误，希望看者多多帮忙指正，互相一起进步</strong></em></p>
 <!-- more -->
 <h1 id="gateway源码查看">gateway源码查看</h1>
 <p>在<code>httpController</code>有如下方法：</p>
@@ -113,8 +113,8 @@
 <img src="http://alang.two3.cn/post-images/1572596746058.png" alt=""><br>
 <img src="http://alang.two3.cn/post-images/1572596750984.png" alt=""><br>
 <img src="http://alang.two3.cn/post-images/1572596757416.png" alt=""></p>
-<h1 id="postman调用http上传数据至tb">postman调用http上传数据至tb</h1>
-<p>上一步骤我们配置了转换器id为green,网关默认开启端口号为9090，则http请求地址为：网关部署地址ip/uplink/green。<br>
+<h1 id="postman调用http扩展url">postman调用http扩展url</h1>
+<p>上一步骤我们配置了转换器序列号为green,网关默认开启端口号为9090，则http请求地址为：网关地址ip:9090/uplink/green。<br>
 <img src="http://alang.two3.cn/post-images/1572599651241.png" alt=""></p>
 <h1 id="至tb平台上查看设备及数据">至tb平台上查看设备及数据</h1>
 <figure data-type="image" tabindex="1"><img src="http://alang.two3.cn/post-images/1572599728628.png" alt=""></figure>
