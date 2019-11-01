@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-11-01T03:03:32.995Z</updated>
+    <updated>2019-11-01T09:17:32.616Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -10,6 +10,37 @@
     <logo>http://alang.two3.cn/images/avatar.png</logo>
     <icon>http://alang.two3.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[thingsboard gateway http扩展 上传属性及遥测数据]]></title>
+        <id>http://alang.two3.cn/post/thingsboard-gateway-http-kuo-zhan-shang-chuan-shu-xing-ji-yao-ce-shu-ju</id>
+        <link href="http://alang.two3.cn/post/thingsboard-gateway-http-kuo-zhan-shang-chuan-shu-xing-ji-yao-ce-shu-ju">
+        </link>
+        <updated>2019-11-01T08:02:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>thingsboard官网文档有介绍网关mqtt扩展的使用，http扩展找了许久也没找到。于是就想从thinsboard pe版本中的http整合找下灵感。pe版本中的http整合其实也就是提供中间的一个整合器服务和转换器（可以转换json/text/binary(base64)），然后跟着这个线索去查看gateway的源码，发现有一个controller有配置uplink上传链，至于downlink还待研究。<em><strong>对于thingsboard还是小白，如文章理解有误，希望看者多多帮忙指正，互相一起进步</strong></em></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>thingsboard官网文档有介绍网关mqtt扩展的使用，http扩展找了许久也没找到。于是就想从thinsboard pe版本中的http整合找下灵感。pe版本中的http整合其实也就是提供中间的一个整合器服务和转换器（可以转换json/text/binary(base64)），然后跟着这个线索去查看gateway的源码，发现有一个controller有配置uplink上传链，至于downlink还待研究。<em><strong>对于thingsboard还是小白，如文章理解有误，希望看者多多帮忙指正，互相一起进步</strong></em></p>
+<!-- more -->
+<h1 id="gateway源码查看">gateway源码查看</h1>
+<p>在<code>httpController</code>有如下方法：</p>
+<pre><code class="language-java">@RequestMapping(value = &quot;/uplink/{converterId}&quot;, method = RequestMethod.POST)
+    public void handleRequest(@PathVariable String converterId,
+                              @RequestBody String body) throws Exception {
+        service.processRequest(converterId, null, body);
+    }
+</code></pre>
+<h1 id="gateway扩展配置">gateway扩展配置</h1>
+<p>至thingsboard平台配置网关设备的扩展，新增http扩展。如下：<br>
+<img src="http://alang.two3.cn/post-images/1572596736680.png" alt=""><br>
+<img src="http://alang.two3.cn/post-images/1572596746058.png" alt=""><br>
+<img src="http://alang.two3.cn/post-images/1572596750984.png" alt=""><br>
+<img src="http://alang.two3.cn/post-images/1572596757416.png" alt=""></p>
+<h1 id="postman调用http上传数据至tb">postman调用http上传数据至tb</h1>
+<p>上一步骤我们配置了转换器id为green,网关默认开启端口号为9090，则http请求地址为：网关部署地址ip/uplink/green。<br>
+<img src="http://alang.two3.cn/post-images/1572599651241.png" alt=""></p>
+<h1 id="至tb平台上查看设备及数据">至tb平台上查看设备及数据</h1>
+<figure data-type="image" tabindex="1"><img src="http://alang.two3.cn/post-images/1572599728628.png" alt=""></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[postgresql-11.5.1安装timescaledb-1.4.2后无法加载库解决方法]]></title>
         <id>http://alang.two3.cn/post/postgresql-1151-an-zhuang-timescaledb-142-hou-wu-fa-jia-zai-ku-jie-jue-fang-fa</id>
@@ -847,71 +878,6 @@ public static void main(String[] args) {
 		</video>
 	</div>
 	</div>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[idea快捷键]]></title>
-        <id>http://alang.two3.cn/post/idea-kuai-jie-jian</id>
-        <link href="http://alang.two3.cn/post/idea-kuai-jie-jian">
-        </link>
-        <updated>2019-07-26T15:49:38.000Z</updated>
-        <summary type="html"><![CDATA[<p>此份快捷键是从myeclipse移植过来的，from<code>尚硅谷·宋红康 设置版</code></p>
-]]></summary>
-        <content type="html"><![CDATA[<p>此份快捷键是从myeclipse移植过来的，from<code>尚硅谷·宋红康 设置版</code></p>
-<!-- more -->
-<h1 id="simple">simple</h1>
-<p>alt+r(run) 执行<br>
-alt+enter 万能解错/生成返回值变量</p>
-<p>alt+left 退回到前一个编辑的页面<br>
-alt+right 进入到下一个编辑的页面</p>
-<p>ctrl+c 复制代码<br>
-ctlr+z 撤销<br>
-ctrl+y 反撤销<br>
-ctrl+x 剪切<br>
-ctrl+v 粘贴<br>
-ctrl+s 保存<br>
-ctlr+a 全选</p>
-<p>ctrl+o(outline) 查看类的结构<br>
-ctrl+d(delete line) 删除一行或选中行</p>
-<p>ctrl+E 打开最近修改的文件</p>
-<p>ctrl+f 查找/替换(当前)<br>
-ctrl+h 查找(全局)<br>
-shift+shift 查找文件</p>
-<p>tab 选中数行，整体往后移动tab<br>
-shift+tab 选中数行，整体往前移动tab</p>
-<p>F2 查看文档说明<br>
-F4 查看继承关系</p>
-<h1 id="altshift">alt+shift</h1>
-<p>alt+shift+r(rename) 修改变量名与方法名<br>
-alt+shift+s 生成构造器/get/set/toString<br>
-alt+shift+z 生成try-catch等</p>
-<p>alt+shift+f 局部变量抽取为成员变量<br>
-alt+shift+m 局部代码抽取为方法</p>
-<p>alt+shift+c(collapse) 收起所有方法<br>
-alt+shift+x(expand) 打开所有方法</p>
-<h1 id="ctrlshift">ctrl+shift</h1>
-<p>ctrl+/ 单行注释<br>
-ctrl+shift+/ 多行注释</p>
-<p>shift+enter 向下开始新的一行<br>
-ctrl+shift+enter 向上开始新的一行</p>
-<p>ctrl+shift+t 查看源码（ctrl+选中指定结构也可）<br>
-ctrl+shift+f(format) 格式化代码</p>
-<p>ctrl+w 关闭当前打开的代码栏<br>
-ctrl+shift+w 关闭打开的所有代码栏</p>
-<p>ctrl+shift+y 大小写互转<br>
-ctrl+shift+x 打开代码所在硬盘文件夹<br>
-ctrl+shift+u(UML) 查看类的继承结构图<br>
-ctrl+shift+h(call hierarchy) 查找方法在哪里被调用<br>
-ctrl+shift+q 快速搜索类中的错误<br>
-ctrl+shift+v 选择要粘贴的内容</p>
-<h1 id="ctrlalt">ctrl+alt</h1>
-<p>alt+/ 提示补全<br>
-ctrl+alt+/ 提示方法参数 类型</p>
-<p>alt+up 向上移动行<br>
-alt+down 向下移动行<br>
-ctrl+alt+down 向下复制行</p>
-<p>ctrl+alt+h(method hierarchy) 查看方法多层重写结构<br>
-ctrl+alt+f(favorites) 添加到收藏</p>
 ]]></content>
     </entry>
 </feed>
