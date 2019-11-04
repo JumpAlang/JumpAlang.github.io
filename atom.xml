@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-11-01T09:29:47.617Z</updated>
+    <updated>2019-11-04T08:15:58.969Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -10,6 +10,156 @@
     <logo>http://alang.two3.cn/images/avatar.png</logo>
     <icon>http://alang.two3.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[thingsboard网关扩展与tb同步的理解]]></title>
+        <id>http://alang.two3.cn/post/thingsboard-wang-guan-kuo-zhan-yu-tb-tong-bu-de-li-jie</id>
+        <link href="http://alang.two3.cn/post/thingsboard-wang-guan-kuo-zhan-yu-tb-tong-bu-de-li-jie">
+        </link>
+        <updated>2019-11-04T07:20:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近由于要经常操作网关扩展，如添加http扩展，新增mqtt扩展的映射。经常出现网关不同步问题。导致了经过网关的数据，设备有创建，但是没有相应遥测数据，之前有看过群里大佬写过thingsboard网关与tb配置同步的源码分析：</p>
+<blockquote>
+<p><a href="https://blog.csdn.net/Zzhou1990/article/details/102477059">https://blog.csdn.net/Zzhou1990/article/details/102477059</a> <em><strong>Thingsboard Gateway 根据云端配置初始化</strong></em></p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近由于要经常操作网关扩展，如添加http扩展，新增mqtt扩展的映射。经常出现网关不同步问题。导致了经过网关的数据，设备有创建，但是没有相应遥测数据，之前有看过群里大佬写过thingsboard网关与tb配置同步的源码分析：</p>
+<blockquote>
+<p><a href="https://blog.csdn.net/Zzhou1990/article/details/102477059">https://blog.csdn.net/Zzhou1990/article/details/102477059</a> <em><strong>Thingsboard Gateway 根据云端配置初始化</strong></em></p>
+</blockquote>
+<!-- more -->
+<h1 id="理解大佬源码分析">理解大佬源码分析</h1>
+<p>从大佬文章中，大致可以理解成:当网关配置与thingsboard互通后，并允许thingsboard远程更新，则网关中连接thingsboard mqtt broker的mqtt客户端有订阅了属性更新主题<code>v1/devices/me/attributes</code>，用于实时获取共享属性更新。每当在thingsboard平台上配置网关扩展，thingsboard就会自动将配置信息保存为共享属性<code>configuration</code>的值。此时网关中的mqtt客户端监听到共享属性更新，会根据共享属性值重新初始化网关扩展配置。而后再把相应扩展配置上传至网关客户端属性<code>appliedConfiguration</code>,见如下代码：</p>
+<pre><code class="language-java">private void updateConfiguration(String configuration) {
+        try {
+            if (extensionsConfigListener != null) {
+                extensionsConfigListener.accept(configuration);
+            }
+            onAppliedConfiguration(configuration);
+        } catch (Exception e) {
+            log.warn(&quot;Failed to update extension configurations [[]]&quot;, e.getMessage(), e);
+        }
+
+public void onAppliedConfiguration(String configuration) {
+        byte[] msgData = toBytes(newNode().put(&quot;appliedConfiguration&quot;, configuration));
+        persistMessage(DEVICE_ATTRIBUTES_TOPIC, msgIdSeq.incrementAndGet(), msgData, null, null,
+                error -&gt;
+                        log.warn(&quot;Could not publish applied configuration&quot;, error));
+    }
+</code></pre>
+<h1 id="同步状态判断依据">同步状态判断依据</h1>
+<p>查阅thingsboard ui模块下的如下文件：<br>
+<code>D:\JAVA\iot\code\thingsboard\ui\src\app\extension\extension-table.directive.js</code><br>
+确认同步方法：</p>
+<pre><code class="language-js">function reloadExtensions() {
+        vm.subscribed = false;
+        vm.allExtensions.length = 0;
+        vm.extensions.length = 0;
+        vm.extensionsPromise = attributeService.getEntityAttributesValues(vm.entityType, vm.entityId, types.attributesScope.shared.value, [&quot;configuration&quot;]);
+        vm.extensionsPromise.then(
+            function success(data) {
+                if (data.length) {
+                    vm.allExtensions = angular.fromJson(data[0].value);
+                } else {
+                    vm.allExtensions = [];
+                }
+
+                vm.selectedExtensions = [];
+                updateExtensions();
+                vm.extensionsPromise = null;
+            },
+            function fail() {
+                vm.extensions = [];
+                vm.selectedExtensions = [];
+                updateExtensions();
+                vm.extensionsPromise = null;
+            }
+        );
+    }
+
+function updateExtensions() {
+        vm.selectedExtensions = [];
+        var result = $filter('orderBy')(vm.allExtensions, vm.query.order);
+        // $log.info(result);
+        if (vm.query.search != null) {
+            result = $filter('filter')(result, function(extension) {
+                if(!vm.query.search || (extension.id.indexOf(vm.query.search) != -1) || (extension.type.indexOf(vm.query.search) != -1)) {
+                    return true;
+                }
+                return false;
+            });
+        }
+        vm.extensionsCount = result.length;
+        var startIndex = vm.query.limit * (vm.query.page - 1);
+        vm.extensions = result.slice(startIndex, startIndex + vm.query.limit);
+
+        vm.extensionsJSON = angular.toJson(vm.extensions);
+        checkForSync();
+    }
+
+function subscribeForClientAttributes() {
+        if (!vm.subscribed) {
+            if (vm.entityId &amp;&amp; vm.entityType) {
+                $scope.subscriber = {
+                    subscriptionCommands: [{
+                        entityType: vm.entityType,
+                        entityId: vm.entityId,
+                        scope: 'CLIENT_SCOPE'
+                    }],
+                    type: 'attribute',
+                    onData: function (data) {
+                        if (data.data) {
+                            onSubscriptionData(data.data);
+                        }
+                        vm.subscribed = true;
+                    }
+                };
+                telemetryWebsocketService.subscribe($scope.subscriber);
+            }
+        }
+    }
+
+function onSubscriptionData(data) {
+         // $log.info(data);
+        if ($.isEmptyObject(data)) {
+            vm.appliedConfiguration = undefined;
+        } else {
+            if (data.appliedConfiguration &amp;&amp; data.appliedConfiguration[0] &amp;&amp; data.appliedConfiguration[0][1]) {
+                vm.appliedConfiguration = data.appliedConfiguration[0][1];
+            }
+        }
+
+        updateExtensions();
+        $scope.$digest();
+    }
+
+function checkForSync() {
+         // $log.info(&quot;app:&quot;+vm.appliedConfiguration);
+         // $log.info(&quot;ext:&quot;+vm.extensionsJSON);
+        if (vm.appliedConfiguration &amp;&amp; vm.extensionsJSON &amp;&amp; vm.appliedConfiguration === vm.extensionsJSON) {
+            vm.syncStatus = $translate.instant('extension.sync.sync');
+            vm.syncLastTime = formatDate();
+            $scope.isSync = true;
+        } else {
+            vm.syncStatus = $translate.instant('extension.sync.not-sync');
+
+            $scope.isSync = false;
+        }
+    }
+</code></pre>
+<p>可以看出同步状态是通过判断网关的客户端属性<code>appliedConfiguration</code>与加工过的共享属性<code>configuration</code>值是否一致。<br>
+同时发现一个自认为的bug：共享属性<code>configuration</code>会被排序加工成<code>extensionsJSON</code>,排序是根据扩展id升序排序的,所以会导致客户端属性与加工后的共享属性不一致，导致提示不同步，但好像并不影响使用：<br>
+<code>var result = $filter('orderBy')(vm.allExtensions, vm.query.order);</code></p>
+<pre><code class="language-js">vm.query = {
+        order: 'id',
+        limit: 5,
+        page: 1,
+        search: null
+    };
+</code></pre>
+<p>所以我自己建议是添加网关扩展时id累加命名，如1_green,2_red。</p>
+<h1 id="后记">后记</h1>
+<p>以上纯属本人臆想推测，欢迎看者多加指正，互相进步。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard gateway http扩展 创建设备、上传属性及遥测数据]]></title>
         <id>http://alang.two3.cn/post/thingsboard-gateway-http-kuo-zhan-shang-chuan-shu-xing-ji-yao-ce-shu-ju</id>
@@ -854,30 +1004,6 @@ public static void main(String[] args) {
 </code></pre>
 </li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[笑口常开，好彩自然来]]></title>
-        <id>http://alang.two3.cn/post/xiao-kou-chang-kai-hao-cai-zi-ran-lai</id>
-        <link href="http://alang.two3.cn/post/xiao-kou-chang-kai-hao-cai-zi-ran-lai">
-        </link>
-        <updated>2019-08-07T07:42:30.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>小时候父母吵架闹到要离婚的地步时，我挺身而出劝解道：“难道你们就不能打一顿孩子消消气？非要闹到离婚不可？弟弟还那么小，你们打他，他又不会记仇！”</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>小时候父母吵架闹到要离婚的地步时，我挺身而出劝解道：“难道你们就不能打一顿孩子消消气？非要闹到离婚不可？弟弟还那么小，你们打他，他又不会记仇！”</p>
-</blockquote>
-<!-- more -->
-<div style="text-align:center;">
-	<h1>洗不完的头</h1>
-	 <div>
-		<video controls="controls"  autoplay="autoplay"  width="66%">
-		<source src="http://jumpalang.two3.cn/%E6%B4%97%E4%B8%8D%E5%AE%8C%E7%9A%84%E5%A4%B4.mp4" type="video/mp4" />
-		</video>
-	</div>
-	</div>
 ]]></content>
     </entry>
 </feed>
