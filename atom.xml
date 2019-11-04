@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-11-04T08:18:13.409Z</updated>
+    <updated>2019-11-04T08:20:44.177Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -27,7 +27,7 @@
 </blockquote>
 <!-- more -->
 <h1 id="前记">前记</h1>
-<p>以上纯属本人臆想推测，欢迎看者多加指正，互相进步。</p>
+<p>以下纯属本人臆想推测，难免会有疏漏。欢迎看者多加指正，互相进步。</p>
 <h1 id="理解大佬源码分析">理解大佬源码分析</h1>
 <p>从大佬文章中，大致可以理解成:当网关配置与thingsboard互通后，并允许thingsboard远程更新，则网关中连接thingsboard mqtt broker的mqtt客户端有订阅了属性更新主题<code>v1/devices/me/attributes</code>，用于实时获取共享属性更新。每当在thingsboard平台上配置网关扩展，thingsboard就会自动将配置信息保存为共享属性<code>configuration</code>的值。此时网关中的mqtt客户端监听到共享属性更新，会根据共享属性值重新初始化网关扩展配置。而后再把相应扩展配置上传至网关客户端属性<code>appliedConfiguration</code>,见如下代码：</p>
 <pre><code class="language-java">private void updateConfiguration(String configuration) {
