@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-11-13T03:51:11.394Z</updated>
+    <updated>2019-11-13T03:52:55.577Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -28,16 +28,16 @@
 </code></pre>
 <p>发现是使用springmvc的@PathVariable来匹配路径，而@PathVariable只支持一级路径，如下是大佬的原话：</p>
 <blockquote>
-<p>它在做匹配时直接会把green/report切成green和report两段，每段去和pattern的每一段匹配。</p>
+<p>它在做匹配时直接会把green/report切成green和report两段，每段去和pattern的每一段匹配。<br>
+大佬给出的建议是：</p>
 </blockquote>
-<p>大佬给出的建议是：</p>
 <ol>
 <li>修改antmatcher源码</li>
-<li>/**去匹配，然后手工去拿最后一段<br>
-选择了第二种方法，比较方便。<br>
-带着问题找答案，找到一篇文章：<br>
-<a href="https://blog.csdn.net/jiangxuexuanshuang/article/details/51720362">https://blog.csdn.net/jiangxuexuanshuang/article/details/51720362</a></li>
+<li>/**去匹配，然后手工去拿最后一段</li>
 </ol>
+<p>选择了第二种方法，比较方便。<br>
+带着问题找答案，找到一篇文章：<br>
+<a href="https://blog.csdn.net/jiangxuexuanshuang/article/details/51720362">https://blog.csdn.net/jiangxuexuanshuang/article/details/51720362</a></p>
 <h1 id="源码修改">源码修改</h1>
 <p>把路径匹配的<code>/uplink/{converterId}</code>改成用<code>/**</code>去匹配：<code>/uplink/**</code>,然后写方法去提取这个<code>**</code>里面的内容。</p>
 <pre><code class="language-java">@RequestMapping(value = &quot;/uplink/**&quot;, method = RequestMethod.POST)
