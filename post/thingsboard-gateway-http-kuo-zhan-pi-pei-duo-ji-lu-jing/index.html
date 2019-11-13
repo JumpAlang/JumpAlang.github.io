@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jump!Alang</title>
 <meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://alang.two3.cn/favicon.ico?v=1573617170385">
+<link rel="shortcut icon" href="http://alang.two3.cn/favicon.ico?v=1573617634102">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -24,7 +24,7 @@
       <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
         <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
         <a href="http://alang.two3.cn">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://alang.two3.cn/images/avatar.png?v=1573617170385" alt="">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://alang.two3.cn/images/avatar.png?v=1573617634102" alt="">
         </a>
         <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Jump!Alang</h1>
       </div>
@@ -107,9 +107,9 @@
 </code></pre>
 <p>发现是使用springmvc的@PathVariable来匹配路径，而@PathVariable只支持一级路径，如下是大佬的原话：</p>
 <blockquote>
-<p>它在做匹配时直接会把green/report切成green和report两段，每段去和pattern的每一段匹配。<br>
-大佬给出的建议是：</p>
+<p>它在做匹配时直接会把green/report切成green和report两段，每段去和pattern的每一段匹配。</p>
 </blockquote>
+<p>大佬给出的建议是：</p>
 <ol>
 <li>修改antmatcher源码</li>
 <li>/**去匹配，然后手工去拿最后一段</li>
