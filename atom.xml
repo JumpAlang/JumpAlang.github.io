@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-11-04T08:20:44.177Z</updated>
+    <updated>2019-11-13T03:51:11.394Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -10,6 +10,56 @@
     <logo>http://alang.two3.cn/images/avatar.png</logo>
     <icon>http://alang.two3.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[thingsboard gateway http扩展匹配多级路径]]></title>
+        <id>http://alang.two3.cn/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing</id>
+        <link href="http://alang.two3.cn/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing">
+        </link>
+        <updated>2019-11-13T02:47:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>调测http扩展时，发现转换器序列号中的url只能配置一级，如只支持<code>green</code>格式，不支持<code>green/1/2/3</code>之类多级。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>调测http扩展时，发现转换器序列号中的url只能配置一级，如只支持<code>green</code>格式，不支持<code>green/1/2/3</code>之类多级。</p>
+<!-- more -->
+<h1 id="问题分析">问题分析</h1>
+<p>查看HttpController源码：</p>
+<pre><code class="language-java">@RequestMapping(value = &quot;/uplink/{converterId}&quot;, method = RequestMethod.POST)
+    public void handleRequest(@PathVariable String converterId,
+                                            @RequestBody String body) throws Exception {
+</code></pre>
+<p>发现是使用springmvc的@PathVariable来匹配路径，而@PathVariable只支持一级路径，如下是大佬的原话：</p>
+<blockquote>
+<p>它在做匹配时直接会把green/report切成green和report两段，每段去和pattern的每一段匹配。</p>
+</blockquote>
+<p>大佬给出的建议是：</p>
+<ol>
+<li>修改antmatcher源码</li>
+<li>/**去匹配，然后手工去拿最后一段<br>
+选择了第二种方法，比较方便。<br>
+带着问题找答案，找到一篇文章：<br>
+<a href="https://blog.csdn.net/jiangxuexuanshuang/article/details/51720362">https://blog.csdn.net/jiangxuexuanshuang/article/details/51720362</a></li>
+</ol>
+<h1 id="源码修改">源码修改</h1>
+<p>把路径匹配的<code>/uplink/{converterId}</code>改成用<code>/**</code>去匹配：<code>/uplink/**</code>,然后写方法去提取这个<code>**</code>里面的内容。</p>
+<pre><code class="language-java">@RequestMapping(value = &quot;/uplink/**&quot;, method = RequestMethod.POST)
+    public void handleRequest(HttpServletRequest request,
+                                            @RequestBody String body) throws Exception {
+                        String converterId = extractPathFromPattern(request);
+                        service.processRequest(converterId, null, body);              
+    }
+
+    private String extractPathFromPattern(final HttpServletRequest request) {
+        String path = (String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE);
+        String bestMatchPattern = (String) request.getAttribute(HandlerMapping.BEST_MATCHING_PATTERN_ATTRIBUTE);
+        return new AntPathMatcher().extractPathWithinPattern(bestMatchPattern, path);
+    }
+</code></pre>
+<h1 id="测试">测试</h1>
+<p>至thingsboard的设备管理下配置完网关的http扩展后，使用postman测试新增的http转换器：<br>
+<img src="http://alang.two3.cn/post-images/1573616229936.png" alt=""></p>
+<h1 id="总结">总结</h1>
+<p>暂无</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard网关扩展与tb同步的理解]]></title>
         <id>http://alang.two3.cn/post/thingsboard-wang-guan-kuo-zhan-yu-tb-tong-bu-de-li-jie</id>
@@ -171,7 +221,7 @@ function checkForSync() {
         <content type="html"><![CDATA[<p>thingsboard官网文档有介绍网关mqtt扩展的使用，http扩展的使用方法找了许久也未找到。于是就想从thinsboard pe版本中的http整合找下灵感。pe版本中的http整合其实也就是提供中间的一个整合器服务和转换器（可以转换json/text/binary(base64)），然后跟着这个线索去查看gateway的源码，发现有一个controller有配置uplink上传链，至于downlink还待研究。<em><strong>对于thingsboard还是小白，如文章理解有误，希望看者多多帮忙指正，互相一起进步</strong></em></p>
 <!-- more -->
 <h1 id="gateway源码查看">gateway源码查看</h1>
-<p>在<code>httpController</code>有如下方法：</p>
+<p>在<code>HttpController</code>有如下方法：</p>
 <pre><code class="language-java">@RequestMapping(value = &quot;/uplink/{converterId}&quot;, method = RequestMethod.POST)
     public void handleRequest(@PathVariable String converterId,
                               @RequestBody String body) throws Exception {
@@ -647,363 +697,6 @@ postman调用样例，这边以我本地为例：<br>
     }
 }
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JAVA面试题]]></title>
-        <id>http://alang.two3.cn/post/java-mian-shi-ti</id>
-        <link href="http://alang.two3.cn/post/java-mian-shi-ti">
-        </link>
-        <updated>2019-08-11T05:12:42.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>机会是留给有准备的人！</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>机会是留给有准备的人！</p>
-</blockquote>
-<!-- more -->
-<ol>
-<li>
-<p>简单说下什么是跨平台？<br>
-由于各种操作系统指令集不是完全一致的，所有在操作系统之上加个虚拟机可以来提供统一接口，屏蔽系统之间的差异。</p>
-</li>
-<li>
-<p>java有几种基本数据类型</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">数据类型</th>
-<th style="text-align:center">字节</th>
-<th style="text-align:center">默认值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">byte</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">short</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">int</td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">long</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">float</td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">0.0f</td>
-</tr>
-<tr>
-<td style="text-align:center">double</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">0.0d</td>
-</tr>
-<tr>
-<td style="text-align:center">char</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">'\u0000'</td>
-</tr>
-<tr>
-<td style="text-align:center"><em><strong>boolean</strong></em></td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">false</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>ArratList和LinkedList区别<br>
-ArrayList是基于动态数组的数据结构，LinkedList是基于链表的数据结构。<br>
-对于随机访问get和set,ArrayList优于LinkedList,因为LinkedList要移动指针。<br>
-对于新增和删除add和remove，LinkedList优于ArrayList，因为ArrayList要移动数据。</p>
-</li>
-<li>
-<p>ConncurrentModificationException异常出现的原因</p>
-<pre><code class="language-java">  public class Test{
- 	 public static void main(String[] args){
- 		 ArrayList&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;();
- 		 list.add(2);
- 		 Iterator&lt;Integer&gt; ite = list.iterator();
- 		 while(ite.hasNext()){
- 			 Integer integer = ite.next();
- 			 if(integer == 2){
- 				 list.remove(integer);
- 			 }
- 		 }
- 	 }
-  }
-</code></pre>
-<p>执行上段代码是有问题的，会抛出<code>ConcurrentModification</code>异常。<br>
-<strong>原因</strong>：调用list.remove()方法导致modCount和expectedModeCount的值不一致。</p>
-<pre><code class="language-java">final void checkForComodication(){
-    if(modCount != expectedModCount
-   	 throw new ConcurrentModification();
-}
-</code></pre>
-<p><strong>解决方法</strong>：在迭代器中如果要删除元素的话，需要调用Iterator类的remove方法。</p>
-<pre><code class="language-java">public class Test{
-    public static void main(String[] args){
-   	 ArrayList&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;();
-   	 list.add(2);
-   	 Iterator&lt;Integer&gt; ite = list.iterator();
-   	 while(ite.hasNext()){
-   		 Integer integer = ite.next();
-   		 if(integer == 2){
-   			 ite.remove();//注意这个地方
-   		 }
-   	 }
-    }
-} 
-</code></pre>
-</li>
-<li>
-<p>String、StringBuffer和StringBuilder区别</p>
-<ol>
-<li>数据可变和不可变<br>
-<code>String</code>底层使用一个不可变的字符数组private final char value[];所以它内容不可变；<br>
-<code>StringBuffer</code>和<code>StringBuilder</code>都继承了<code>AbstractStringBuilder</code>底层使用的是可变字符数组：<code>char[] value</code>;</li>
-<li>线程安全<br>
-<code>StringBuilder</code>是线程不安全的，效率较高；而StringBuffer是线程安全的，效率较低。<br>
-通过他们的<code>append()</code>方法来看，<code>StringBuffer</code>是有同步锁，而StringBuilder没有：</li>
-</ol>
-<pre><code class="language-java">@Override
-public sychronized StringBuffer append(Object obj){
-	toStringCache = null;
-	super.append(String.valueOf(obj));
-	return this;
-}
-
-@Override
-public StringBuilder append(String str){
-	super.append(str);
-	return this;
-}
-</code></pre>
-<ol start="3">
-<li>相同点<br>
-<code>StringBuilder</code>与<code>StringBuffer</code>有公共父类`AbstractStringBuilder'。</li>
-</ol>
-<p>最后，操作可变字符速度：<code>StringBuilder &gt; StringBuffer &gt; String</code>。</p>
-</li>
-<li>
-<p>HashMap和HashTable、ConcurrentHashMap区别？<br>
-相同点：<br>
-1.HashMap和HashTable都实现Map接口<br>
-2.都可以存储key-value数据<br>
-不同点：<br>
-1.HashMap可以将null作为key或value，HashTable不可以。<br>
-2.HashMap是线程不安全，效率高，HashTable是线程安全，效率低。<br>
-3.HashMap的迭代器(Iterator)是fail-fast迭代器,而HashTable的迭代器(enumerator)不是fail-fast。</p>
-<blockquote>
-<p>fail-fast:就是就快的时间能把错误抛出而不是让程序执行。</p>
-</blockquote>
-<p>如何保证线程安全又效率高？<br>
-Java5提供了ConcurrentHashMap，它是HashTable的替代，比HashTable的扩展性更好。<br>
-我们能否让HashMap同步？<br>
-HashMap可以通过下面的语句进行同步：<br>
-<code>Map m = Collections.sychronizeMap(hashMap);</code></p>
-</li>
-<li>
-<p>线程创建方式</p>
-<ol>
-<li>继承Thread类，作为线程对象存在(继承Thread对象)</li>
-</ol>
-<pre><code class="language-java">public class CreatThreadDemo1 extends Thread{
-/**
- * 构造方法： 继承父类方法的Thread(String name)；方法
- * @param name
- */
-public CreatThreadDemo1(String name){
-    super(name);
-}
-
-@Override
-public void run() {
-    while (!interrupted()){
-        System.out.println(getName()+&quot;线程执行了...&quot;);
-        try {
-            Thread.sleep(200);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-}
-
-public static void main(String[] args) {
-    CreatThreadDemo1 d1 = new CreatThreadDemo1(&quot;first&quot;);
-    CreatThreadDemo1 d2 = new CreatThreadDemo1(&quot;second&quot;);
-
-    d1.start();
-    d2.start();
-
-    d1.interrupt();  //中断第一个线程
-}
-}
-</code></pre>
-<p>常规方法，不多做介绍了，interrupted方法，是来判断该线程是否被中断。（终止线程不允许用stop方法，该方法不会施放占用的资源。所以我们在设计程序的时候，要按照中断线程的思维去设计，就像上面的代码一样）。</p>
-<ol start="2">
-<li>实现runnable接口作为线程任务存在</li>
-</ol>
-<pre><code class="language-java">public class CreatThreadDemo2 implements Runnable {
-@Override
-public void run() {
-    while (true){
-        System.out.println(&quot;线程执行了...&quot;);
-    }
-}
-
-public static void main(String[] args) {
-    //将线程任务传给线程对象
-    Thread thread = new Thread(new CreatThreadDemo2());
-    //启动线程
-    thread.start();
-}
-}
-</code></pre>
-<p>Runnable 只是来修饰线程所执行的任务，它不是一个线程对象。想要启动Runnable对象，必须将它放到一个线程对象里。</p>
-<ol start="3">
-<li>匿名内部类创建线程对象</li>
-</ol>
-<pre><code class="language-java">public class CreatThreadDemo3 extends Thread{
-public static void main(String[] args) {
-    //创建无参线程对象
-    new Thread(){
-        @Override
-        public void run() {
-            System.out.println(&quot;线程执行了...&quot;);
-        }
-    }.start();
-   //创建带线程任务的线程对象
-    new Thread(new Runnable() {
-        @Override
-        public void run() {
-            System.out.println(&quot;线程执行了...&quot;);
-        }
-    }).start();
-    //创建带线程任务并且重写run方法的线程对象
-    new Thread(new Runnable() {
-        @Override
-        public void run() {
-            System.out.println(&quot;runnable run 线程执行了...&quot;);
-        }
-    }){
-        @Override
-        public void run() {
-            System.out.println(&quot;override run 线程执行了...&quot;);
-        }
-    }.start();
-}
-}
-</code></pre>
-<p>创建带线程任务并且重写run方法的线程对象中，为什么只运行了Thread的run方法。我们看看Thread类的源码:<br>
-<code>public class Thread implements Runnable{……}</code>;<br>
-4.创建带返回值的线程</p>
-<pre><code class="language-java">public class CreatThreadDemo4 implements Callable {
-public static void main(String[] args) throws ExecutionException, InterruptedException {
-    CreatThreadDemo4 demo4 = new CreatThreadDemo4();
-
-    FutureTask&lt;Integer&gt; task = new FutureTask&lt;Integer&gt;(demo4); //FutureTask最终实现的是runnable接口
-
-    Thread thread = new Thread(task);
-
-    thread.start();
-
-    System.out.println(&quot;我可以在这里做点别的业务逻辑...因为FutureTask是提前完成任务&quot;);
-    //拿出线程执行的返回值
-    Integer result = task.get();
-    System.out.println(&quot;线程中运算的结果为:&quot;+result);
-}
-
-//重写Callable接口的call方法
-@Override
-public Object call() throws Exception {
-    int result = 1;
-    System.out.println(&quot;业务逻辑计算中...&quot;);
-    Thread.sleep(3000);
-    return result;
-}
-}
-</code></pre>
-<p>Callable接口介绍：</p>
-<pre><code class="language-java">public interface Callable&lt;V&gt; {
-/**
- * Computes a result, or throws an exception if unable to do so.
- *
- * @return computed result
- * @throws Exception if unable to compute a result
- */
-V call() throws Exception;
-}
-</code></pre>
-<p>返回指定泛型的call方法。然后调用FutureTask对象的get方法得道call方法的返回值。</p>
-<ol start="5">
-<li>定时器Timer</li>
-</ol>
-<pre><code class="language-java">public class CreatThreadDemo5 {
-
-public static void main(String[] args) {
-    Timer timer = new Timer();
-
-    timer.schedule(new TimerTask() {
-        @Override
-        public void run() {
-            System.out.println(&quot;定时器线程执行了...&quot;);
-        }
-    },0,1000);   //延迟0，周期1s
-
-}
-}
-</code></pre>
-<ol start="6">
-<li>线程池创建线程</li>
-</ol>
-<pre><code class="language-java">public class CreatThreadDemo6 {
-public static void main(String[] args) {
-    //创建一个具有10个线程的线程池
-    ExecutorService threadPool = Executors.newFixedThreadPool(10);
-    long threadpoolUseTime = System.currentTimeMillis();
-    for (int i = 0;i&lt;10;i++){
-        threadPool.execute(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println(Thread.currentThread().getName()+&quot;线程执行了...&quot;);
-            }
-        });
-    }
-    long threadpoolUseTime1 = System.currentTimeMillis();
-    System.out.println(&quot;多线程用时&quot;+(threadpoolUseTime1-threadpoolUseTime));
-    //销毁线程池
-    threadPool.shutdown();
-    threadpoolUseTime = System.currentTimeMillis();
-}
-
-}
-</code></pre>
-<p>7.利用java8新特性 stream 实现并发</p>
-<pre><code class="language-java">public class CreatThreadDemo7 {
-public static void main(String[] args) {
-    List&lt;Integer&gt; values = Arrays.asList(10,20,30,40);
-    //parallel 平行的，并行的
-    int result = values.parallelStream().mapToInt(p -&gt; p*2).sum();
-    System.out.println(result);
-    //怎么证明它是并发处理呢
-    values.parallelStream().forEach(p-&gt; System.out.println(p));
-		}
-	}
-</code></pre>
-</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
