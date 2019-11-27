@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://alang.two3.cn</id>
     <title>Jump!Alang</title>
-    <updated>2019-11-27T03:15:27.829Z</updated>
+    <updated>2019-11-27T11:16:01.012Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://alang.two3.cn"/>
     <link rel="self" href="http://alang.two3.cn/atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>http://alang.two3.cn/images/avatar.png</logo>
     <icon>http://alang.two3.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[为什么说中国房价不敢跌、也不能跌？]]></title>
+        <id>http://alang.two3.cn/post/wei-shi-me-shuo-zhong-guo-fang-jie-bu-gan-die-ye-bu-neng-die</id>
+        <link href="http://alang.two3.cn/post/wei-shi-me-shuo-zhong-guo-fang-jie-bu-gan-die-ye-bu-neng-die">
+        </link>
+        <updated>2019-11-27T11:08:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>从<a href="https://www.youtube.com/watch?v=W08Rij3QNqQ" title="youtube">youtube</a>上看到的，感觉有点道理就摘抄过来。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>从<a href="https://www.youtube.com/watch?v=W08Rij3QNqQ" title="youtube">youtube</a>上看到的，感觉有点道理就摘抄过来。</p>
+<!-- more -->
+<div style="text-align:center;">
+	 <div>
+		<video controls="controls" >
+		<source src="http://jumpalang.two3.cn//video/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E4%B8%AD%E5%9B%BD%E6%88%BF%E4%BB%B7%E4%B8%8D%E6%95%A2%E8%B7%8C%E3%80%81%E4%B9%9F%E4%B8%8D%E8%83%BD%E8%B7%8C%EF%BC%9F.mp4" type="video/mp4" />
+		</video>
+	</div>
+	</div>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[《Outside》张钰琪NASA演唱]]></title>
         <id>http://alang.two3.cn/post/outside-zhang-yu-qi-nasa-yan-chang</id>
@@ -475,29 +493,6 @@ postman调用样例，这边以我本地为例：<br>
 <p><a href="https://thingsboard.io/docs/iot-gateway/what-is-iot-gateway/">https://thingsboard.io/docs/iot-gateway/what-is-iot-gateway/</a> <em>什么是ThingsBoard IoT网关？</em><br>
 <a href="https://thingsboard.io/docs/iot-gateway/getting-started/">https://thingsboard.io/docs/iot-gateway/getting-started/</a> <em>ThingsBoard IoT网关入门</em><br>
 <a href="https://thingsboard.io/docs/reference/gateway-mqtt-api/">https://thingsboard.io/docs/reference/gateway-mqtt-api/</a> <em>MQTT网关API参考</em></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[你离开了南京，从此没有人和我说话]]></title>
-        <id>http://alang.two3.cn/post/ni-chi-kai-liao-nan-jing-cong-ci-mei-you-ren-he-wo-shuo-hua</id>
-        <link href="http://alang.two3.cn/post/ni-chi-kai-liao-nan-jing-cong-ci-mei-you-ren-he-wo-shuo-hua">
-        </link>
-        <updated>2019-08-26T14:36:20.000Z</updated>
-        <summary type="html"><![CDATA[<div style="text-align:center;">
-	<div>
-			<audio  controls="controls">
-			<source src="http://jumpalang.two3.cn//music/%E4%BD%A0%E7%A6%BB%E5%BC%80%E4%BA%86%E5%8D%97%E4%BA%AC%20%E4%BB%8E%E6%AD%A4%E6%B2%A1%E6%9C%89%E4%BA%BA%E5%92%8C%E6%88%91%E8%AF%B4%E8%AF%9D.mp3" type="audio/mpeg" />
-	</audio>
-	</div>
-	</div>]]></summary>
-        <content type="html"><![CDATA[<div style="text-align:center;">
-	<div>
-			<audio  controls="controls">
-			<source src="http://jumpalang.two3.cn//music/%E4%BD%A0%E7%A6%BB%E5%BC%80%E4%BA%86%E5%8D%97%E4%BA%AC%20%E4%BB%8E%E6%AD%A4%E6%B2%A1%E6%9C%89%E4%BA%BA%E5%92%8C%E6%88%91%E8%AF%B4%E8%AF%9D.mp3" type="audio/mpeg" />
-	</audio>
-	</div>
-	</div>
-<!-- more -->
 ]]></content>
     </entry>
 </feed>
