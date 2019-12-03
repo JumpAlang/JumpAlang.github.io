@@ -31,37 +31,9 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            永远年轻！永远热泪盈眶！
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-                <a href="https://github.com/JumpAlang" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="remixicon-github-line"></i>
-                </a>
-              
-            
-              
-            
-              
-                <a href="https://weibo.com/JumpAlang" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="remixicon-weibo-line"></i>
-                </a>
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
+          <div class="toc-container hidden lg:block">
             
           </div>
         </div>
@@ -112,31 +84,77 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="remixicon-bookmark-line"></i> 科普
-        </h2>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">为什么大多数人穷其一生，终究一无所获？</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2019-12-03 / 1 min read
+        </div>
         
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://jumpalang.github.io//post/zhuan-zai-bi-te-bi-ru-men-jiao-cheng">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">(转载)比特币入门教程</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        <blockquote>
-<p>作者：阮一峰 日期：2018年1月4日 摘自：<a target="_blank" href="http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html">链接</a></p>
-</blockquote>
+        <div class="post-content yue">
+          <p>也许七岁以后，我的使命就是把自己的基因发扬光大。</p>
+<!-- more -->
+<div style="text-align:center;">
+	 <div>
+		<video controls="controls" >
+		<source src="http://jumpalang.two3.cn//video/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E7%A9%B7%E5%85%B6%E4%B8%80%E7%94%9F%EF%BC%8C%E7%BB%88%E7%A9%B6%E4%B8%80%E6%97%A0%E6%89%80%E8%8E%B7%EF%BC%9F%E7%9C%8B%E6%95%99%E6%8E%88%E7%B2%BE%E8%BE%9F%E7%9A%84%E5%88%86%E6%9E%90%EF%BC%81.mp4" type="video/mp4" />
+		</video>
+	</div>
+	</div>
+        </div>
 
-      </div>
-      <div class="text-gray-400 text-sm font-light">2019-04-18 / 12 min read</div>
-    </div>
-  </section>
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://jumpalang.github.io//tag/study">
+            <span class="flex-auto">学习方法</span>
+          </a>
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://jumpalang.github.io//tag/summary">
+            <span class="flex-auto">摘抄</span>
+          </a>
+        
 
-        <div class="pagination-container animated fadeIn">
-  
-  
-</div>
+
+        <div class="flex justify-between py-8">
+          
+
+          
+            <div class="next-post">
+              <a href="https://jumpalang.github.io//post/wei-shi-me-shuo-zhong-guo-fang-jie-bu-gan-die-ye-bu-neng-die">
+                <h3 class="post-title">
+                  为什么说中国房价不敢跌、也不能跌？
+                  <i class="remixicon-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'dd6b58508cc9af58fc1c',
+    clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
+    repo: 'JumpAlang.github.io',
+    owner: 'JumpAlang',
+    admin: ['JumpAlang'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
 
       </div>
     </div>
