@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://www.alang.run</id>
+    <id>http://m.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2019-12-24T17:54:13.641Z</updated>
+    <updated>2019-12-24T18:00:36.194Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://www.alang.run"/>
-    <link rel="self" href="http://www.alang.run/atom.xml"/>
+    <link rel="alternate" href="http://m.alang.run"/>
+    <link rel="self" href="http://m.alang.run/atom.xml"/>
     <subtitle>永远年轻！永远热泪盈眶！</subtitle>
-    <logo>http://www.alang.run/images/avatar.png</logo>
-    <icon>http://www.alang.run/favicon.ico</icon>
+    <logo>http://m.alang.run/images/avatar.png</logo>
+    <icon>http://m.alang.run/favicon.ico</icon>
     <rights>All rights reserved 2019, Jump!Alang</rights>
     <entry>
         <title type="html"><![CDATA[为什么大多数人穷其一生，终究一无所获？]]></title>
-        <id>http://www.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo</id>
-        <link href="http://www.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo">
+        <id>http://m.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo</id>
+        <link href="http://m.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo">
         </link>
         <updated>2019-12-03T09:34:04.000Z</updated>
         <summary type="html"><![CDATA[<p>潜意识决定了你95%的人生。而潜意识你可以通过催眠、重复来改变。</p>
@@ -30,8 +30,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[《Outside》张钰琪NASA演唱]]></title>
-        <id>http://www.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang</id>
-        <link href="http://www.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang">
+        <id>http://m.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang</id>
+        <link href="http://m.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang">
         </link>
         <updated>2019-11-26T12:50:21.000Z</updated>
         <summary type="html"><![CDATA[<div style="text-align:center;">
@@ -88,8 +88,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard gateway http扩展匹配多级路径]]></title>
-        <id>http://www.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing</id>
-        <link href="http://www.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing">
+        <id>http://m.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing</id>
+        <link href="http://m.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing">
         </link>
         <updated>2019-11-13T02:47:43.000Z</updated>
         <summary type="html"><![CDATA[<p>调测http扩展时，发现转换器序列号中的url只能配置一级，如只支持<code>green</code>格式，不支持<code>green/1/2/3</code>之类多级。</p>
@@ -131,15 +131,15 @@
 </code></pre>
 <h1 id="测试">测试</h1>
 <p>至thingsboard的设备管理下配置完网关的http扩展后，使用postman测试新增的http转换器：<br>
-<img src="http://www.alang.run/post-images/1573616229936.png" alt=""></p>
+<img src="http://m.alang.run/post-images/1573616229936.png" alt=""></p>
 <h1 id="总结">总结</h1>
 <p>暂无</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard网关扩展与tb同步的理解]]></title>
-        <id>http://www.alang.run/post/thingsboard-wang-guan-kuo-zhan-yu-tb-tong-bu-de-li-jie</id>
-        <link href="http://www.alang.run/post/thingsboard-wang-guan-kuo-zhan-yu-tb-tong-bu-de-li-jie">
+        <id>http://m.alang.run/post/thingsboard-wang-guan-kuo-zhan-yu-tb-tong-bu-de-li-jie</id>
+        <link href="http://m.alang.run/post/thingsboard-wang-guan-kuo-zhan-yu-tb-tong-bu-de-li-jie">
         </link>
         <updated>2019-11-04T07:20:31.000Z</updated>
         <summary type="html"><![CDATA[<p>最近由于要经常操作网关扩展，如添加http扩展，新增mqtt扩展的映射。经常出现网关不同步问题。导致了经过网关的数据，设备有创建，但是没有相应遥测数据，之前有看过群里大佬写过thingsboard网关与tb配置同步的源码分析：</p>
@@ -288,8 +288,8 @@ function checkForSync() {
     </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard gateway http扩展 创建设备、上传属性及遥测数据]]></title>
-        <id>http://www.alang.run/post/thingsboard-gateway-http-kuo-zhan-shang-chuan-shu-xing-ji-yao-ce-shu-ju</id>
-        <link href="http://www.alang.run/post/thingsboard-gateway-http-kuo-zhan-shang-chuan-shu-xing-ji-yao-ce-shu-ju">
+        <id>http://m.alang.run/post/thingsboard-gateway-http-kuo-zhan-shang-chuan-shu-xing-ji-yao-ce-shu-ju</id>
+        <link href="http://m.alang.run/post/thingsboard-gateway-http-kuo-zhan-shang-chuan-shu-xing-ji-yao-ce-shu-ju">
         </link>
         <updated>2019-11-01T08:02:53.000Z</updated>
         <summary type="html"><![CDATA[<p>thingsboard官网文档有介绍网关mqtt扩展的使用，http扩展的使用方法找了许久也未找到。于是就想从thinsboard pe版本中的http整合找下灵感。pe版本中的http整合其实也就是提供中间的一个整合器服务和转换器（可以转换json/text/binary(base64)），然后跟着这个线索去查看gateway的源码，发现有一个controller有配置uplink上传链，至于downlink还待研究。<em><strong>对于thingsboard还是小白，如文章理解有误，希望看者多多帮忙指正，互相一起进步</strong></em></p>
@@ -306,21 +306,21 @@ function checkForSync() {
 </code></pre>
 <h1 id="gateway扩展配置">gateway扩展配置</h1>
 <p>至thingsboard平台配置网关设备的扩展，新增http扩展。如下：<br>
-<img src="http://www.alang.run/post-images/1572596736680.png" alt=""><br>
-<img src="http://www.alang.run/post-images/1572596746058.png" alt=""><br>
-<img src="http://www.alang.run/post-images/1572596750984.png" alt=""><br>
-<img src="http://www.alang.run/post-images/1572596757416.png" alt=""></p>
+<img src="http://m.alang.run/post-images/1572596736680.png" alt=""><br>
+<img src="http://m.alang.run/post-images/1572596746058.png" alt=""><br>
+<img src="http://m.alang.run/post-images/1572596750984.png" alt=""><br>
+<img src="http://m.alang.run/post-images/1572596757416.png" alt=""></p>
 <h1 id="postman调用http扩展url">postman调用http扩展url</h1>
 <p>上一步骤我们配置了转换器序列号为green,网关默认开启端口号为9090，则http请求地址为：网关地址ip:9090/uplink/green。<br>
-<img src="http://www.alang.run/post-images/1572599651241.png" alt=""></p>
+<img src="http://m.alang.run/post-images/1572599651241.png" alt=""></p>
 <h1 id="至tb平台上查看设备及数据">至tb平台上查看设备及数据</h1>
-<figure data-type="image" tabindex="1"><img src="http://www.alang.run/post-images/1572599728628.png" alt=""></figure>
+<figure data-type="image" tabindex="1"><img src="http://m.alang.run/post-images/1572599728628.png" alt=""></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[postgresql-11.5.1安装timescaledb-1.4.2后无法加载库解决方法]]></title>
-        <id>http://www.alang.run/post/postgresql-1151-an-zhuang-timescaledb-142-hou-wu-fa-jia-zai-ku-jie-jue-fang-fa</id>
-        <link href="http://www.alang.run/post/postgresql-1151-an-zhuang-timescaledb-142-hou-wu-fa-jia-zai-ku-jie-jue-fang-fa">
+        <id>http://m.alang.run/post/postgresql-1151-an-zhuang-timescaledb-142-hou-wu-fa-jia-zai-ku-jie-jue-fang-fa</id>
+        <link href="http://m.alang.run/post/postgresql-1151-an-zhuang-timescaledb-142-hou-wu-fa-jia-zai-ku-jie-jue-fang-fa">
         </link>
         <updated>2019-10-19T17:08:27.000Z</updated>
         <summary type="html"><![CDATA[<p>之前为了尝鲜了，装了最新版的postgresql数据库，而后安装完时序数据库timescaledb报了如下错误<code>无法加载库 &quot;d:/program files/postgresql/11/lib/timescaledb-1.4.2.dll&quot;</code>，解决这个问题还是花费了不少时间，写在这希望能帮助遇到同样问题的人。</p>
@@ -345,8 +345,8 @@ Zip file downloadable from here: https://get.enterprisedb.com/postgresql/postgre
     </entry>
     <entry>
         <title type="html"><![CDATA[ThingsBoard修改logo]]></title>
-        <id>http://www.alang.run/post/thingsboard-xiu-gai-logo-ji-biao-ti</id>
-        <link href="http://www.alang.run/post/thingsboard-xiu-gai-logo-ji-biao-ti">
+        <id>http://m.alang.run/post/thingsboard-xiu-gai-logo-ji-biao-ti</id>
+        <link href="http://m.alang.run/post/thingsboard-xiu-gai-logo-ji-biao-ti">
         </link>
         <updated>2019-10-16T16:35:26.000Z</updated>
         <summary type="html"><![CDATA[<p>本来以为很简单的事，但其中问题不断，写在此愿能帮助遇到同样问题的你。<br>
@@ -374,8 +374,8 @@ Zip file downloadable from here: https://get.enterprisedb.com/postgresql/postgre
     </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard rpc大佬总结]]></title>
-        <id>http://www.alang.run/post/thingsboard-rpc-da-lao-zong-jie</id>
-        <link href="http://www.alang.run/post/thingsboard-rpc-da-lao-zong-jie">
+        <id>http://m.alang.run/post/thingsboard-rpc-da-lao-zong-jie</id>
+        <link href="http://m.alang.run/post/thingsboard-rpc-da-lao-zong-jie">
         </link>
         <updated>2019-09-27T07:42:54.000Z</updated>
         <summary type="html"><![CDATA[<p>感谢大佬：@苏州-大侠，@杭州～三升水<br>
@@ -395,19 +395,19 @@ QQ群：China Thingsboard（726442610）</p>
 2.因为TB他不是单机的，就是有多个服务在一起部署的，多个机器是通过Akka模型进行通讯的<br>
 3.他用grpc来进行服务的调用和消息在多个实例上传递<br>
 4.这2个分别是用集群获取消息和发送消息，无论数据采集还有其他<br>
-<img src="http://www.alang.run/post-images/1569571494278.jpg" alt=""><br>
-<img src="http://www.alang.run/post-images/1569571500277.jpg" alt=""><br>
+<img src="http://m.alang.run/post-images/1569571494278.jpg" alt=""><br>
+<img src="http://m.alang.run/post-images/1569571500277.jpg" alt=""><br>
 5.TB把单机版和集群的API做了个区分<br>
 6.所以你会看到2套API,总结就是，你不是集群部署的话，rpc那套用处不大，上面采集的接口（<code>就是mqtt,coap,http的通过主题发送消息</code>）也能满足你的要求<br>
 7.像这种，就是那种多个集群在一起通信的，交互消息的终端打印信息<br>
-<img src="http://www.alang.run/post-images/1569571672429.jpg" alt=""><br>
+<img src="http://m.alang.run/post-images/1569571672429.jpg" alt=""><br>
 8.网关的作用主要是对于单体没有联网能力的设备，从自组网或者局域网中，到一个有联网能力的设备上，统一上传数据</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard rest api使用准备]]></title>
-        <id>http://www.alang.run/post/thingsboard-rest-api-shi-yong-zhun-bei</id>
-        <link href="http://www.alang.run/post/thingsboard-rest-api-shi-yong-zhun-bei">
+        <id>http://m.alang.run/post/thingsboard-rest-api-shi-yong-zhun-bei</id>
+        <link href="http://m.alang.run/post/thingsboard-rest-api-shi-yong-zhun-bei">
         </link>
         <updated>2019-09-25T00:33:17.000Z</updated>
         <summary type="html"><![CDATA[<p>服务器端核心API</p>
@@ -420,16 +420,16 @@ QQ群：China Thingsboard（726442610）</p>
 <h1 id="获取token">获取token</h1>
 <p>post请求地址：http://THINGSBOARD_URL/api/auth/login，如官网示例则为：http://demo.thingsboard.io/api/auth/login<br>
 postman调用样例，这边以我本地为例：<br>
-<img src="http://www.alang.run/post-images/1569372720394.png" alt=""></p>
+<img src="http://m.alang.run/post-images/1569372720394.png" alt=""></p>
 <h1 id="调用api准备">调用api准备</h1>
 <p>调用api可以直接使用swagger-ui.html也可以在postman。</p>
 <ul>
 <li>swagger-ui调用api准备<br>
 在Swagger UI右上角的“Authorize”按钮填充api_key，api_key为&quot;Bearer &quot;+token,记得Bearer后面有个空格。<br>
-<img src="http://www.alang.run/post-images/1569373125236.png" alt=""></li>
+<img src="http://m.alang.run/post-images/1569373125236.png" alt=""></li>
 <li>postman调用api准备<br>
 要在header加上X-Authorization<br>
-<img src="http://www.alang.run/post-images/1569373400730.png" alt=""></li>
+<img src="http://m.alang.run/post-images/1569373400730.png" alt=""></li>
 </ul>
 <h1 id="参考">参考</h1>
 <p><a href="https://thingsboard.io/docs/reference/rest-api/">https://thingsboard.io/docs/reference/rest-api/</a> REST API</p>
@@ -437,8 +437,8 @@ postman调用样例，这边以我本地为例：<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard gateWay概述]]></title>
-        <id>http://www.alang.run/post/thingsboard-gateway-gai-shu</id>
-        <link href="http://www.alang.run/post/thingsboard-gateway-gai-shu">
+        <id>http://m.alang.run/post/thingsboard-gateway-gai-shu</id>
+        <link href="http://m.alang.run/post/thingsboard-gateway-gai-shu">
         </link>
         <updated>2019-09-24T00:46:02.000Z</updated>
         <summary type="html"><![CDATA[<p>thingsboard网关可让您将与旧式和第三方系统连接的IoT设备与ThingsBoard集成在一起。<br>
@@ -449,7 +449,7 @@ postman调用样例，这边以我本地为例：<br>
 <!-- more -->
 <h1 id="架构">架构</h1>
 <p>对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对MQTT来说，网关只不过选择性监听了topic，构建了一个映射“map”关系。<br>
-<img src="http://www.alang.run/post-images/1569286524998.png" alt=""></p>
+<img src="http://m.alang.run/post-images/1569286524998.png" alt=""></p>
 <h1 id="可以解决什么问题">可以解决什么问题</h1>
 <p>现实中大部分都是通过网关操作设备的，不管是MQTT还是modbus或者opc。<br>
 问题一：如果你有1万台设备如何连接： 若是你有一万个设备，不可能一个一个用token去连的。<br>
