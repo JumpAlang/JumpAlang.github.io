@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://m.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2020-02-20T04:58:46.355Z</updated>
+    <updated>2020-02-20T05:08:54.302Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://m.alang.run"/>
     <link rel="self" href="http://m.alang.run/atom.xml"/>
@@ -20,7 +20,7 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>潜意识决定了你95%的人生。而潜意识你可以通过催眠、重复来改变。</p>
 <!-- more -->
-<div style="text-align:center;">
+<div style="text-align:center; ">
 	 <div>
 		<video controls="controls" >
 		<source src="http://qiniu.alang.run//video/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E7%A9%B7%E5%85%B6%E4%B8%80%E7%94%9F%EF%BC%8C%E7%BB%88%E7%A9%B6%E4%B8%80%E6%97%A0%E6%89%80%E8%8E%B7%EF%BC%9F%E7%9C%8B%E6%95%99%E6%8E%88%E7%B2%BE%E8%BE%9F%E7%9A%84%E5%88%86%E6%9E%90%EF%BC%81.mp4" type="video/mp4" />
