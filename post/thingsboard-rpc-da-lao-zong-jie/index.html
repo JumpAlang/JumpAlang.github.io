@@ -4,13 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jump!Alang</title>
 <meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://m.alang.run/favicon.ico?v=1591441978410">
+<link rel="shortcut icon" href="http://git.alang.run/favicon.ico?v=1593658939648">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-<link rel="stylesheet" href="http://m.alang.run/styles/main.css">
+<link rel="stylesheet" href="http://git.alang.run/styles/main.css">
 
 
 
@@ -22,8 +22,8 @@
     <div class="sidebar-content">
       <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
         <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="http://m.alang.run">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://m.alang.run/images/avatar.png?v=1591441978410" alt="">
+        <a href="http://git.alang.run">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://git.alang.run/images/avatar.png?v=1593658939648" alt="">
         </a>
         <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Jump!Alang</h1>
       </div>
@@ -82,7 +82,7 @@
   </div>
   <div class="site-footer">
     <div class="py-4 text-gray-700">JumpAlang ©2019  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></div>
-    <a class="rss" href="http://m.alang.run/atom.xml" target="_blank">RSS</a>
+    <a class="rss" href="http://git.alang.run/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
 <div class="mask" onclick="closeMenu()">
@@ -108,22 +108,22 @@ QQ群：China Thingsboard（726442610）</p>
 2.因为TB他不是单机的，就是有多个服务在一起部署的，多个机器是通过Akka模型进行通讯的<br>
 3.他用grpc来进行服务的调用和消息在多个实例上传递<br>
 4.这2个分别是用集群获取消息和发送消息，无论数据采集还有其他<br>
-<img src="http://m.alang.run/post-images/1569571494278.jpg" alt="" loading="lazy"><br>
-<img src="http://m.alang.run/post-images/1569571500277.jpg" alt="" loading="lazy"><br>
+<img src="http://git.alang.run/post-images/1569571494278.jpg" alt="" loading="lazy"><br>
+<img src="http://git.alang.run/post-images/1569571500277.jpg" alt="" loading="lazy"><br>
 5.TB把单机版和集群的API做了个区分<br>
 6.所以你会看到2套API,总结就是，你不是集群部署的话，rpc那套用处不大，上面采集的接口（<code>就是mqtt,coap,http的通过主题发送消息</code>）也能满足你的要求<br>
 7.像这种，就是那种多个集群在一起通信的，交互消息的终端打印信息<br>
-<img src="http://m.alang.run/post-images/1569571672429.jpg" alt="" loading="lazy"><br>
+<img src="http://git.alang.run/post-images/1569571672429.jpg" alt="" loading="lazy"><br>
 8.网关的作用主要是对于单体没有联网能力的设备，从自组网或者局域网中，到一个有联网能力的设备上，统一上传数据</p>
 
         </div>
 
         
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://m.alang.run/tag/iot/">
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://git.alang.run/tag/iot/">
             <span class="flex-auto">物联网</span>
           </a>
         
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://m.alang.run/tag/thingsboard/">
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://git.alang.run/tag/thingsboard/">
             <span class="flex-auto">thingsboard</span>
           </a>
         
@@ -132,7 +132,7 @@ QQ群：China Thingsboard（726442610）</p>
         <div class="flex justify-between py-8">
           
             <div class="prev-post">
-              <a href="http://m.alang.run/post/thingsboard-xiu-gai-logo-ji-biao-ti/">
+              <a href="http://git.alang.run/post/thingsboard-xiu-gai-logo-ji-biao-ti/">
                 <h3 class="post-title">
                   <i class="ri-arrow-left-line"></i>
                   ThingsBoard修改logo
@@ -143,7 +143,7 @@ QQ群：China Thingsboard（726442610）</p>
 
           
             <div class="next-post">
-              <a href="http://m.alang.run/post/thingsboard-rest-api-shi-yong-zhun-bei/">
+              <a href="http://git.alang.run/post/thingsboard-rest-api-shi-yong-zhun-bei/">
                 <h3 class="post-title">
                   thingsboard rest api使用准备
                   <i class="ri-arrow-right-line"></i>
@@ -184,7 +184,7 @@ QQ群：China Thingsboard（726442610）</p>
       </div>
     </div>
 
-    <script src="http://m.alang.run/media/prism.js"></script>  
+    <script src="http://git.alang.run/media/prism.js"></script>  
 <script>
 
 Prism.highlightAll()
