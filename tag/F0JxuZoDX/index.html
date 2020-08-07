@@ -30,14 +30,38 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            文章目录
+            永远年轻！永远热泪盈眶！
           </p>
-          <div class="toc-container hidden lg:block">
-            <ul class="markdownIt-TOC">
-<li><a href="#%E8%8B%8F%E5%B7%9E-%E5%A4%A7%E4%BE%A0">苏州-大侠</a></li>
-<li><a href="#%E6%9D%AD%E5%B7%9E~%E4%B8%89%E5%8D%87%E6%B0%B4">杭州～三升水</a></li>
-</ul>
-
+          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
+            
+              
+                <a href="https://github.com/JumpAlang" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                  <i class="ri-github-line"></i>
+                </a>
+              
+            
+              
+            
+              
+                <a href="https://weibo.com/JumpAlang" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                  <i class="ri-weibo-line"></i>
+                </a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
           </div>
         </div>
       
@@ -87,99 +111,28 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
-        <h1 class="text-3xl font-bold lg:mt-16">thingsboard rpc大佬总结</h1>
-        <div class="text-sm text-gray-700 lg:my-8">
-          2019-09-27 / 2 min read
-        </div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
+        <h2 class="text-lg text-gray-700 mb-8">
+          <i class="ri-bookmark-line"></i> pm2
+        </h2>
         
-        <div class="post-content yue">
-          <p>感谢大佬：@苏州-大侠，@杭州～三升水<br>
-QQ群：China Thingsboard（726442610）</p>
-<!-- more -->
-<h1 id="苏州-大侠">苏州-大侠</h1>
-<p>1.正常 我们都是通过 mqtt，modbus，opc UA向TB抛数据<br>
-2.如果想要通过TB下发指令或下发数据，就是通过tb的rpc<br>
-3.tb有rpc的专属topic，对不同的协议(modbus ,mqtt,opc ua)有不同的格式<br>
-4.tb下发rpc可以通过规则链，部件或调API<br>
-5.如用gateway的modbus采集地址位的数据，如果想要修改地址位的数据，这时就用rpc下发数据，gateway接受到rpc的数据，就会写入地址中</p>
-<h1 id="杭州~三升水">杭州～三升水</h1>
-<p>1.首先我们理解RPC是什么意思，RPC和框架中的远程服务调用是一样的<br>
-2.因为TB他不是单机的，就是有多个服务在一起部署的，多个机器是通过Akka模型进行通讯的<br>
-3.他用grpc来进行服务的调用和消息在多个实例上传递<br>
-4.这2个分别是用集群获取消息和发送消息，无论数据采集还有其他<br>
-<img src="http://git.alang.run/post-images/1569571494278.jpg" alt="" loading="lazy"><br>
-<img src="http://git.alang.run/post-images/1569571500277.jpg" alt="" loading="lazy"><br>
-5.TB把单机版和集群的API做了个区分<br>
-6.所以你会看到2套API,总结就是，你不是集群部署的话，rpc那套用处不大，上面采集的接口（<code>就是mqtt,coap,http的通过主题发送消息</code>）也能满足你的要求<br>
-7.像这种，就是那种多个集群在一起通信的，交互消息的终端打印信息<br>
-<img src="http://git.alang.run/post-images/1569571672429.jpg" alt="" loading="lazy"><br>
-8.网关的作用主要是对于单体没有联网能力的设备，从自组网或者局域网中，到一个有联网能力的设备上，统一上传数据</p>
-
-        </div>
-
+  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
+    
+    <div class="content">
+      <a href="http://git.alang.run/post/pm2-de-jian-dan-shi-yong/">
+        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">pm2的简单使用</h2>
+      </a>
+      <div class="post-abstract text-gray-700 font-light my-4">
         
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://git.alang.run/tag/iot/">
-            <span class="flex-auto">物联网</span>
-          </a>
-        
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://git.alang.run/tag/thingsboard/">
-            <span class="flex-auto">thingsboard</span>
-          </a>
-        
+      </div>
+      <div class="text-gray-400 text-sm font-light">2020-08-07 / 1 min read</div>
+    </div>
+  </section>
 
-
-        <div class="flex justify-between py-8">
-          
-            <div class="prev-post">
-              <a href="http://git.alang.run/post/thingsboard-xiu-gai-logo-ji-biao-ti/">
-                <h3 class="post-title">
-                  <i class="ri-arrow-left-line"></i>
-                  ThingsBoard修改logo
-                </h3>
-              </a>
-            </div>
-          
-
-          
-            <div class="next-post">
-              <a href="http://git.alang.run/post/thingsboard-rest-api-shi-yong-zhun-bei/">
-                <h3 class="post-title">
-                  thingsboard rest api使用准备
-                  <i class="ri-arrow-right-line"></i>
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'dd6b58508cc9af58fc1c',
-    clientSecret: 'aa86bd09e6d2eedc03f182792c20275d200ffb62',
-    repo: 'JumpAlang.github.io',
-    owner: 'JumpAlang',
-    admin: ['JumpAlang'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
+        <div class="pagination-container animated fadeIn">
+  
+  
+</div>
 
       </div>
     </div>
