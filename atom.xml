@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://git.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2020-08-27T01:24:06.380Z</updated>
+    <updated>2020-09-27T03:22:23.455Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://git.alang.run"/>
     <link rel="self" href="http://git.alang.run/atom.xml"/>
@@ -10,6 +10,60 @@
     <logo>http://git.alang.run/images/avatar.png</logo>
     <icon>http://git.alang.run/favicon.ico</icon>
     <rights>All rights reserved 2020, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[开源的优秀后端管理系统]]></title>
+        <id>http://git.alang.run/post/kai-yuan-de-you-xiu-hou-duan-guan-li-xi-tong/</id>
+        <link href="http://git.alang.run/post/kai-yuan-de-you-xiu-hou-duan-guan-li-xi-tong/">
+        </link>
+        <updated>2020-09-27T02:08:54.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>寻觅时间：2020/9/27</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>寻觅时间：2020/9/27</strong></p>
+<!-- more -->
+<h1 id="寻觅1">寻觅1</h1>
+<p>从公众号<code>Java技术驿站</code>看到一篇文章<a href="%22https://mp.weixin.qq.com/s/KfToO7xDzbHLva7rvwCOqQ%22">这 5 个能挣钱的 SpringBoot 项目，真TMD香！</a>，正好我也有想找个可以快速开发的通用后台系统模板。<br>
+其中两个吸引了我的注意： <a href="%22https://gitee.com/lab1024/smart-admin%22">SmartAdmin</a> <code>start 1k fork 400</code> 和 <a href="%22https://gitee.com/aun/Timo%22">Timo</a>,<code>start 1.6k fork 673</code>。</p>
+<h2 id="项目详情">项目详情</h2>
+<h3 id="smartadmin">SmartAdmin</h3>
+<ul>
+<li>前端：Vue + Vue-Router + Vuex + ViewUI + vue-enum</li>
+<li>后端：SpringBoot2 + Mybatis-plus + jwt + druid + mysql</li>
+</ul>
+<blockquote>
+<p>在线预览 <a href="http://preview.smartadmin.1024lab.net">http://preview.smartadmin.1024lab.net</a><br>
+<code>start 1k fork 400</code>    <code>前后端分离</code>  <code>前后端代码规范文档</code> <code>维护中</code> <code>始于2019-11-16</code> <code>5天前更新</code></p>
+</blockquote>
+<h3 id="timo">Timo</h3>
+<ul>
+<li>
+<p>前端：Layui + Jquery + zTree + Font-awesome</p>
+</li>
+<li>
+<p>后端：SpringBoot + Spring Data Jpa + Thymeleaf + Shiro + Jwt + EhCache</p>
+<blockquote>
+<p>在线预览 <a href="http://demo.linln.cn">http://demo.linln.cn</a><br>
+<code>start 1.6k fork 673</code>  <code>前后端分离</code>  <code>移动端适配</code> <code>维护中</code> <code>始于2018-10-12</code> <code>3天前更新</code></p>
+</blockquote>
+<h1 id="寻觅2">寻觅2</h1>
+</li>
+</ul>
+<p>因为之前都习惯于在github搜索开源项目，但从github clone项目很慢，发现上面提到的项目都有提供gitee的项目地址，于是转站gitee clone项目。<br>
+出于好奇，我也在gitee上搜索了<code>后台管理</code>，然后筛选<em>java</em>项目，发现了另一个优秀的项目<a href="https://gitee.com/elunez/eladmin">eladmin</a> <code>start 3.3k fork 1.8k</code></p>
+<h2 id="项目详情-2">项目详情</h2>
+<h3 id="eladmin">eladmin</h3>
+<ul>
+<li>前端：Vue + ElementUI</li>
+<li>后端:  Spring Boot 2.1.0 +Spring Boot Jpa+ JWT+Spring Security+Redis + Mysql
+<blockquote>
+<p>在线预览 <a href="https://el-admin.xin/">https://el-admin.xin/</a><br>
+<code>start 3.3k fork 1.8k</code>  <code>前后端分离</code>  <code>移动端适配</code> <code>维护中</code> <code>始于2018-12-22</code> <code>6天前更新</code></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="总结">总结</h1>
+<p>从我自身出发，我倾向于使用mybatis操作数据。于是smartAdmin成为了选择，但是它移动端不适配。想想是不是也可以尝试下spring jpa，没错，那就从eladmin开始吧。而对于Timo很适合于自己赚外快接单使用，可以不前后端分离，方便部署……</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[pm2的简单使用]]></title>
         <id>http://git.alang.run/post/pm2-de-jian-dan-shi-yong/</id>
@@ -432,35 +486,6 @@ Zip file downloadable from here: https://get.enterprisedb.com/postgresql/postgre
 <a href="https://get.enterprisedb.com/postgresql/postgresql-11.4-1-windows-x64-binaries.zip">https://get.enterprisedb.com/postgresql/postgresql-11.4-1-windows-x64-binaries.zip</a><br>
 或者至百度网盘下载我提取出来的dll：<br>
 链接: <a href="https://pan.baidu.com/s/1ZTRL3ukfABm6rmzyy_-42Q&amp;shfl=shareset">https://pan.baidu.com/s/1ZTRL3ukfABm6rmzyy_-42Q&amp;shfl=shareset</a> 提取码: jdzb</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ThingsBoard修改logo]]></title>
-        <id>http://git.alang.run/post/thingsboard-xiu-gai-logo-ji-biao-ti/</id>
-        <link href="http://git.alang.run/post/thingsboard-xiu-gai-logo-ji-biao-ti/">
-        </link>
-        <updated>2019-10-16T16:35:26.000Z</updated>
-        <summary type="html"><![CDATA[<p>本来以为很简单的事，但其中问题不断，写在此愿能帮助遇到同样问题的你。<br>
-要实时查看logo替换效果，建议在热部署模式下运行，官方文档：<a href="https://thingsboard.io/docs/user-guide/contribution/how-to-contribute/#running-ui-container-in-hot-redeploy-mode">https://thingsboard.io/docs/user-guide/contribution/how-to-contribute/#running-ui-container-in-hot-redeploy-mode</a></p>
-]]></summary>
-        <content type="html"><![CDATA[<p>本来以为很简单的事，但其中问题不断，写在此愿能帮助遇到同样问题的你。<br>
-要实时查看logo替换效果，建议在热部署模式下运行，官方文档：<a href="https://thingsboard.io/docs/user-guide/contribution/how-to-contribute/#running-ui-container-in-hot-redeploy-mode">https://thingsboard.io/docs/user-guide/contribution/how-to-contribute/#running-ui-container-in-hot-redeploy-mode</a></p>
-<!-- more -->
-<h1 id="定制自己的logo">定制自己的logo</h1>
-<p>我这边使用的是在线网页制作svg：<a href="https://c.runoob.com/more/svgeditor/">https://c.runoob.com/more/svgeditor/</a></p>
-<ol>
-<li>准备工作<br>
-把thingsboard原logo(存在此路径下：<code>/UI/src/svg/log_tilte_white.svg</code>)导入在线制作svg网页</li>
-<li>制作<br>
-导入成功后按delete把导入的thingsboard logo背景删除（主要是为了保证图片尺寸跟原thingsboard大致一致）</li>
-</ol>
-<h1 id="编辑制作好的svg代码">编辑制作好的svg代码</h1>
-<p>把thingsboard源logo的头部复制到你制作好的svg头部（个人理解主要是为了保证宽度高度的一致）</p>
-<p>thingsboard源logo头部</p>
-<pre><code class="language-html">&lt;svg id=&quot;svg2&quot; xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;320&quot; width=&quot;1543.4&quot; version=&quot;1.1&quot; xmlns:cc=&quot;http://creativecommons.org/ns#&quot; xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot; viewBox=&quot;0 0 1543.4268 320.00026&quot;&gt;
-</code></pre>
-<h1 id="编译">编译</h1>
-<p>把图片拷贝到thingsboard原位置，重新编译打包(要先把thingsboard根路径下的pom.xml中的license-maven-plugin插件注释了)</p>
 ]]></content>
     </entry>
 </feed>
