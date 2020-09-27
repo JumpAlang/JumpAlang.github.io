@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jump!Alang</title>
 <meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://git.alang.run/favicon.ico?v=1601176919747">
+<link rel="shortcut icon" href="http://git.alang.run/favicon.ico?v=1601177330602">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -23,7 +23,7 @@
       <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
         <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
         <a href="http://git.alang.run">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://git.alang.run/images/avatar.png?v=1601176919747" alt="">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://git.alang.run/images/avatar.png?v=1601177330602" alt="">
         </a>
         <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Jump!Alang</h1>
       </div>
@@ -33,7 +33,14 @@
             文章目录
           </p>
           <div class="toc-container hidden lg:block">
-            
+            <ul class="markdownIt-TOC">
+<li><a href="#%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E5%B9%B6%E8%AE%BE%E7%BD%AE%E5%88%AB%E5%90%8D">启动应用并设置别名</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E5%BA%94%E7%94%A8%E5%88%97%E8%A1%A8">查看应用列表</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E5%BA%94%E7%94%A8">删除应用</a></li>
+<li><a href="#%E9%87%8D%E5%90%AF%E5%BA%94%E7%94%A8">重启应用</a></li>
+<li><a href="#%E5%81%9C%E6%AD%A2%E5%BA%94%E7%94%A8">停止应用</a></li>
+</ul>
+
           </div>
         </div>
       
@@ -93,21 +100,21 @@
           <blockquote>
 <p>日常开发中需要启动一个node项目，需要用npm run …,，如果终端被关掉，程序也就自动停止，有时候几个项目一起跑起来，好几个终端开着，个人不太喜欢，有一神器可以解决：pm2。pm2 是一个带有负载均衡功能的Node应用的进程管理器.当你要把你的独立代码利用全部的服务器上的所有CPU，并保证进程永远都活着，0秒的重载， PM2是完美的。它非常适合IaaS结构，但不要把它用于PaaS方案。</p>
 </blockquote>
-<p>#启动应用并设置别名</p>
+<h1 id="启动应用并设置别名">启动应用并设置别名</h1>
 <ol>
 <li>没有app.js的启动方法(<em>有app.js但启动不了时也可以用这个</em>)<br>
 <code>pm2 start npm -- name 别名 -- run start</code></li>
 <li>有app.js<br>
 <code>pm2 start app.js --name 别名</code></li>
 </ol>
-<p>#查看应用列表<br>
-<code>pm2 list</code></p>
-<p>#删除应用<br>
-<code>pm2 delete 序号|别名</code></p>
-<p>#重启应用<br>
-<code>pm2 restart 序号|别名</code></p>
-<p>#停止应用<br>
-<code>pm2 stop 序号|别名</code></p>
+<h1 id="查看应用列表">查看应用列表</h1>
+<p><code>pm2 list</code></p>
+<h1 id="删除应用">删除应用</h1>
+<p><code>pm2 delete 序号|别名</code></p>
+<h1 id="重启应用">重启应用</h1>
+<p><code>pm2 restart 序号|别名</code></p>
+<h1 id="停止应用">停止应用</h1>
+<p><code>pm2 stop 序号|别名</code></p>
 
         </div>
 

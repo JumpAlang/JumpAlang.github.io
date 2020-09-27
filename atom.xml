@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://git.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2020-09-27T03:22:23.455Z</updated>
+    <updated>2020-09-27T03:28:56.040Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://git.alang.run"/>
     <link rel="self" href="http://git.alang.run/atom.xml"/>
@@ -73,21 +73,21 @@
         <content type="html"><![CDATA[<blockquote>
 <p>日常开发中需要启动一个node项目，需要用npm run …,，如果终端被关掉，程序也就自动停止，有时候几个项目一起跑起来，好几个终端开着，个人不太喜欢，有一神器可以解决：pm2。pm2 是一个带有负载均衡功能的Node应用的进程管理器.当你要把你的独立代码利用全部的服务器上的所有CPU，并保证进程永远都活着，0秒的重载， PM2是完美的。它非常适合IaaS结构，但不要把它用于PaaS方案。</p>
 </blockquote>
-<p>#启动应用并设置别名</p>
+<h1 id="启动应用并设置别名">启动应用并设置别名</h1>
 <ol>
 <li>没有app.js的启动方法(<em>有app.js但启动不了时也可以用这个</em>)<br>
 <code>pm2 start npm -- name 别名 -- run start</code></li>
 <li>有app.js<br>
 <code>pm2 start app.js --name 别名</code></li>
 </ol>
-<p>#查看应用列表<br>
-<code>pm2 list</code></p>
-<p>#删除应用<br>
-<code>pm2 delete 序号|别名</code></p>
-<p>#重启应用<br>
-<code>pm2 restart 序号|别名</code></p>
-<p>#停止应用<br>
-<code>pm2 stop 序号|别名</code></p>
+<h1 id="查看应用列表">查看应用列表</h1>
+<p><code>pm2 list</code></p>
+<h1 id="删除应用">删除应用</h1>
+<p><code>pm2 delete 序号|别名</code></p>
+<h1 id="重启应用">重启应用</h1>
+<p><code>pm2 restart 序号|别名</code></p>
+<h1 id="停止应用">停止应用</h1>
+<p><code>pm2 stop 序号|别名</code></p>
 ]]></content>
     </entry>
     <entry>
