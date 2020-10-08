@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://m.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2020-10-08T08:27:35.518Z</updated>
+    <updated>2020-10-08T08:33:16.045Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://m.alang.run"/>
     <link rel="self" href="http://m.alang.run/atom.xml"/>
@@ -51,8 +51,7 @@
 <li>准备<br>
 把各个已经编译且可运行的音乐api代码（<em>包括node_modules</em>）拷贝到统一一个文件夹，方便进行shell操作。</li>
 <li>编写Dockerfile<br>
-之前看到一篇博客：<a href="https://zhuanlan.zhihu.com/p/130738206">nodejs 应用打包docker创建精简1G多镜像<br>
-</a>，说NodeJs镜像很大,于是按照文章教程在本地制作了一个NodeJs基础镜像node_base</li>
+之前看到一篇博客：<a href="https://zhuanlan.zhihu.com/p/130738206">nodejs 应用打包docker创建精简1G多镜像</a>，说NodeJs镜像很大,于是按照文章教程在本地制作了一个NodeJs基础镜像node_base</li>
 </ol>
 <pre><code class="language-shell">FROM node_base:latest #精简的NodeJs基础镜像，上文有说到
 
@@ -109,7 +108,7 @@ PORT=3300 QQ=$1 npm start  #$1,是指执行命令传递过来的第二个参数�
 三. 发布镜像<br>
 <code>docker image push jumpalang/jusic_music_api:1.0</code><br>
 四. 完善镜像详细信息<br>
-访问官方镜像网站&lt;hub.docker.com&gt;，填写镜像的描述信息及详细信息</p>
+访问官方镜像网站<a href="http://hub.docker.com">http://hub.docker.com</a>，填写镜像的描述信息及详细信息</p>
 </li>
 </ol>
 <h2 id="一起听歌吧主程序镜像制作">一起听歌吧主程序镜像制作</h2>
@@ -167,7 +166,7 @@ ENTRYPOINT java -jar -DAPIUSER=$APIUSER -DAPIPWD=$APIPWD -DRedisHost=&quot;$Redi
 三. 发布镜像<br>
 <code>docker image push jumpalang/jusic_serve_houses:1.0</code><br>
 四. 完善镜像详细信息<br>
-访问官方镜像网站&lt;hub.docker.com&gt;，填写镜像的描述信息及详细信息</p>
+访问官方镜像网站<a href="http://hub.docker.com">http://hub.docker.com</a>，填写镜像的描述信息及详细信息</p>
 </li>
 </ol>
 <h2 id="使用docker-compose一键启动项目">使用docker-compose一键启动项目</h2>

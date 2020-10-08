@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jump!Alang</title>
 <meta name="description" content="永远年轻！永远热泪盈眶！" />
-<link rel="shortcut icon" href="http://m.alang.run/favicon.ico?v=1602145651508">
+<link rel="shortcut icon" href="http://m.alang.run/favicon.ico?v=1602145991527">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -23,7 +23,7 @@
       <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
         <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
         <a href="http://m.alang.run">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://m.alang.run/images/avatar.png?v=1602145651508" alt="">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="http://m.alang.run/images/avatar.png?v=1602145991527" alt="">
         </a>
         <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Jump!Alang</h1>
       </div>
@@ -140,8 +140,7 @@
 <li>准备<br>
 把各个已经编译且可运行的音乐api代码（<em>包括node_modules</em>）拷贝到统一一个文件夹，方便进行shell操作。</li>
 <li>编写Dockerfile<br>
-之前看到一篇博客：<a href="https://zhuanlan.zhihu.com/p/130738206">nodejs 应用打包docker创建精简1G多镜像<br>
-</a>，说NodeJs镜像很大,于是按照文章教程在本地制作了一个NodeJs基础镜像node_base</li>
+之前看到一篇博客：<a href="https://zhuanlan.zhihu.com/p/130738206">nodejs 应用打包docker创建精简1G多镜像</a>，说NodeJs镜像很大,于是按照文章教程在本地制作了一个NodeJs基础镜像node_base</li>
 </ol>
 <pre><code class="language-shell">FROM node_base:latest #精简的NodeJs基础镜像，上文有说到
 
@@ -198,7 +197,7 @@ PORT=3300 QQ=$1 npm start  #$1,是指执行命令传递过来的第二个参数�
 三. 发布镜像<br>
 <code>docker image push jumpalang/jusic_music_api:1.0</code><br>
 四. 完善镜像详细信息<br>
-访问官方镜像网站&lt;hub.docker.com&gt;，填写镜像的描述信息及详细信息</p>
+访问官方镜像网站<a href="http://hub.docker.com">http://hub.docker.com</a>，填写镜像的描述信息及详细信息</p>
 </li>
 </ol>
 <h2 id="一起听歌吧主程序镜像制作">一起听歌吧主程序镜像制作</h2>
@@ -256,7 +255,7 @@ ENTRYPOINT java -jar -DAPIUSER=$APIUSER -DAPIPWD=$APIPWD -DRedisHost=&quot;$Redi
 三. 发布镜像<br>
 <code>docker image push jumpalang/jusic_serve_houses:1.0</code><br>
 四. 完善镜像详细信息<br>
-访问官方镜像网站&lt;hub.docker.com&gt;，填写镜像的描述信息及详细信息</p>
+访问官方镜像网站<a href="http://hub.docker.com">http://hub.docker.com</a>，填写镜像的描述信息及详细信息</p>
 </li>
 </ol>
 <h2 id="使用docker-compose一键启动项目">使用docker-compose一键启动项目</h2>
