@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://m.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2020-10-08T08:34:56.273Z</updated>
+    <updated>2020-10-08T08:38:28.643Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://m.alang.run"/>
     <link rel="self" href="http://m.alang.run/atom.xml"/>
@@ -94,7 +94,7 @@ PORT=3300 QQ=$1 npm start  #$1,是指执行命令传递过来的第二个参数�
 <li>
 <p>本地运行测试<br>
 <code>docker run --name jusic_music_api -e QQ=1040927107 -p 3000:3000 -p 3300:3300 -p 3400:3400 -p 8081:8081 -d jusic_music_api:1.0</code><br>
-运行后执行<code>docker ps</code>查看容器是否运行或者访问任一音乐api（如浏览器不能访问：<a href="localhost:3000">localhost:3000</a>，则说明没启动成功可以使用docker命令查看日记：<code>docker logs jusic_music_api</code>，或者在entrypoint.sh添加一些辅助日记，如<code>echo pwd &gt; test.txt</code>）,<br>
+运行后执行<code>docker ps</code>查看容器是否运行或者访问任一音乐api（如浏览器不能访问：<a href="localhost:3000">localhost:3000</a>，则说明没启动成功，可以使用docker命令查看日记：<code>docker logs jusic_music_api</code>，或者在entrypoint.sh添加一些辅助日记，如<code>echo pwd &gt; test.txt</code>）,<br>
 进入容器内部执行命令：<code>docker exec -it jusic_music_api sh</code>。</p>
 </li>
 <li>
@@ -153,7 +153,7 @@ ENTRYPOINT java -jar -DAPIUSER=$APIUSER -DAPIPWD=$APIPWD -DRedisHost=&quot;$Redi
 <p>本地运行测试<br>
 运行前要先拉取及运行redis及音乐api镜像<em>jusic_music_api</em><br>
 <code>docker run --name jusic_serve_houses -e APIPWD=123 -e MusicApi=&quot;http://musicApi&quot; -p 8888:8888 -d --link redis:redis --link jusic_music_api:musicApi jusic_serve_houses:1.0</code><br>
-浏览器访问<a href="localhost:8888">localhost:8888</a>查看效果，如果没启动成功可以使用docker命令查看日记：<code>docker logs jusic_serve_houses</code>。进入容器内部执行命令：<code>docker exec -it jusic_serve_houses /bin/bash</code></p>
+浏览器访问<a href="localhost:8888">localhost:8888</a>查看效果，如果没启动成功，可以使用docker命令查看日记：<code>docker logs jusic_serve_houses</code>。进入容器内部执行命令：<code>docker exec -it jusic_serve_houses /bin/bash</code></p>
 </li>
 <li>
 <p>发布镜像<br>
