@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://git.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2020-10-08T08:47:29.904Z</updated>
+    <updated>2020-10-08T09:22:34.441Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://git.alang.run"/>
     <link rel="self" href="http://git.alang.run/atom.xml"/>
@@ -16,9 +16,11 @@
         <link href="http://git.alang.run/post/chuang-jian-springbootredisnodejs-xiang-mu-de-docker-jing-xiang/">
         </link>
         <updated>2020-10-08T01:18:50.000Z</updated>
-        <summary type="html"><![CDATA[<p>考虑到应用<a href="http://music.alang.run">一起听歌吧</a>后期可能要迁移服务器，也为了方便一起听歌吧的小伙伴在自己的服务器部署，制作一起听歌吧Docker镜像刻不容缓。</p>
+        <summary type="html"><![CDATA[<p>考虑到应用<a href="http://music.alang.run">一起听歌吧</a> 开源地址：<a href="https://github.com/JumpAlang/Jusic-Serve-Houses">https://github.com/JumpAlang/Jusic-Serve-Houses</a><br>
+后期可能要迁移服务器，也为了方便一起听歌吧的小伙伴在自己的服务器部署，制作一起听歌吧Docker镜像刻不容缓。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>考虑到应用<a href="http://music.alang.run">一起听歌吧</a>后期可能要迁移服务器，也为了方便一起听歌吧的小伙伴在自己的服务器部署，制作一起听歌吧Docker镜像刻不容缓。</p>
+        <content type="html"><![CDATA[<p>考虑到应用<a href="http://music.alang.run">一起听歌吧</a> 开源地址：<a href="https://github.com/JumpAlang/Jusic-Serve-Houses">https://github.com/JumpAlang/Jusic-Serve-Houses</a><br>
+后期可能要迁移服务器，也为了方便一起听歌吧的小伙伴在自己的服务器部署，制作一起听歌吧Docker镜像刻不容缓。</p>
 <!-- more -->
 <h1 id="认识docker">认识Docker</h1>
 <blockquote>
