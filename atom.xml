@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://m.alang.run</id>
+    <id>http://git.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2021-02-19T09:41:12.223Z</updated>
+    <updated>2021-02-19T09:43:22.174Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://m.alang.run"/>
-    <link rel="self" href="http://m.alang.run/atom.xml"/>
+    <link rel="alternate" href="http://git.alang.run"/>
+    <link rel="self" href="http://git.alang.run/atom.xml"/>
     <subtitle>永远年轻！永远热泪盈眶！</subtitle>
-    <logo>http://m.alang.run/images/avatar.png</logo>
-    <icon>http://m.alang.run/favicon.ico</icon>
+    <logo>http://git.alang.run/images/avatar.png</logo>
+    <icon>http://git.alang.run/favicon.ico</icon>
     <rights>All rights reserved 2021, Jump!Alang</rights>
     <entry>
         <title type="html"><![CDATA[《How to get rich》摘录]]></title>
-        <id>http://m.alang.run/post/lesslesshow-to-get-richgreatergreater-zhai-lu/</id>
-        <link href="http://m.alang.run/post/lesslesshow-to-get-richgreatergreater-zhai-lu/">
+        <id>http://git.alang.run/post/lesslesshow-to-get-richgreatergreater-zhai-lu/</id>
+        <link href="http://git.alang.run/post/lesslesshow-to-get-richgreatergreater-zhai-lu/">
         </link>
         <updated>2021-02-18T08:13:26.000Z</updated>
         <content type="html"><![CDATA[<h1 id="寻求财富而不是金钱或地位">寻求财富，而不是金钱或地位</h1>
@@ -309,8 +309,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[tencent video business]]></title>
-        <id>http://m.alang.run/post/tencent-video-business/</id>
-        <link href="http://m.alang.run/post/tencent-video-business/">
+        <id>http://git.alang.run/post/tencent-video-business/</id>
+        <link href="http://git.alang.run/post/tencent-video-business/">
         </link>
         <updated>2021-01-10T02:07:43.000Z</updated>
         <content type="html"><![CDATA[<h1 id="变现思路">变现思路</h1>
@@ -343,8 +343,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[创建Springboot+Redis+NodeJs项目的Docker镜像]]></title>
-        <id>http://m.alang.run/post/chuang-jian-springbootredisnodejs-xiang-mu-de-docker-jing-xiang/</id>
-        <link href="http://m.alang.run/post/chuang-jian-springbootredisnodejs-xiang-mu-de-docker-jing-xiang/">
+        <id>http://git.alang.run/post/chuang-jian-springbootredisnodejs-xiang-mu-de-docker-jing-xiang/</id>
+        <link href="http://git.alang.run/post/chuang-jian-springbootredisnodejs-xiang-mu-de-docker-jing-xiang/">
         </link>
         <updated>2020-10-08T01:18:50.000Z</updated>
         <summary type="html"><![CDATA[<p>考虑到应用<a href="http://music.alang.run">一起听歌吧</a> 开源地址：<a href="https://github.com/JumpAlang/Jusic-Serve-Houses">https://github.com/JumpAlang/Jusic-Serve-Houses</a><br>
@@ -603,8 +603,8 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
     </entry>
     <entry>
         <title type="html"><![CDATA[开源的优秀后端管理系统]]></title>
-        <id>http://m.alang.run/post/kai-yuan-de-you-xiu-hou-duan-guan-li-xi-tong/</id>
-        <link href="http://m.alang.run/post/kai-yuan-de-you-xiu-hou-duan-guan-li-xi-tong/">
+        <id>http://git.alang.run/post/kai-yuan-de-you-xiu-hou-duan-guan-li-xi-tong/</id>
+        <link href="http://git.alang.run/post/kai-yuan-de-you-xiu-hou-duan-guan-li-xi-tong/">
         </link>
         <updated>2020-09-27T02:08:54.000Z</updated>
         <summary type="html"><![CDATA[<p><strong>寻觅时间：2020/9/27</strong></p>
@@ -657,8 +657,8 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
     </entry>
     <entry>
         <title type="html"><![CDATA[pm2的简单使用]]></title>
-        <id>http://m.alang.run/post/pm2-de-jian-dan-shi-yong/</id>
-        <link href="http://m.alang.run/post/pm2-de-jian-dan-shi-yong/">
+        <id>http://git.alang.run/post/pm2-de-jian-dan-shi-yong/</id>
+        <link href="http://git.alang.run/post/pm2-de-jian-dan-shi-yong/">
         </link>
         <updated>2020-08-07T07:44:25.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
@@ -683,8 +683,8 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
     </entry>
     <entry>
         <title type="html"><![CDATA[muse-ui+vue-cli编译兼容ie10/11]]></title>
-        <id>http://m.alang.run/post/muse-uivue-cli-bian-yi-jian-rong-ie1011/</id>
-        <link href="http://m.alang.run/post/muse-uivue-cli-bian-yi-jian-rong-ie1011/">
+        <id>http://git.alang.run/post/muse-uivue-cli-bian-yi-jian-rong-ie1011/</id>
+        <link href="http://git.alang.run/post/muse-uivue-cli-bian-yi-jian-rong-ie1011/">
         </link>
         <updated>2020-06-06T09:00:41.000Z</updated>
         <summary type="html"><![CDATA[<p>muse-ui有用到es6语法，如箭头函数，因此无法在ie10/11使用，vue-cli有提供了解决方案，可以把项目的依赖包（如<code>muse-ui</code>）在打包时进行转换以兼容ie。</p>
@@ -737,8 +737,8 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
     </entry>
     <entry>
         <title type="html"><![CDATA[IT生活经验]]></title>
-        <id>http://m.alang.run/post/it-sheng-huo-jing-yan/</id>
-        <link href="http://m.alang.run/post/it-sheng-huo-jing-yan/">
+        <id>http://git.alang.run/post/it-sheng-huo-jing-yan/</id>
+        <link href="http://git.alang.run/post/it-sheng-huo-jing-yan/">
         </link>
         <updated>2020-05-18T04:31:29.000Z</updated>
         <content type="html"><![CDATA[<ol>
@@ -748,8 +748,8 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
     </entry>
     <entry>
         <title type="html"><![CDATA[为什么大多数人穷其一生，终究一无所获？]]></title>
-        <id>http://m.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo/</id>
-        <link href="http://m.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo/">
+        <id>http://git.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo/</id>
+        <link href="http://git.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo/">
         </link>
         <updated>2019-12-03T09:34:04.000Z</updated>
         <summary type="html"><![CDATA[<p>潜意识决定了你95%的人生。而潜意识你可以通过催眠、重复来改变。</p>
@@ -766,8 +766,8 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
     </entry>
     <entry>
         <title type="html"><![CDATA[《Outside》张钰琪NASA演唱]]></title>
-        <id>http://m.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang/</id>
-        <link href="http://m.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang/">
+        <id>http://git.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang/</id>
+        <link href="http://git.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang/">
         </link>
         <updated>2019-11-26T12:50:21.000Z</updated>
         <summary type="html"><![CDATA[<div style="text-align:center;">
@@ -824,8 +824,8 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
     </entry>
     <entry>
         <title type="html"><![CDATA[thingsboard gateway http扩展匹配多级路径]]></title>
-        <id>http://m.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing/</id>
-        <link href="http://m.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing/">
+        <id>http://git.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing/</id>
+        <link href="http://git.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing/">
         </link>
         <updated>2019-11-13T02:47:43.000Z</updated>
         <summary type="html"><![CDATA[<p>调测http扩展时，发现转换器序列号中的url只能配置一级，如只支持<code>green</code>格式，不支持<code>green/1/2/3</code>之类多级。</p>
@@ -867,7 +867,7 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
 </code></pre>
 <h1 id="测试">测试</h1>
 <p>至thingsboard的设备管理下配置完网关的http扩展后，使用postman测试新增的http转换器：<br>
-<img src="http://m.alang.run/post-images/1573616229936.png" alt="" loading="lazy"></p>
+<img src="http://git.alang.run/post-images/1573616229936.png" alt="" loading="lazy"></p>
 <h1 id="总结">总结</h1>
 <p>暂无</p>
 ]]></content>
