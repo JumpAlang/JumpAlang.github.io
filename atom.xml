@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://git.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2021-02-20T07:54:15.857Z</updated>
+    <updated>2021-02-21T01:12:12.161Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://git.alang.run"/>
     <link rel="self" href="http://git.alang.run/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>http://git.alang.run/images/avatar.png</logo>
     <icon>http://git.alang.run/favicon.ico</icon>
     <rights>All rights reserved 2021, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[隐藏网页所有图片代码]]></title>
+        <id>http://git.alang.run/post/yin-cang-wang-ye-suo-you-tu-pian-dai-ma/</id>
+        <link href="http://git.alang.run/post/yin-cang-wang-ye-suo-you-tu-pian-dai-ma/">
+        </link>
+        <updated>2021-02-21T01:07:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>上班摸鱼，浏览网页，总是生怕网页图片惹人注目。遂想到写个js代码去掉图片，虽然chrome也有相关设置不加载图片，但还是感觉麻烦。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>上班摸鱼，浏览网页，总是生怕网页图片惹人注目。遂想到写个js代码去掉图片，虽然chrome也有相关设置不加载图片，但还是感觉麻烦。</p>
+<!-- more -->
+<p>以下代码，请在浏览器下，按f12，在console下输入：</p>
+<pre><code class="language-js">let imgs2 =document.getElementsByTagName(&quot;img&quot;);for(var i = 0; i &lt; imgs2.length; i++){imgs2[i].style.display='none'}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[《How to get rich》摘录]]></title>
         <id>http://git.alang.run/post/lesslesshow-to-get-richgreatergreater-zhai-lu/</id>
@@ -822,55 +837,5 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
 		</video>
 	</div>
 	</div>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[thingsboard gateway http扩展匹配多级路径]]></title>
-        <id>http://git.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing/</id>
-        <link href="http://git.alang.run/post/thingsboard-gateway-http-kuo-zhan-pi-pei-duo-ji-lu-jing/">
-        </link>
-        <updated>2019-11-13T02:47:43.000Z</updated>
-        <summary type="html"><![CDATA[<p>调测http扩展时，发现转换器序列号中的url只能配置一级，如只支持<code>green</code>格式，不支持<code>green/1/2/3</code>之类多级。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>调测http扩展时，发现转换器序列号中的url只能配置一级，如只支持<code>green</code>格式，不支持<code>green/1/2/3</code>之类多级。</p>
-<!-- more -->
-<h1 id="问题分析">问题分析</h1>
-<p>查看HttpController源码：</p>
-<pre><code class="language-java">@RequestMapping(value = &quot;/uplink/{converterId}&quot;, method = RequestMethod.POST)
-    public void handleRequest(@PathVariable String converterId,
-                                            @RequestBody String body) throws Exception {
-</code></pre>
-<p>发现是使用springmvc的@PathVariable来匹配路径，而@PathVariable只支持一级路径，如下是大佬的原话：</p>
-<blockquote>
-<p>它在做匹配时直接会把green/report切成green和report两段，每段去和pattern的每一段匹配。</p>
-</blockquote>
-<p>大佬给出的建议是：</p>
-<ol>
-<li>修改antmatcher源码</li>
-<li>/**去匹配，然后手工去拿最后一段</li>
-</ol>
-<p>选择了第二种方法，比较方便。<br>
-带着问题找答案，找到一篇文章：<br>
-<a href="https://blog.csdn.net/jiangxuexuanshuang/article/details/51720362">https://blog.csdn.net/jiangxuexuanshuang/article/details/51720362</a></p>
-<h1 id="源码修改">源码修改</h1>
-<p>把路径匹配的<code>/uplink/{converterId}</code>改成用<code>/**</code>去匹配：<code>/uplink/**</code>,然后写方法去提取这个<code>**</code>里面的内容。</p>
-<pre><code class="language-java">@RequestMapping(value = &quot;/uplink/**&quot;, method = RequestMethod.POST)
-    public void handleRequest(HttpServletRequest request,
-                                            @RequestBody String body) throws Exception {
-                        String converterId = extractPathFromPattern(request);
-                        service.processRequest(converterId, null, body);              
-    }
-
-    private String extractPathFromPattern(final HttpServletRequest request) {
-        String path = (String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE);
-        String bestMatchPattern = (String) request.getAttribute(HandlerMapping.BEST_MATCHING_PATTERN_ATTRIBUTE);
-        return new AntPathMatcher().extractPathWithinPattern(bestMatchPattern, path);
-    }
-</code></pre>
-<h1 id="测试">测试</h1>
-<p>至thingsboard的设备管理下配置完网关的http扩展后，使用postman测试新增的http转换器：<br>
-<img src="http://git.alang.run/post-images/1573616229936.png" alt="" loading="lazy"></p>
-<h1 id="总结">总结</h1>
-<p>暂无</p>
-]]></content>
     </entry>
 </feed>
