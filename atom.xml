@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://git.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2021-02-21T01:12:12.161Z</updated>
+    <updated>2021-02-28T08:19:33.037Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://git.alang.run"/>
     <link rel="self" href="http://git.alang.run/atom.xml"/>
@@ -10,6 +10,48 @@
     <logo>http://git.alang.run/images/avatar.png</logo>
     <icon>http://git.alang.run/favicon.ico</icon>
     <rights>All rights reserved 2021, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[ipad3 3.10.4安装微信及QQ]]></title>
+        <id>http://git.alang.run/post/ipad3-3104-an-zhuang-wei-xin-ji-qq/</id>
+        <link href="http://git.alang.run/post/ipad3-3104-an-zhuang-wei-xin-ji-qq/">
+        </link>
+        <updated>2021-02-28T07:51:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>发小从闲鱼上买了台二手ipad4，800大洋，想用来挂微信及QQ。可从app store安装微信或者QQ总是下载完后提示无法安装。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>发小从闲鱼上买了台二手ipad4，800大洋，想用来挂微信及QQ。可从app store安装微信或者QQ总是下载完后提示无法安装。</p>
+<!-- more -->
+<h1 id="互联网查找解决方案">互联网查找解决方案</h1>
+<p>于是Google了一番，终于找到个大牛分享的视频教程：<br>
+<a href="https://www.bilibili.com/video/av838195980">iPad4登陆微信提示版本低，全过程完整版视频来啦！快快登陆吧！<br>
+</a></p>
+<h1 id="总体思路">总体思路</h1>
+<p>大致思路：安装支持ipad4的微信版本7.0.2，安装后登录会提示版本过低，只要越狱后，把微信安装目录下的info.plist中微信版本号改成目前最新版本号即可。<br>
+大致流程如下：</p>
+<ol>
+<li>ipad必须先越狱</li>
+<li>安装afc2</li>
+<li>在ipad端的爱思助手安装微信历史版本中的7.0.2</li>
+<li>在电脑的爱思助手修改微信安装目录下的info.plist为最新版本号</li>
+<li>先在ipad单独登录微信，不要手机+ipad同时登录</li>
+<li>退出上一步单独的登录微信，使用ipad+手机同时登录</li>
+</ol>
+<h1 id="前期准备">前期准备</h1>
+<ol>
+<li>爱思助手7.0电脑端</li>
+</ol>
+<h1 id="可能出现的问题">可能出现的问题</h1>
+<ul>
+<li>cydia无法访问网络<br>
+参照：<a href="https://www.bilibili.com/video/av370580939/">【教程】教你修正越狱后Cydia无法联网</a> 阴差阳错的解决了<br>
+或者试下换个电信网络</li>
+</ul>
+<h1 id="安装qq">安装QQ</h1>
+<p>QQ目前还不会强制要求安装最新版本，直接在ipad爱思助手下载历史版本试下哪个可行即可。</p>
+<h1 id="总结">总结</h1>
+<p>刚开始没看清楚视频教程，直接在爱思助手点了一键刷机，应该选择越狱才对的，脑子秀逗了。<br>
+后面cydia网络问题也浪费了很多时间，后面解决也不知是因为换了电信网络还是看了视频教程操作生效，待验证。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[隐藏网页所有图片代码]]></title>
         <id>http://git.alang.run/post/yin-cang-wang-ye-suo-you-tu-pian-dai-ma/</id>
@@ -776,64 +818,6 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
 	 <div>
 		<video controls="controls" >
 		<source src="http://qiniu.alang.run//video/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E7%A9%B7%E5%85%B6%E4%B8%80%E7%94%9F%EF%BC%8C%E7%BB%88%E7%A9%B6%E4%B8%80%E6%97%A0%E6%89%80%E8%8E%B7%EF%BC%9F%E7%9C%8B%E6%95%99%E6%8E%88%E7%B2%BE%E8%BE%9F%E7%9A%84%E5%88%86%E6%9E%90%EF%BC%81.mp4" type="video/mp4" />
-		</video>
-	</div>
-	</div>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[《Outside》张钰琪NASA演唱]]></title>
-        <id>http://git.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang/</id>
-        <link href="http://git.alang.run/post/outside-zhang-yu-qi-nasa-yan-chang/">
-        </link>
-        <updated>2019-11-26T12:50:21.000Z</updated>
-        <summary type="html"><![CDATA[<div style="text-align:center;">
-	<div>
-			<audio  controls="controls"  autoplay="autoplay">
-			<source src="http://qiniu.alang.run//music/outside%E6%9C%89%E5%89%AA%E8%BE%91.m4a" type="audio/mpeg" />
-	</audio>
-	</div>
-</div>
-]]></summary>
-        <content type="html"><![CDATA[<div style="text-align:center;">
-	<div>
-			<audio  controls="controls"  autoplay="autoplay">
-			<source src="http://qiniu.alang.run//music/outside%E6%9C%89%E5%89%AA%E8%BE%91.m4a" type="audio/mpeg" />
-	</audio>
-	</div>
-</div>
-<!-- more -->
-<ul>
-<li>Ten thousand meters high it is light which is magical<br>
-万米高空中飘着迷人的极光</li>
-<li>run out of my hope using my last strength to lying on the snow<br>
-我希望不再用尽力气躺入雪中</li>
-<li>Finally gonna know a place where I could put my soul<br>
-终将有一个地方能安放灵魂</li>
-<li>Try to leave in a calm way with only my god knows<br>
-我在沉默中离开 只有上天知道</li>
-<li>Coming for the night<br>
-去向黑暗</li>
-<li>We flying so high<br>
-我们在飞行</li>
-<li>My heart could cross millions of miles<br>
-我的心跨越一千英里</li>
-<li>I’m going to the wild<br>
-去向自由</li>
-<li>I going through the light<br>
-越过光圈</li>
-<li>And hearing the calling from the other side<br>
-听见世界另一边的呼唤</li>
-<li>I touch the universe I touch your hand<br>
-触摸宇宙 触碰指尖</li>
-<li>Your eyes are like the pure sapphire<br>
-你的眼睛像纯净蓝宝石</li>
-<li>The river would run for another thousand so do we could be remained forever<br>
-银河将再流淌下一个一千年就像我们永不改变</li>
-</ul>
-<div style="text-align:center;">
-	 <div>
-		<video controls="controls" >
-		<source src="http://qiniu.alang.run//video/%E9%92%B0%E7%90%AA%E7%99%BB%E7%BE%8E%E5%9B%BDNASA%E9%A2%81%E5%A5%96%E7%A4%BC%E7%8C%AE%E5%94%B1%EF%BC%8C%E5%8E%9F%E5%88%9B%E3%80%8AOutside%E3%80%8B.mp4" type="video/mp4" />
 		</video>
 	</div>
 	</div>]]></content>

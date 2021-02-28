@@ -34,12 +34,12 @@
           </p>
           <div class="toc-container hidden lg:block">
             <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#13-spring%E5%B8%A6%E7%BB%99%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88">1.3 Spring带给我们什么</a></li>
-<li><a href="#14-spring%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84">1.4 Spring体系结构</a></li>
-</ul>
-</li>
+<li><a href="#%E4%BA%92%E8%81%94%E7%BD%91%E6%9F%A5%E6%89%BE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">互联网查找解决方案</a></li>
+<li><a href="#%E6%80%BB%E4%BD%93%E6%80%9D%E8%B7%AF">总体思路</a></li>
+<li><a href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87">前期准备</a></li>
+<li><a href="#%E5%8F%AF%E8%83%BD%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98">可能出现的问题</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85qq">安装QQ</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
 </ul>
 
           </div>
@@ -92,79 +92,58 @@
 <div class="mask" onclick="closeMenu()">
 </div>
       <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
-        <h1 class="text-3xl font-bold lg:mt-16">第一章-spring概述-精通spring4.x企业应用开发实战</h1>
+        <h1 class="text-3xl font-bold lg:mt-16">ipad3 3.10.4安装微信及QQ</h1>
         <div class="text-sm text-gray-700 lg:my-8">
-          2019-07-09 / 5 min read
+          2021-02-28 / 2 min read
         </div>
         
         <div class="post-content yue">
-          <h2 id="13-spring带给我们什么">1.3 Spring带给我们什么</h2>
+          <p>发小从闲鱼上买了台二手ipad4，800大洋，想用来挂微信及QQ。可从app store安装微信或者QQ总是下载完后提示无法安装。</p>
+<!-- more -->
+<h1 id="互联网查找解决方案">互联网查找解决方案</h1>
+<p>于是Google了一番，终于找到个大牛分享的视频教程：<br>
+<a href="https://www.bilibili.com/video/av838195980">iPad4登陆微信提示版本低，全过程完整版视频来啦！快快登陆吧！<br>
+</a></p>
+<h1 id="总体思路">总体思路</h1>
+<p>大致思路：安装支持ipad4的微信版本7.0.2，安装后登录会提示版本过低，只要越狱后，把微信安装目录下的info.plist中微信版本号改成目前最新版本号即可。<br>
+大致流程如下：</p>
 <ol>
-<li>Spring的好处（摘自第6页）</li>
+<li>ipad必须先越狱</li>
+<li>安装afc2</li>
+<li>在ipad端的爱思助手安装微信历史版本中的7.0.2</li>
+<li>在电脑的爱思助手修改微信安装目录下的info.plist为最新版本号</li>
+<li>先在ipad单独登录微信，不要手机+ipad同时登录</li>
+<li>退出上一步单独的登录微信，使用ipad+手机同时登录</li>
 </ol>
+<h1 id="前期准备">前期准备</h1>
+<ol>
+<li>爱思助手7.0电脑端</li>
+</ol>
+<h1 id="可能出现的问题">可能出现的问题</h1>
 <ul>
-<li>方便解耦，简化开发。通过Spring提供的IOC容器，用户可以将对象之间的依赖关系交由Spring控制，避免硬编码所造成的过度程序耦合。有了Spring，用户不必再为单实例模式类、属性文件解析等这些底层的需求编写代码，可以专注于上层的应用。</li>
-<li>AOP编程的支持。通过Spring提供的AOP功能，方便进行面向切面的编程，很多不容易用传统OOP实现的功能可以通过AOP轻松应对。</li>
-<li>声明式事务的支持。在Spring中，用户可以从单调烦闷的事务管理代码中解脱出来，通过声明的方式灵活地进行事务管理，提高开发效率和质量。</li>
-<li>方便程序的测试。可以用非容器依赖的编程方式进行几乎所有的测试工作。在Spring里，测试不再是昂贵的操作，而是随手可做的事情。</li>
-<li>方便集成各种优秀框架。Spring不排斥各种优秀的开源框架，相反，Spring可以降低各种框架的使用难度。Spring提供了对各种优秀框架（如Sturs、Hibernate、Hessian、Quartz等）的直接支持。</li>
-<li>降低Java EE API的使用难度。Spring对很多难用的Java EE API(如JDBC、JavaMail、远程调用等)提供了一个薄层封装，通过Spring的简易封装，这些Java EE API的使用难度大大降低。</li>
-<li>Java源码是经典的学习范例。Spring的源码设计精妙、结构清晰、匠心独运，处处体现着大师对Java设计模式的灵活运用及对Java技术的高深造诣。Spring框架源码无疑是Java技术的最佳实践范例。如果想在短时间内迅速提高自己的Java技术水平和应用开发水平，学习和研究Spring源码将会收到意想不到的效果。</li>
+<li>cydia无法访问网络<br>
+参照：<a href="https://www.bilibili.com/video/av370580939/">【教程】教你修正越狱后Cydia无法联网</a> 阴差阳错的解决了<br>
+或者试下换个电信网络</li>
 </ul>
-<h2 id="14-spring体系结构">1.4 Spring体系结构</h2>
-<figure data-type="image" tabindex="1"><img src="http://git.alang.run/post-images/1562642306584.png" alt="" loading="lazy"></figure>
-<ol>
-<li>IoC<br>
-Spring核心模块实现了IoC的功能，它将类与类之间的依赖从代码中脱离出来，用配置的方式进行依赖关系描述，由IoC容器负责依赖类之间的创建、拼接、管理、获取等工作。BeanFactory接口是Spring框架的核心接口，它实现了容器许多核心的功能。<br>
-Context模块构建于核心模块之上，扩展了BeanFactory的功能，添加了i18n国际化、Bean生命周期控制、框架事件体系、资源加载透明化等多项功能。此外，该模块还提供了许多企业级服务的支持，如邮件服务、任务调度、JNDI获取、EJB集成、远程访问等。ApplicationContext是Context模块的核心接口。<br>
-表达式语言模块是统一表达式语言（Unfied EL）的一个扩展，该表达式语言用于查询和管理运行期的对象，支持设置/获取对象属性，调用对象方法，操作数组、集合等。此外，该模块还提供了逻辑表达式运算、变量定义等功能，可以方便地通过表达式串和Spring IoC容器进行交互。</li>
-<li>AOP<br>
-AOP是继OOP之后，对编程设计思想影响极大的技术之一。AOP是进行横切逻辑编程的思想，它开拓了考虑问题的思路。在AOP模块里，Spring提供了满足AOP Alliance规范的实现，还整合了AspectJ这种AOP语言级的框架。在Spring里实现AOP编程有众多选择。Java5.0引入了java.lang.instrument,允许在JVM启动时启用一个代理类，通过该代理类在运行期修改类的字节码，改变一个类的功能，从而实现AOP功能。</li>
-<li>数据访问和集成<br>
-任何应用程序的核心问题是对数据的访问和操作。数据有多处表现形式，如数据表、XML、消息等，而每种数据形式又拥有不同的数据访问技术（如数据表的访问既可以直接通过JDBC，也可以通过Hibernate或MyBatis）。<br>
-首先，Spring站在DAO的抽象层面，建立了一套面向DAO层的统一的异常体系，同时将各种访问数据的检查型异常转换为非检查型异常，为整合各种持久层框架提供基础。其次，Spring通过模板化技术对各种数据访问技术进行了薄层封装，将模式化的代码隐藏起来，使数据访问的程序得到大幅简化。这样，Spring就建立了和数据形式访问技术无关的统一的DAO层，借助AOP技术，Spring提供了声明式事务的功能。</li>
-<li>Web及远程操作<br>
-该模块建立在Application Context模块之上，提供了Web应用的各种工具类，如通过Listener或Servlet初始化Spring容器，将Spring容器注册到Web容器中。该模块还提供了多项面向Web的功能，如透明化文件上传，Velocity、FreeMarker、XSLT的支持。此外，Spring可以整合Struts、WebWork等MVC框架。</li>
-<li>Web及远程访问<br>
-Spring自己提供了一个完整的类似于Struts的MVC框架，称为Spring MVC。相对于Servlet的MVC，Spring在简化Portlet的开发上也做了很多工作，开发者可以从中受益。</li>
-<li>WebSocket<br>
-WebSocket提供了一个在Web应用中高效、双向的通信，需要考虑到客户端（浏览器）和服务器之间的高频和低时延消息交换。一般的应用场景有在线交易、游戏、协作、数据可视化等。</li>
-</ol>
+<h1 id="安装qq">安装QQ</h1>
+<p>QQ目前还不会强制要求安装最新版本，直接在ipad爱思助手下载历史版本试下哪个可行即可。</p>
+<h1 id="总结">总结</h1>
+<p>刚开始没看清楚视频教程，直接在爱思助手点了一键刷机，应该选择越狱才对的，脑子秀逗了。<br>
+后面cydia网络问题也浪费了很多时间，后面解决也不知是因为换了电信网络还是看了视频教程操作生效，待验证。</p>
 
         </div>
 
-        
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://git.alang.run/tag/spring/">
-            <span class="flex-auto">spring</span>
-          </a>
-        
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://git.alang.run/tag/summary/">
-            <span class="flex-auto">摘抄</span>
-          </a>
-        
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="http://git.alang.run/tag/book/">
-            <span class="flex-auto">书籍</span>
-          </a>
         
 
 
         <div class="flex justify-between py-8">
           
-            <div class="prev-post">
-              <a href="http://git.alang.run/post/zhuan-zai-wei-shi-me-jue-da-bu-fen-ren-du-diao-jin-liao-keng-li/">
-                <h3 class="post-title">
-                  <i class="ri-arrow-left-line"></i>
-                  (转载)为什么绝大部分人都掉进了坑里
-                </h3>
-              </a>
-            </div>
-          
 
           
             <div class="next-post">
-              <a href="http://git.alang.run/post/zhuan-zai-zen-yang-xiang-shang-kua-yue-jie-ceng/">
+              <a href="http://git.alang.run/post/yin-cang-wang-ye-suo-you-tu-pian-dai-ma/">
                 <h3 class="post-title">
-                  (转载)怎样向上跨越阶层
+                  隐藏网页所有图片代码
                   <i class="ri-arrow-right-line"></i>
                 </h3>
               </a>
