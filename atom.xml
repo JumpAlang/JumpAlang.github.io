@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://git.alang.run</id>
     <title>Jump!Alang</title>
-    <updated>2021-03-04T02:49:47.821Z</updated>
+    <updated>2021-03-17T09:57:41.877Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://git.alang.run"/>
     <link rel="self" href="http://git.alang.run/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>http://git.alang.run/images/avatar.png</logo>
     <icon>http://git.alang.run/favicon.ico</icon>
     <rights>All rights reserved 2021, Jump!Alang</rights>
+    <entry>
+        <title type="html"><![CDATA[给.exe桌面软件增加使用限制]]></title>
+        <id>http://git.alang.run/post/gei-exe-zhuo-mian-ruan-jian-zeng-jia-shi-yong-xian-zhi/</id>
+        <link href="http://git.alang.run/post/gei-exe-zhuo-mian-ruan-jian-zeng-jia-shi-yong-xian-zhi/">
+        </link>
+        <updated>2021-03-17T09:40:07.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近，小伙伴有开发了一个冷门小软件，想采取按软件打开次数收费。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近，小伙伴有开发了一个冷门小软件，想采取按软件打开次数收费。</p>
+<!-- more -->
+<h1 id="思考">思考</h1>
+<p>由于使用软件的用户都是电脑小白，为了省功夫，就想到了直接本地验证即可。<br>
+于是开始提取关键词：软件加壳、次数限制……</p>
+<h1 id="柳暗花明">柳暗花明</h1>
+<p>经历一系列搜索碰壁，终于找到一款软件可以满足此功能（最开始找到吾爱的文章是正解 <a href="https://www.52pojie.cn/thread-220148-1-1.html">https://www.52pojie.cn/thread-220148-1-1.html</a>）。<br>
+** Shielden ** 来自safe engine团队。而且是免费的。<br>
+不仅可以设置软件打开次数，还可以设置有效期。<br>
+下载地址：<a href="http://www.safengine.com/downloads/get-demo">http://www.safengine.com/downloads/get-demo</a></p>
+<h1 id="使用注意">使用注意</h1>
+<ol>
+<li>设置使用默认的</li>
+<li>需要特殊设置的地方 ：授权选项-启用授权系统，默认授权菜单是可以展开的，设置限制运行次数为0</li>
+<li>修改自定义提示为你想提醒的文字</li>
+<li>执行完毕后会生成被加密后的exe文件和一个用于生成授权文件的生成器。</li>
+</ol>
+<h1 id="总结">总结</h1>
+<p>以后对于小众小工具软件可以采用授权机制收费，这样才会长远。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ipad3 3.10.4安装微信及QQ]]></title>
         <id>http://git.alang.run/post/ipad3-3104-an-zhuang-wei-xin-ji-qq/</id>
@@ -803,23 +832,5 @@ library/hello-world是 image 文件在仓库里面的位置，其中library是 i
 <li>要爬取一个网站的内容，可以看下这个网站是否开源，如果开源可以试着在本地运行，可能你要的数据可以直接借助它生成。</li>
 </ol>
 ]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为什么大多数人穷其一生，终究一无所获？]]></title>
-        <id>http://git.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo/</id>
-        <link href="http://git.alang.run/post/wei-shi-me-da-duo-shu-ren-qiong-qi-yi-sheng-zhong-jiu-yi-wu-suo-huo/">
-        </link>
-        <updated>2019-12-03T09:34:04.000Z</updated>
-        <summary type="html"><![CDATA[<p>潜意识决定了你95%的人生。而潜意识你可以通过催眠、重复来改变。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>潜意识决定了你95%的人生。而潜意识你可以通过催眠、重复来改变。</p>
-<!-- more -->
-<div style="text-align:center; ">
-	 <div>
-		<video controls="controls" >
-		<source src="http://qiniu.alang.run//video/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E7%A9%B7%E5%85%B6%E4%B8%80%E7%94%9F%EF%BC%8C%E7%BB%88%E7%A9%B6%E4%B8%80%E6%97%A0%E6%89%80%E8%8E%B7%EF%BC%9F%E7%9C%8B%E6%95%99%E6%8E%88%E7%B2%BE%E8%BE%9F%E7%9A%84%E5%88%86%E6%9E%90%EF%BC%81.mp4" type="video/mp4" />
-		</video>
-	</div>
-	</div>]]></content>
     </entry>
 </feed>
